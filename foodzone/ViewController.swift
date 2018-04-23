@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, AVCaptureMetadataOutputObjectsDelegate {
 
     @IBOutlet weak var selectedImage: UIImageView!
+    @IBOutlet weak var codeInfo: UILabel!
+    var session : AVCaptureSession!
+    var video : AVCaptureVideoPreviewLayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +28,43 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @IBAction func scanCodeClicked(_ sender: Any) {
+        session = AVCaptureSession()
+        let captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
+        
+        do {
+            let input = try AVCaptureDeviceInput(device: captureDevice)
+            session.addInput(input)
+        }
+        catch {
+            print("Error in capture device")
+        }
+        
+        let output = AVCaptureMetadataOutput()
+        session.addOutput(output)
+        output.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
+        output.metadataObjectTypes = [AVMetadataObjectTypeQRCode]
+        
+        video = AVCaptureVideoPreviewLayer(session: session)
+        video?.frame = view.layer.bounds
+        view.layer.addSublayer(video!)
+        session.startRunning()
+    }
+    
+    func captureOutput(_ output: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
+        if metadataObjects != nil && metadataObjects.count != 0 {
+            if let object = metadataObjects[0] as? AVMetadataMachineReadableCodeObject {
+                if object.type == AVMetadataObjectTypeQRCode {
+                    let alert = UIAlertController(title: "QR Code", message: object.stringValue, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Retake", style: .default, handler: nil))
+                    alert.addAction(UIAlertAction(title: "Copy", style: .default, handler: { (nil) in UIPasteboard.general.string = object.stringValue
+                        self.codeInfo.text = object.stringValue
+                        self.session?.stopRunning()
+                        self.video.removeFromSuperlayer()
+                    }))
+                    present(alert, animated: true, completion: nil)
+                }
+            }
+        }
     }
     
     @IBAction func submitInfoClicked(_ sender: Any) {

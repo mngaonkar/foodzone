@@ -173,10 +173,18 @@
                                     <action selector="scanCodeClicked:" destination="Gs7-78-jUB" eventType="touchUpInside" id="b3o-8p-jhx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1W-PH-CGJ">
+                                <rect key="frame" x="0.0" y="373" width="375" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
+                        <outlet property="codeInfo" destination="Q1W-PH-CGJ" id="kBb-cU-WLV"/>
                         <outlet property="selectedImage" destination="hPh-nU-BiR" id="lMU-F1-Idd"/>
                     </connections>
                 </viewController>
