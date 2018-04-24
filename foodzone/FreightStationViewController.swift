@@ -31,7 +31,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     func uploadImage(image : UIImage) -> String{
-        let sasURL = "https://foodzone.blob.core.windows.net/images?sv=2017-07-29&ss=bfqt&srt=sco&sp=rwdlacup&se=2018-04-24T03:49:50Z&st=2018-04-23T19:49:50Z&spr=https&sig=74gYzNMEsSrkVeJJU2lB9eDwwVKpRf6BIw8xjh0V5KY%3D"
+        let sasURL = "https://foodzone.blob.core.windows.net/images?sv=2017-07-29&ss=bfqt&srt=sco&sp=rwdlacup&se=2018-12-31T03:08:00Z&st=2018-04-24T19:08:00Z&spr=https&sig=hgCd5RfZvwL87NzF8Gtej7fR0yM5hghfYCz1HlT5feY%3D"
 
         var error : NSError?
         var imageURL : String = ""
@@ -50,15 +50,21 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let blob = container.blockBlobReference(fromName: "image-\(timestamp).png")
         blob.properties.contentType = "image/png"
         
-        let imageData = UIImagePNGRepresentation(image)
+        let resizedImage = resizeImage(image: image, targetSize: CGSize(width: 200.0, height: 200.0))
+        let imageData = UIImagePNGRepresentation(resizedImage)
         if imageData != nil {
-            activityIndicator.startAnimating()
+            //activityIndicator.startAnimating()
             blob.upload(from: imageData!, completionHandler:{(NSError) -> Void in
-                self.activityIndicator.stopAnimating()
+                //self.activityIndicator.stopAnimating()
+                print(NSError.debugDescription)
             })
         }
         
         return imageURL
+    }
+    
+    @IBAction func backPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func scanCodeClicked(_ sender: Any) {
@@ -123,7 +129,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }))
         
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
-        
+        actionSheet.popoverPresentationController?.sourceView = self.view
+        actionSheet.popoverPresentationController?.sourceRect = CGRect(x: UIScreen.main.bounds.width/2, y: 0, width: 1.0, height: 1.0)
         self.present(actionSheet, animated: true, completion: nil)
     }
     

@@ -1,16 +1,24 @@
 PODS:
+  - Alamofire (4.7.1)
   - AZSClient (0.2.6)
+  - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
+  - Alamofire
   - AZSClient
+  - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Alamofire
     - AZSClient
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
   AZSClient: efd576cabf56f97e38cb1b614739f4b0c1906392
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 60ac6039eaebb8179a024dce1c305a40d14e24e5
+PODFILE CHECKSUM: 028af76ab2bc66f264e6c815942a45dfa6f7426d
 
 COCOAPODS: 1.5.0

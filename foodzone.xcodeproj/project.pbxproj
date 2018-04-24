@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D5B4CD3208E47D9000A436D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5B4CD2208E47D9000A436D /* ViewController.swift */; };
+		6D0604F3208F9E6B00CC4FBE /* FoodFeaturesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0604F2208F9E6B00CC4FBE /* FoodFeaturesModel.swift */; };
+		6D0604F5208FA00C00CC4FBE /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0604F4208FA00C00CC4FBE /* RestaurantViewController.swift */; };
+		6D0604F7208FA04C00CC4FBE /* ChefDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0604F6208FA04C00CC4FBE /* ChefDataModel.swift */; };
+		6D0604F9208FA55F00CC4FBE /* lobster_dish.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6D0604F8208FA55F00CC4FBE /* lobster_dish.jpeg */; };
+		6D0604FB208FA76C00CC4FBE /* lobster_chef.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D0604FA208FA76C00CC4FBE /* lobster_chef.png */; };
+		6D0604FD208FB0FF00CC4FBE /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0604FC208FB0FF00CC4FBE /* Utilities.swift */; };
+		6D5B4CD3208E47D9000A436D /* FreightStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5B4CD2208E47D9000A436D /* FreightStationViewController.swift */; };
 		9C35A4B41DE4EF8000650581 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C35A4B31DE4EF8000650581 /* SafariServices.framework */; };
 		9C35A4B61DE4EF8500650581 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C35A4B51DE4EF8500650581 /* Security.framework */; };
 		9CA121761DAC7FFD000C2FCA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA121751DAC7FFD000C2FCA /* WebKit.framework */; };
@@ -23,7 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6D5B4CD2208E47D9000A436D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6D0604F2208F9E6B00CC4FBE /* FoodFeaturesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFeaturesModel.swift; sourceTree = "<group>"; };
+		6D0604F4208FA00C00CC4FBE /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		6D0604F6208FA04C00CC4FBE /* ChefDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefDataModel.swift; sourceTree = "<group>"; };
+		6D0604F8208FA55F00CC4FBE /* lobster_dish.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lobster_dish.jpeg; sourceTree = "<group>"; };
+		6D0604FA208FA76C00CC4FBE /* lobster_chef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lobster_chef.png; sourceTree = "<group>"; };
+		6D0604FC208FB0FF00CC4FBE /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		6D5B4CD2208E47D9000A436D /* FreightStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreightStationViewController.swift; sourceTree = "<group>"; };
 		86EEEE6A65D0E5149BDCCF23 /* Pods-foodzone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodzone.release.xcconfig"; path = "Pods/Target Support Files/Pods-foodzone/Pods-foodzone.release.xcconfig"; sourceTree = "<group>"; };
 		9C35A4B31DE4EF8000650581 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		9C35A4B51DE4EF8500650581 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -91,10 +103,16 @@
 		A2D9CBC01943C2540017F096 /* foodzone */ = {
 			isa = PBXGroup;
 			children = (
+				6D0604FA208FA76C00CC4FBE /* lobster_chef.png */,
+				6D0604F8208FA55F00CC4FBE /* lobster_dish.jpeg */,
 				A2BD20951AC8A731007F7181 /* QSTodoDataModel.xcdatamodeld */,
 				A2D9CBC31943C2540017F096 /* AppDelegate.swift */,
 				A2D9CBCA1943C2540017F096 /* Main.storyboard */,
-				6D5B4CD2208E47D9000A436D /* ViewController.swift */,
+				6D0604F4208FA00C00CC4FBE /* RestaurantViewController.swift */,
+				6D5B4CD2208E47D9000A436D /* FreightStationViewController.swift */,
+				6D0604F2208F9E6B00CC4FBE /* FoodFeaturesModel.swift */,
+				6D0604F6208FA04C00CC4FBE /* ChefDataModel.swift */,
+				6D0604FC208FB0FF00CC4FBE /* Utilities.swift */,
 				A2D9CBCD1943C2540017F096 /* Images.xcassets */,
 				A2D9CBC11943C2540017F096 /* Supporting Files */,
 				A2D9CBE31943C39D0017F096 /* ToDoTableViewController.swift */,
@@ -197,7 +215,9 @@
 			files = (
 				A2D9CBCC1943C2540017F096 /* Main.storyboard in Resources */,
 				A2D9CBCE1943C2540017F096 /* Images.xcassets in Resources */,
+				6D0604FB208FA76C00CC4FBE /* lobster_chef.png in Resources */,
 				A31A89F71BF3FDFA00C7B656 /* Launch Screen.storyboard in Resources */,
+				6D0604F9208FA55F00CC4FBE /* lobster_dish.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,10 +232,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-foodzone/Pods-foodzone-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AZSClient/AZSClient.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AZSClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -247,11 +271,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D5B4CD3208E47D9000A436D /* ViewController.swift in Sources */,
+				6D0604F3208F9E6B00CC4FBE /* FoodFeaturesModel.swift in Sources */,
+				6D5B4CD3208E47D9000A436D /* FreightStationViewController.swift in Sources */,
+				6D0604F5208FA00C00CC4FBE /* RestaurantViewController.swift in Sources */,
 				A2E767C6194594DC00869113 /* ToDoItemViewController.swift in Sources */,
 				A2BD20971AC8A731007F7181 /* QSTodoDataModel.xcdatamodeld in Sources */,
 				A2D9CBE41943C39D0017F096 /* ToDoTableViewController.swift in Sources */,
+				6D0604FD208FB0FF00CC4FBE /* Utilities.swift in Sources */,
 				A2D9CBC41943C2540017F096 /* AppDelegate.swift in Sources */,
+				6D0604F7208FA04C00CC4FBE /* ChefDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

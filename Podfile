@@ -7,4 +7,6 @@ target 'foodzone' do
 
   # Pods for foodzone
   pod 'AZSClient'
+  pod 'SwiftyJSON'
+  pod 'Alamofire'
 end
