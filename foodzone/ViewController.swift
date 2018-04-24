@@ -11,6 +11,7 @@ import AVFoundation
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, AVCaptureMetadataOutputObjectsDelegate {
 
+    @IBOutlet weak var imageLink: UITextView!
     @IBOutlet weak var selectedImage: UIImageView!
     @IBOutlet weak var codeInfo: UILabel!
     var session : AVCaptureSession!
@@ -29,39 +30,43 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         // Dispose of any resources that can be recreated.
     }
     
-    func uploadImage(image : UIImage) {
+    func uploadImage(image : UIImage) -> String{
         let sasURL = "https://foodzone.blob.core.windows.net/images?sv=2017-07-29&ss=bfqt&srt=sco&sp=rwdlacup&se=2018-04-24T03:49:50Z&st=2018-04-23T19:49:50Z&spr=https&sig=74gYzNMEsSrkVeJJU2lB9eDwwVKpRf6BIw8xjh0V5KY%3D"
 
         var error : NSError?
+        var imageURL : String = ""
         
         let container = AZSCloudBlobContainer(url: URL(string: sasURL)!, error: &error)
         if error != nil {
             print("Error creating container object")
-            return
+            return imageURL
         }
         let date = Date()
         let formatter = DateFormatter()
         formatter.dateFormat = "hh:mm:ss-dd.MM.yyyy"
         let timestamp = formatter.string(from: date)
         
+        imageURL = "https://foodzone.blob.core.windows.net/images/" + "image-\(timestamp).png"
         let blob = container.blockBlobReference(fromName: "image-\(timestamp).png")
         blob.properties.contentType = "image/png"
         
         let imageData = UIImagePNGRepresentation(image)
         if imageData != nil {
-            self.activityIndicator.startAnimating()
+            activityIndicator.startAnimating()
             blob.upload(from: imageData!, completionHandler:{(NSError) -> Void in
                 self.activityIndicator.stopAnimating()
             })
         }
+        
+        return imageURL
     }
     
     @IBAction func scanCodeClicked(_ sender: Any) {
         session = AVCaptureSession()
-        let captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
+        let captureDevice = AVCaptureDevice.default(for: AVMediaType.video)
         
         do {
-            let input = try AVCaptureDeviceInput(device: captureDevice)
+            let input = try AVCaptureDeviceInput(device: captureDevice!)
             session.addInput(input)
         }
         catch {
@@ -71,7 +76,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let output = AVCaptureMetadataOutput()
         session.addOutput(output)
         output.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
-        output.metadataObjectTypes = [AVMetadataObjectTypeQRCode]
+        output.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
         
         video = AVCaptureVideoPreviewLayer(session: session)
         video?.frame = view.layer.bounds
@@ -79,10 +84,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         session.startRunning()
     }
     
-    func captureOutput(_ output: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
+    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         if metadataObjects != nil && metadataObjects.count != 0 {
             if let object = metadataObjects[0] as? AVMetadataMachineReadableCodeObject {
-                if object.type == AVMetadataObjectTypeQRCode {
+                if object.type == AVMetadataObject.ObjectType.qr {
                     let alert = UIAlertController(title: "QR Code", message: object.stringValue, preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Retake", style: .default, handler: nil))
                     alert.addAction(UIAlertAction(title: "Copy", style: .default, handler: { (nil) in UIPasteboard.general.string = object.stringValue
@@ -97,7 +102,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @IBAction func submitInfoClicked(_ sender: Any) {
-        uploadImage(image: selectedImage.image!)
+        let imageURL = uploadImage(image: selectedImage.image!)
+        imageLink.text = imageURL
     }
     
     @IBAction func selectImageClicked(_ sender: Any) {

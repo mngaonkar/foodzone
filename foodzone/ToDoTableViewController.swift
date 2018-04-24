@@ -66,7 +66,7 @@ class ToDoTableViewController: UITableViewController, NSFetchedResultsController
         self.onRefresh(self.refreshControl)
     }
     
-    func onRefresh(_ sender: UIRefreshControl!) {
+    @objc func onRefresh(_ sender: UIRefreshControl!) {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         
         self.table!.pull(with: self.table?.query(), queryId: "AllRecords") {
