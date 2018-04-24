@@ -15,11 +15,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var codeInfo: UILabel!
     var session : AVCaptureSession!
     var video : AVCaptureVideoPreviewLayer!
-    
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.activityIndicator.hidesWhenStopped = true
+        self.activityIndicator.stopAnimating()
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,11 +42,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let blob = container.blockBlobReference(fromName: "image.png")
         blob.properties.contentType = "image/png"
         
-        let data = UIImagePNGRepresentation(image)
-        if data != nil {
-            blob.upload(from: data!) { (error) in
-                print("Error encountered \(error!)")
-            }
+        let imageData = UIImagePNGRepresentation(image)
+        if imageData != nil {
+            self.activityIndicator.startAnimating()
+            blob.upload(from: imageData!, completionHandler:{(NSError) -> Void in
+                self.activityIndicator.stopAnimating()
+            })
         }
     }
     
