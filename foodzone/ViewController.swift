@@ -39,7 +39,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             print("Error creating container object")
             return
         }
-        let blob = container.blockBlobReference(fromName: "image.png")
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "hh:mm:ss-dd.MM.yyyy"
+        let timestamp = formatter.string(from: date)
+        
+        let blob = container.blockBlobReference(fromName: "image-\(timestamp).png")
         blob.properties.contentType = "image/png"
         
         let imageData = UIImagePNGRepresentation(image)

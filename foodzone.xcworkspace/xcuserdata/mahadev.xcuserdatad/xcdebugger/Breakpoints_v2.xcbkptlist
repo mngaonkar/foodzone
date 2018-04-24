@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "foodzone/ViewController.swift"
-            timestampString = "546231263.52889"
+            timestampString = "546231802.361019"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "uploadImage(image:)"
             landmarkType = "7">
             <Locations>
