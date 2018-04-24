@@ -143,6 +143,7 @@
 				A2D9CBBA1943C2540017F096 /* Sources */,
 				A2D9CBBB1943C2540017F096 /* Frameworks */,
 				A2D9CBBC1943C2540017F096 /* Resources */,
+				A6ECA84875D5DBBB9FD533F6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,6 +204,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		A6ECA84875D5DBBB9FD533F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-foodzone/Pods-foodzone-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AZSClient/AZSClient.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AZSClient.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-foodzone/Pods-foodzone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EF109E4ACB4679C94C41D676 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

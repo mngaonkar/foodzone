@@ -27,6 +27,27 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         // Dispose of any resources that can be recreated.
     }
     
+    func uploadImage(image : UIImage) {
+        let sasURL = "https://foodzone.blob.core.windows.net/images?sv=2017-07-29&ss=bfqt&srt=sco&sp=rwdlacup&se=2018-04-24T03:49:50Z&st=2018-04-23T19:49:50Z&spr=https&sig=74gYzNMEsSrkVeJJU2lB9eDwwVKpRf6BIw8xjh0V5KY%3D"
+
+        var error : NSError?
+        
+        let container = AZSCloudBlobContainer(url: URL(string: sasURL)!, error: &error)
+        if error != nil {
+            print("Error creating container object")
+            return
+        }
+        let blob = container.blockBlobReference(fromName: "image.png")
+        blob.properties.contentType = "image/png"
+        
+        let data = UIImagePNGRepresentation(image)
+        if data != nil {
+            blob.upload(from: data!) { (error) in
+                print("Error encountered \(error!)")
+            }
+        }
+    }
+    
     @IBAction func scanCodeClicked(_ sender: Any) {
         session = AVCaptureSession()
         let captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
@@ -68,6 +89,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @IBAction func submitInfoClicked(_ sender: Any) {
+        uploadImage(image: selectedImage.image!)
     }
     
     @IBAction func selectImageClicked(_ sender: Any) {

@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 4be74265f3a29a2b86a9bb888df8afd1cd4b8a95
+PODS:
+  - AZSClient (0.2.6)
+
+DEPENDENCIES:
+  - AZSClient
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AZSClient
+
+SPEC CHECKSUMS:
+  AZSClient: efd576cabf56f97e38cb1b614739f4b0c1906392
+
+PODFILE CHECKSUM: 60ac6039eaebb8179a024dce1c305a40d14e24e5
 
 COCOAPODS: 1.5.0

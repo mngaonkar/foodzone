@@ -7,39 +7,305 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D5D6842F0E82E97171DC2DEE119AE4A /* Pods-foodzone-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4781D6D80D8608F2EC34B003AACCD3EF /* Pods-foodzone-dummy.m */; };
-		7C1A7299B7D6DBF96C412CD43ECA86AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		A7FC49428B21C75CDDC5D8EE6F0B25D4 /* Pods-foodzone-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D453558EA0CCF2C790C0C98A9EDB8D74 /* Pods-foodzone-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		027E057F62F4E3A311350588A26AECCA /* AZSSharedKeyBlobAuthenticationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5D3DB48FBC9CF387E37D7ECA92E1F3 /* AZSSharedKeyBlobAuthenticationHandler.m */; };
+		03E20C8F7FADD8F691F2DEC4BA8D0C18 /* AZSNoOpAuthenticationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E97E74F1EB6BDDEB82232BBE95372E /* AZSNoOpAuthenticationHandler.m */; };
+		08EC63BA1DA6788F3A0865EDF88709DE /* AZSClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EB92EA63C7E4A79C53EC5D0EF55B5DD /* AZSClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B2B4217A0680A571A1CE2354BF567C1 /* AZSContinuationToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C139E2B65F0893078A39B6CD252583E /* AZSContinuationToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D06435B32F42381035774D98BA75937 /* AZSCloudAppendBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7F579EC15CB808E528D36E0D356103 /* AZSCloudAppendBlob.m */; };
+		0E0141B9C0489F28575E7C8FCBAB2D55 /* AZSBlockListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C13C5F1B500CC4A3282095B93FFDE9 /* AZSBlockListItem.m */; };
+		104B35E3DF2C188BBE089C5C532970DC /* AZSBlobOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 61786D840985318C63A1EE2269DC528E /* AZSBlobOutputStream.m */; };
+		1224C9ECFC2BEA444E30D3206A640CC0 /* AZSRequestResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B05E673CFDE179A84A017072B0648EC /* AZSRequestResult.m */; };
+		13B145EF1046F8A2F20D389BCFE84CCB /* AZSCloudPageBlob.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F15023EEA4E4B7BD84A8CAC70FAEEF0 /* AZSCloudPageBlob.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1717BED84A9DAF4FD298305F5ED5EDF6 /* AZSBlobProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 1697F89C1E9203937F9250C887E4B1BA /* AZSBlobProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18A7BCC6E14C2F6D3A66C12275C4F3AC /* AZSErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = A82ECEC4DFB2EAB49C543E9C4CCAE929 /* AZSErrors.m */; };
+		1E8BD21C7482E8D05F0035C5B9A3E005 /* AZSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F54C03334CB823CE9A7F0073E29653F0 /* AZSUtil.m */; };
+		20ECFC9C84635F4F4E630A6390561A59 /* AZSCloudStorageAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = BF756FD1ADBF8618CF4905E01E4B8203 /* AZSCloudStorageAccount.m */; };
+		25230301451E4DC5296AAE371C6A5C8C /* AZSRetryInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 19DD6D4DE078DDF25193568E5803B601 /* AZSRetryInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		268CC19DB09A67859FF08DBF8AC04046 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		274AB669D23F9742A55FD1E8B621644E /* AZSResponseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 37694F0B12A588311D1C533ACA269312 /* AZSResponseParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		282E63764B2ED49E72296317B5515811 /* AZSCorsRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B44CDED67690B545D21775BC7148675 /* AZSCorsRule.m */; };
+		28517434ED5A44974DDC04E6858CC356 /* AZSNavigationUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7B0AD426B8EB9C5C189385BE70255D1 /* AZSNavigationUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28FC690E43D1F47B6DEB1DCEF26B59AF /* AZSBlobResponseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = A94C41B1070863114F5625EA01CB0A9B /* AZSBlobResponseParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		292029A1991FE7D3C34DEF8A27ECEB61 /* AZSRequestOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A260ABD54FA60C088E8C164934EBB /* AZSRequestOptions.m */; };
+		2B636E42353B26323D5BE51891846AC0 /* AZSStorageUri.m in Sources */ = {isa = PBXBuildFile; fileRef = 5464191DB00F92A164D2D95FE5836FEF /* AZSStorageUri.m */; };
+		339B8846C50C9F60B9E622308FEF3256 /* AZSBlobRequestXML.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE6242A9D531B2452DF81CF8605F84A /* AZSBlobRequestXML.m */; };
+		355B94FE485DC458D4DF6DFDDCD2649F /* AZSRetryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E11AF55976D9AB8CD06BE55A48DDE3 /* AZSRetryInfo.m */; };
+		3C7C07CECC3B6638CCDF7797FE1623CD /* AZSSharedAccessPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = BC82379C478E105AB1F07E3A68E5E85A /* AZSSharedAccessPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D7789D7A2A9128E3855129377AEB6AD /* AZSBlobContainerProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C0296638F8B2CCD60C092FC2EC4A8D9 /* AZSBlobContainerProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40DC8A07D3523D8C7940F5E6D70723C3 /* AZSSharedAccessPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 394E5D7CC5598BF44ECC843995BEC0DC /* AZSSharedAccessPolicy.m */; };
+		411179808F6BCA635F50D9AC3ACFA903 /* AZSSharedAccessHeaders.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B6EE5929498C32A944FB302AB6ED6E /* AZSSharedAccessHeaders.m */; };
+		41529EDA7C7EF6C20C4AFC19187B676D /* AZSCloudBlobContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BDE722DD53EF0D2A07BB89F93DC0D53 /* AZSCloudBlobContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4334AD415552A7E035EAB7CF148BA43A /* AZSConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A449A1450A41B1F72F8DF946064AA3A /* AZSConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4536742B0245A1CC1245126DD9E50866 /* AZSCloudClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC9B458A0C3D9DDD7E90A67F7B9F208 /* AZSCloudClient.m */; };
+		457BDCC61A37805C9041565881816E04 /* AZSBlobOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E301A18FA325439AB69A945B76F69D /* AZSBlobOutputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46171B299ADF6817DE94F8FF9B2C1E91 /* AZSCopyState.m in Sources */ = {isa = PBXBuildFile; fileRef = D6963AD9BDFC2A177BA17885B56963F1 /* AZSCopyState.m */; };
+		4C1DB50077CC2C855F6CE5B2084831FD /* AZSCloudBlobContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ACC3233903D3261ADD6BB383B7BB8A /* AZSCloudBlobContainer.m */; };
+		4CCF01773DCF9C369C994EAD9A19482E /* AZSCloudBlobDirectory.h in Headers */ = {isa = PBXBuildFile; fileRef = BB3472F7C506BADAB5F3F7074C0483FA /* AZSCloudBlobDirectory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5150BEB1032666E118B5515E84C6B1DF /* AZSRequestResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 18984135E397A7CD4794E76F958D8007 /* AZSRequestResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5461AF30C721618330205C68C4BC1CD5 /* AZSBlobUploadHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = C2A79F50E51BD473BC8D740DC9F31259 /* AZSBlobUploadHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54C357703A60923BAC39F54A7AE80A69 /* AZSCloudStorageAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F63CF1FF4171ED8B493485B86085286 /* AZSCloudStorageAccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		558ACB1352EAE749D1336471208293E4 /* AZSCloudAppendBlob.h in Headers */ = {isa = PBXBuildFile; fileRef = D71C9E8D6DD771AD946436432D4F47E6 /* AZSCloudAppendBlob.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57A930A2DAD6788718D5AF99D1E667B2 /* AZSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 57531ECC10E167AA4561A8E06C49CFB5 /* AZSConstants.m */; };
+		5B23B804E921F66453F78745272A5C7A /* AZSSharedAccessSignatureHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 443D8C9EBD8A8117C2A241337AF466B2 /* AZSSharedAccessSignatureHelper.m */; };
+		5BD8769423EEA42592D24A46FC79D93D /* AZSClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC6133269DAEB73DD14494562AE4770 /* AZSClient-dummy.m */; };
+		5F21266EE51E8EEECFA2110AB1F78854 /* AZSCorsRule.h in Headers */ = {isa = PBXBuildFile; fileRef = EA37199FEF0432432AE804B892A548DE /* AZSCorsRule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		619A2685E95F605DDC69B1F9BB3D842C /* AZSBlobRequestOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 56808F2CE12B23268647F8B0EAE71843 /* AZSBlobRequestOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6307F66DA3544BF695DFD036B1AE51DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		648CFE93C7BD95EA6611E1C6D2E94A45 /* AZSBlobProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A6F86C7E7E1940152FD7F8335DC005 /* AZSBlobProperties.m */; };
+		66AAC8F29765B5B8A7167D9F0A1D8E7D /* AZSBlobContainerProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 852340EED3051C899B65FF306AE1F03F /* AZSBlobContainerProperties.m */; };
+		6AE67CF92E6AE9DD087604236275327F /* AZSNavigationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 544B21D966ECE6D1E62506CF78FE413C /* AZSNavigationUtil.m */; };
+		727490021CA24EF20BCBD0E5E2C84B03 /* AZSBlobRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6E32BCFA5DE80A0AB204B08A69837C /* AZSBlobRequestFactory.m */; };
+		7427013F81A943903B6D9F5BADC12523 /* AZSSharedAccessAccountParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = EB1B6AD33B9B4C0ED6E1CA309F295BD8 /* AZSSharedAccessAccountParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		753D539F26F8B78218F6176759630CB8 /* AZSSharedAccessBlobParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DCFEB65B3E2A1D4E9AAA27BA2EC485C /* AZSSharedAccessBlobParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		761EAF8F4EB4E81CFA40B6B8F752F41F /* AZSUriQueryBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = FB608041039CF39901BA8B836BF3F2DC /* AZSUriQueryBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77BC0D697493DBFBE2C7CECC689C6A6F /* AZSRetryPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B1BCD83DBDC47D529BB77B70742FC /* AZSRetryPolicy.m */; };
+		79DD83CB69EE662816E47019CC1710D3 /* AZSRetryContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EC2A37384EDB554258769063E824B19 /* AZSRetryContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7AA88E65DBC625DBB9585A363E5D9EB1 /* AZSCloudBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED88B98EAFEFA572B15707D7195F343 /* AZSCloudBlob.m */; };
+		7AD718C3D4815CEDF6F8C81799F24E4E /* AZSIPRange.m in Sources */ = {isa = PBXBuildFile; fileRef = D57A4AFD3AD2A74817CBCCFF276FC77A /* AZSIPRange.m */; };
+		7BE3541814E006C88A68BA2840419B1A /* AZSCloudPageBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFFC125001AC04F35F138814DDA113C /* AZSCloudPageBlob.m */; };
+		7D2A671A416E47FD40747D4F8B81C15C /* AZSResultSegment.h in Headers */ = {isa = PBXBuildFile; fileRef = 2083A926BD37979146ED04B55A1E5E1A /* AZSResultSegment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E26A9345395D2BBD73D0D211A18EF83 /* AZSSharedAccessSignatureHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 905E03C0C6B601C8E37A578FDB97AD17 /* AZSSharedAccessSignatureHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FBC69CF50C5F594A963158BFA5DEEE2 /* AZSNoOpAuthenticationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD3F3B329B05647F8B4DD44876A5D19 /* AZSNoOpAuthenticationHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8044266EBC027564B1D047D011A183C8 /* AZSExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 105DCD46839A29E73C1191914EC3065E /* AZSExecutor.m */; };
+		82BAC98A60FC8B2DFA523761D43AE9F9 /* AZSMetricsProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 04980CE5969539752120D6E6FB595D6D /* AZSMetricsProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		880F72B7F154B5BB5B00EB8927384E31 /* Pods-foodzone-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4781D6D80D8608F2EC34B003AACCD3EF /* Pods-foodzone-dummy.m */; };
+		896F19A3A74D1449AB335E4F04836D1C /* AZSContinuationToken.m in Sources */ = {isa = PBXBuildFile; fileRef = A42160F2CA85D63B2BF93111FAA8D082 /* AZSContinuationToken.m */; };
+		89E181A600B6AB8A12E60BCBA91BF4D2 /* AZSUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FA35AA7DEFF32E1917D59A1BDFE1F09 /* AZSUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B7ACFEAFCAAC9268A8E75760BCA1D7C /* Pods-foodzone-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D453558EA0CCF2C790C0C98A9EDB8D74 /* Pods-foodzone-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D7EF752266FAD223219C6B29F998C62 /* AZSCloudBlockBlob.h in Headers */ = {isa = PBXBuildFile; fileRef = EE01B483F48EC59C341F998A5A2C5064 /* AZSCloudBlockBlob.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FFB467069AE6096958B7730C1894DE8 /* AZSIPRange.h in Headers */ = {isa = PBXBuildFile; fileRef = C5CA89A31C49FB5109EDBEE821108398 /* AZSIPRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91C8025A9D8102E64F4A73CA72AEC136 /* AZSClient.h in Headers */ = {isa = PBXBuildFile; fileRef = D95FF06FA40C70B0C5D20C83E6D97E56 /* AZSClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		927E019CF0A78AB2C0505058A28A8812 /* AZSCloudBlobClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 3018A2A99412B873DA6D8BF4AD5EBBAE /* AZSCloudBlobClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93460FF8A33A039B3FB3E40A223F6A9C /* AZSRequestFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8B983722483B7B0C8954B73DD2267B /* AZSRequestFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		938D1829492AB3708B4FC4E62FF6A286 /* AZSStorageCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 366752616528A1BAA09AADD0002521D1 /* AZSStorageCommand.m */; };
+		9E037F26FDA801463F3794057914DA65 /* AZSStorageUri.h in Headers */ = {isa = PBXBuildFile; fileRef = 04790E02F2C6BB589CD16745BA693CEB /* AZSStorageUri.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A04D9E5B3B7609AB17F6E5888D306668 /* AZSMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C162DADA0CA1C687E220297EA79D395 /* AZSMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1705D12C3B0E3683FEEC3EC8D154EC6 /* AZSLoggingProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F6063330AF5A219D85DEBE823BC24676 /* AZSLoggingProperties.m */; };
+		A2D8F7809D403E05D9A7510BFB225991 /* AZSMetricsProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A960F031D1CF97D37128EC369A14ABE /* AZSMetricsProperties.m */; };
+		A51A797482450BBE8860AAC0157B4C89 /* AZSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 565C1D87A9133AD7E9A880D0BBAE3486 /* AZSClient.m */; };
+		A63AB3153C67531B26E9190CFAD19FA9 /* AZSSharedAccessAccountParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 5957B5930F5F351588904AABCDEB1AAD /* AZSSharedAccessAccountParameters.m */; };
+		AE96F073113DAD62C26932E5EEFBACB6 /* AZSSharedAccessBlobParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E10374A6D40B46AC4DEE8B5A9501D56 /* AZSSharedAccessBlobParameters.m */; };
+		B0E3DB1229BEEF5B3823CADB1D24EFA5 /* AZSCloudBlockBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFF4FCB6474338EF553F4D22F0A3AA6 /* AZSCloudBlockBlob.m */; };
+		B9CB19D433F1064D43A6F1C29455C82F /* AZSULLRange.h in Headers */ = {isa = PBXBuildFile; fileRef = C7508168B63C2BE9796B7B7BF4150782 /* AZSULLRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA416103C38330DA80CC72433207ECEE /* AZSStorageCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = B866B4430E3A4EAAFD2D42DB312E01F0 /* AZSStorageCredentials.m */; };
+		BBB8993834D0D104A14BD1A5B2EBE4F6 /* AZSEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = E86FBE47F2D99DA7662A3B2068B68888 /* AZSEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCA34F63DF8F22B2DE0896A3A42245A4 /* AZSRetryContext.m in Sources */ = {isa = PBXBuildFile; fileRef = EC84F22779D0F716E41FA08B85702CA7 /* AZSRetryContext.m */; };
+		BCE1C63A7D8E942BC9055154210198EE /* AZSStorageCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D56A19E4D650B7FC38B260FF1D30D33 /* AZSStorageCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE6826DE1AA42F1CEE6E85DC54D5906E /* AZSUriQueryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCFA13C5F2BD56E10236959346071AE /* AZSUriQueryBuilder.m */; };
+		C0F7A17B540CD6565A7235E7B9F3036F /* AZSBlobRequestOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC66C0596CCDAC56B2E8D77B05E8422 /* AZSBlobRequestOptions.m */; };
+		C10B6D9A67F69822D600B89218C166D3 /* AZSCloudBlobClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7D16BE75B871C4CB057EFA91C5DA29 /* AZSCloudBlobClient.m */; };
+		C431E8F3C0A1F1258C60AF75226E5EDD /* AZSServiceProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B7864AF02AB9BF9CC43ABAB8A19668C /* AZSServiceProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C59A9912B0BB66D32D67F1ADF4C8C52F /* AZSCloudBlob.h in Headers */ = {isa = PBXBuildFile; fileRef = 8973AF7DBA47455FB3728C98D7B77C92 /* AZSCloudBlob.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C61558644AA43C3DC8AC2CA57BA05452 /* AZSResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E5243B2D2331093DF15E70D907DB16 /* AZSResponseParser.m */; };
+		C707F8EDEC538A060652E73686843C5F /* AZSExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E48BDEF49DA3991D9CA54C1AEC58B27 /* AZSExecutor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8E583BE0A9E7C75E19EB93AA4C3EB59 /* AZSAccessCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF7D79790EDCE220A638CC7BD2A036A /* AZSAccessCondition.m */; };
+		C939666FD59203A5EDD9F395CEC7D1C0 /* AZSOperationContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8154C76A1FA80FDD1E634A3E02A93 /* AZSOperationContext.m */; };
+		C99125900A909E8B3A17D08C5C64A0B4 /* AZSSharedKeyBlobAuthenticationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 9653AA3E8466A60BC0B3CCCF9AD44937 /* AZSSharedKeyBlobAuthenticationHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA8D2292880AB4E73BCAB4FB634F061A /* AZSLoggingProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 7088E08D5894C87AE5E1822D94D1D587 /* AZSLoggingProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD282F17D55D20A2AAF93414099D8446 /* AZSOperationContext.h in Headers */ = {isa = PBXBuildFile; fileRef = E413B5D482A56E6AF4563E17F6074C80 /* AZSOperationContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D09DA4791A8095836397E53262DC1A82 /* AZSRetryPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E2B3B761B4837D864116B8FFB0FD56F /* AZSRetryPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1372ABBFDE1F53CD9E9AB486DB2730B /* AZSStorageCredentials.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E263B93660BF52308322A3BAADB9D2C /* AZSStorageCredentials.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D46439A39AA3CDE8307DF8E216410618 /* AZSBlockListItem.h in Headers */ = {isa = PBXBuildFile; fileRef = A870ADD882DFB7B0158CF89DB83DC9B0 /* AZSBlockListItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D78CC90AFA0FFC3FC5C3560D60BE3BC6 /* AZSServiceProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = CC736CB36081B1842293407DF3F672A0 /* AZSServiceProperties.m */; };
+		D80019796DCA09D8BD91269FE8668221 /* AZSRequestOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DFD39AFF453C97805F62B53ED5F616D /* AZSRequestOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBDB542AD3D8B237019EFD5434924F8E /* AZSBlobUploadHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6411B98C44D0F930D8D238036A8CB76B /* AZSBlobUploadHelper.m */; };
+		DF456189BECA49AEB3C00AEDB6CB5469 /* AZSBlobRequestXML.h in Headers */ = {isa = PBXBuildFile; fileRef = FF17FDA65A5FE62DEEBA66AE8C084185 /* AZSBlobRequestXML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1F9C5779A58FEF92BB2E8A32BFC7599 /* AZSCloudClient.h in Headers */ = {isa = PBXBuildFile; fileRef = FC77A5BCC7068B7B5F6744709A82E6D6 /* AZSCloudClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E28EFCCD068C7E2E3C86194BF956B8B8 /* AZSBlobRequestFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EB4D9C8416283B21872784589A0F482 /* AZSBlobRequestFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E33ED0EE131677F1D86299485A73D564 /* AZSCopyState.h in Headers */ = {isa = PBXBuildFile; fileRef = B3E1D9785F7F2A5F095696226AE26264 /* AZSCopyState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6452E410D6CB65634ECAFA9F1DAB079 /* AZSErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = C5657EF04C2CC722D0FBE91ED85203BF /* AZSErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9521319130382FFBE6C574FE828364D /* AZSSharedAccessHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = E38AE0A75CCAF0C62370902705360C20 /* AZSSharedAccessHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB7534B03B683D7DF58BC43535B756E0 /* AZSResultSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 935DF917DD334A5B90DF5A8143B02A6C /* AZSResultSegment.m */; };
+		ED338444568CDE238CD644A7AF8B9B55 /* AZSCloudBlobDirectory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF27486D73752E4A53BBDE6B41C2DBC /* AZSCloudBlobDirectory.m */; };
+		F4342FDBBB545C7BCFBF77A4816A4F2F /* AZSAccessCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4916F2858365636CA25E4373D86C95D7 /* AZSAccessCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F476D125339601EDF3944CA452B3C7C6 /* AZSAuthenticationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = F9100D36667142294185FD0B3846DAA8 /* AZSAuthenticationHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B4B72D72FB901040F7E8BCAA45D832 /* AZSBlobResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BB814C3EB5CDAF0C1295DD5915C337B5 /* AZSBlobResponseParser.m */; };
+		F885F448166D263C11859643B61C30E3 /* AZSRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C888199A82E29887241F3E6D9BDA9D5 /* AZSRequestFactory.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8E7A9652B07DB2C3BC3D052CACB74BAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B057C33533B34EC4EA0116CE0025C20A;
+			remoteInfo = AZSClient;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		1FE69796BA3D03412A4435EDDD45B43B /* Pods_foodzone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_foodzone.framework; path = "Pods-foodzone.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00ACC3233903D3261ADD6BB383B7BB8A /* AZSCloudBlobContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSCloudBlobContainer.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudBlobContainer.m"; sourceTree = "<group>"; };
+		04790E02F2C6BB589CD16745BA693CEB /* AZSStorageUri.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSStorageUri.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSStorageUri.h"; sourceTree = "<group>"; };
+		04980CE5969539752120D6E6FB595D6D /* AZSMetricsProperties.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSMetricsProperties.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSMetricsProperties.h"; sourceTree = "<group>"; };
+		0C162DADA0CA1C687E220297EA79D395 /* AZSMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSMacros.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSMacros.h"; sourceTree = "<group>"; };
+		0C888199A82E29887241F3E6D9BDA9D5 /* AZSRequestFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSRequestFactory.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRequestFactory.m"; sourceTree = "<group>"; };
+		105DCD46839A29E73C1191914EC3065E /* AZSExecutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSExecutor.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSExecutor.m"; sourceTree = "<group>"; };
+		1697F89C1E9203937F9250C887E4B1BA /* AZSBlobProperties.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSBlobProperties.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobProperties.h"; sourceTree = "<group>"; };
+		16A6F86C7E7E1940152FD7F8335DC005 /* AZSBlobProperties.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSBlobProperties.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobProperties.m"; sourceTree = "<group>"; };
+		18984135E397A7CD4794E76F958D8007 /* AZSRequestResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSRequestResult.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRequestResult.h"; sourceTree = "<group>"; };
+		19DD6D4DE078DDF25193568E5803B601 /* AZSRetryInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSRetryInfo.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRetryInfo.h"; sourceTree = "<group>"; };
+		1DCFEB65B3E2A1D4E9AAA27BA2EC485C /* AZSSharedAccessBlobParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSSharedAccessBlobParameters.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedAccessBlobParameters.h"; sourceTree = "<group>"; };
+		1E2B3B761B4837D864116B8FFB0FD56F /* AZSRetryPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSRetryPolicy.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRetryPolicy.h"; sourceTree = "<group>"; };
+		1ED88B98EAFEFA572B15707D7195F343 /* AZSCloudBlob.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSCloudBlob.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudBlob.m"; sourceTree = "<group>"; };
+		2083A926BD37979146ED04B55A1E5E1A /* AZSResultSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSResultSegment.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSResultSegment.h"; sourceTree = "<group>"; };
+		2DF7D79790EDCE220A638CC7BD2A036A /* AZSAccessCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSAccessCondition.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSAccessCondition.m"; sourceTree = "<group>"; };
+		3018A2A99412B873DA6D8BF4AD5EBBAE /* AZSCloudBlobClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSCloudBlobClient.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudBlobClient.h"; sourceTree = "<group>"; };
+		366752616528A1BAA09AADD0002521D1 /* AZSStorageCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSStorageCommand.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSStorageCommand.m"; sourceTree = "<group>"; };
+		37694F0B12A588311D1C533ACA269312 /* AZSResponseParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSResponseParser.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSResponseParser.h"; sourceTree = "<group>"; };
+		38B6EE5929498C32A944FB302AB6ED6E /* AZSSharedAccessHeaders.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSSharedAccessHeaders.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedAccessHeaders.m"; sourceTree = "<group>"; };
+		394E5D7CC5598BF44ECC843995BEC0DC /* AZSSharedAccessPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSSharedAccessPolicy.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedAccessPolicy.m"; sourceTree = "<group>"; };
+		3AE8154C76A1FA80FDD1E634A3E02A93 /* AZSOperationContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSOperationContext.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSOperationContext.m"; sourceTree = "<group>"; };
+		3B05E673CFDE179A84A017072B0648EC /* AZSRequestResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSRequestResult.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRequestResult.m"; sourceTree = "<group>"; };
+		3C0296638F8B2CCD60C092FC2EC4A8D9 /* AZSBlobContainerProperties.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSBlobContainerProperties.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobContainerProperties.h"; sourceTree = "<group>"; };
+		3C1B1BCD83DBDC47D529BB77B70742FC /* AZSRetryPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSRetryPolicy.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRetryPolicy.m"; sourceTree = "<group>"; };
+		3EB92EA63C7E4A79C53EC5D0EF55B5DD /* AZSClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AZSClient-umbrella.h"; sourceTree = "<group>"; };
+		3F63CF1FF4171ED8B493485B86085286 /* AZSCloudStorageAccount.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSCloudStorageAccount.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudStorageAccount.h"; sourceTree = "<group>"; };
+		3FCFA13C5F2BD56E10236959346071AE /* AZSUriQueryBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSUriQueryBuilder.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSUriQueryBuilder.m"; sourceTree = "<group>"; };
 		3FE2494B2E2840796041E521C7C0ED12 /* Pods-foodzone-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-foodzone-frameworks.sh"; sourceTree = "<group>"; };
+		43E301A18FA325439AB69A945B76F69D /* AZSBlobOutputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSBlobOutputStream.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobOutputStream.h"; sourceTree = "<group>"; };
+		443D8C9EBD8A8117C2A241337AF466B2 /* AZSSharedAccessSignatureHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSSharedAccessSignatureHelper.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedAccessSignatureHelper.m"; sourceTree = "<group>"; };
+		45770FAB2A04AF59F3B8AC7929BCD97B /* AZSClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AZSClient.modulemap; sourceTree = "<group>"; };
 		4781D6D80D8608F2EC34B003AACCD3EF /* Pods-foodzone-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-foodzone-dummy.m"; sourceTree = "<group>"; };
+		4916F2858365636CA25E4373D86C95D7 /* AZSAccessCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSAccessCondition.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSAccessCondition.h"; sourceTree = "<group>"; };
+		4A449A1450A41B1F72F8DF946064AA3A /* AZSConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSConstants.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSConstants.h"; sourceTree = "<group>"; };
+		4E263B93660BF52308322A3BAADB9D2C /* AZSStorageCredentials.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSStorageCredentials.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSStorageCredentials.h"; sourceTree = "<group>"; };
 		4E7F410E979ED3BA11D5900B93453D53 /* Pods-foodzone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-foodzone.debug.xcconfig"; sourceTree = "<group>"; };
+		4F15023EEA4E4B7BD84A8CAC70FAEEF0 /* AZSCloudPageBlob.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSCloudPageBlob.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudPageBlob.h"; sourceTree = "<group>"; };
+		544B21D966ECE6D1E62506CF78FE413C /* AZSNavigationUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSNavigationUtil.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSNavigationUtil.m"; sourceTree = "<group>"; };
+		5464191DB00F92A164D2D95FE5836FEF /* AZSStorageUri.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSStorageUri.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSStorageUri.m"; sourceTree = "<group>"; };
+		565C1D87A9133AD7E9A880D0BBAE3486 /* AZSClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSClient.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSClient.m"; sourceTree = "<group>"; };
+		56808F2CE12B23268647F8B0EAE71843 /* AZSBlobRequestOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSBlobRequestOptions.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobRequestOptions.h"; sourceTree = "<group>"; };
+		57531ECC10E167AA4561A8E06C49CFB5 /* AZSConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSConstants.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSConstants.m"; sourceTree = "<group>"; };
+		5957B5930F5F351588904AABCDEB1AAD /* AZSSharedAccessAccountParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSSharedAccessAccountParameters.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedAccessAccountParameters.m"; sourceTree = "<group>"; };
+		5B44CDED67690B545D21775BC7148675 /* AZSCorsRule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSCorsRule.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCorsRule.m"; sourceTree = "<group>"; };
+		5B589F7D1C4BC7E1B2321382DA968BD9 /* AZSClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AZSClient.xcconfig; sourceTree = "<group>"; };
+		5C139E2B65F0893078A39B6CD252583E /* AZSContinuationToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSContinuationToken.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSContinuationToken.h"; sourceTree = "<group>"; };
 		5D511400027F56DC9BCC50B491A15F00 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EB4D9C8416283B21872784589A0F482 /* AZSBlobRequestFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSBlobRequestFactory.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobRequestFactory.h"; sourceTree = "<group>"; };
+		5EC2A37384EDB554258769063E824B19 /* AZSRetryContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSRetryContext.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRetryContext.h"; sourceTree = "<group>"; };
+		5EC6133269DAEB73DD14494562AE4770 /* AZSClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AZSClient-dummy.m"; sourceTree = "<group>"; };
+		5EF27486D73752E4A53BBDE6B41C2DBC /* AZSCloudBlobDirectory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSCloudBlobDirectory.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudBlobDirectory.m"; sourceTree = "<group>"; };
+		5FD3F3B329B05647F8B4DD44876A5D19 /* AZSNoOpAuthenticationHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSNoOpAuthenticationHandler.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSNoOpAuthenticationHandler.h"; sourceTree = "<group>"; };
+		61786D840985318C63A1EE2269DC528E /* AZSBlobOutputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSBlobOutputStream.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobOutputStream.m"; sourceTree = "<group>"; };
+		6411B98C44D0F930D8D238036A8CB76B /* AZSBlobUploadHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSBlobUploadHelper.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobUploadHelper.m"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6B7864AF02AB9BF9CC43ABAB8A19668C /* AZSServiceProperties.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSServiceProperties.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSServiceProperties.h"; sourceTree = "<group>"; };
+		7088E08D5894C87AE5E1822D94D1D587 /* AZSLoggingProperties.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSLoggingProperties.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSLoggingProperties.h"; sourceTree = "<group>"; };
 		77CA013C0484222F40C3EE74A2A24DB5 /* Pods-foodzone.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-foodzone.modulemap"; sourceTree = "<group>"; };
+		7BDE722DD53EF0D2A07BB89F93DC0D53 /* AZSCloudBlobContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSCloudBlobContainer.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudBlobContainer.h"; sourceTree = "<group>"; };
+		7DFD39AFF453C97805F62B53ED5F616D /* AZSRequestOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSRequestOptions.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRequestOptions.h"; sourceTree = "<group>"; };
+		7FA35AA7DEFF32E1917D59A1BDFE1F09 /* AZSUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSUtil.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSUtil.h"; sourceTree = "<group>"; };
+		80E5243B2D2331093DF15E70D907DB16 /* AZSResponseParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSResponseParser.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSResponseParser.m"; sourceTree = "<group>"; };
+		84E97E74F1EB6BDDEB82232BBE95372E /* AZSNoOpAuthenticationHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSNoOpAuthenticationHandler.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSNoOpAuthenticationHandler.m"; sourceTree = "<group>"; };
+		852340EED3051C899B65FF306AE1F03F /* AZSBlobContainerProperties.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSBlobContainerProperties.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobContainerProperties.m"; sourceTree = "<group>"; };
+		866AA8AFAF712516F50918B0A6AF4DEB /* Pods_foodzone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_foodzone.framework; path = "Pods-foodzone.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		878074BD0873CF2F817811F042A2569D /* Pods-foodzone-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-foodzone-acknowledgements.plist"; sourceTree = "<group>"; };
+		8973AF7DBA47455FB3728C98D7B77C92 /* AZSCloudBlob.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSCloudBlob.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudBlob.h"; sourceTree = "<group>"; };
+		8A960F031D1CF97D37128EC369A14ABE /* AZSMetricsProperties.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSMetricsProperties.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSMetricsProperties.m"; sourceTree = "<group>"; };
+		8B1F95B37B121F6D27A6BA2A99B34891 /* AZSClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AZSClient.framework; path = AZSClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D56A19E4D650B7FC38B260FF1D30D33 /* AZSStorageCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSStorageCommand.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSStorageCommand.h"; sourceTree = "<group>"; };
+		905E03C0C6B601C8E37A578FDB97AD17 /* AZSSharedAccessSignatureHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSSharedAccessSignatureHelper.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedAccessSignatureHelper.h"; sourceTree = "<group>"; };
+		924613805C8229B9C06F7A037D8FCC89 /* AZSClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AZSClient-prefix.pch"; sourceTree = "<group>"; };
+		935DF917DD334A5B90DF5A8143B02A6C /* AZSResultSegment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSResultSegment.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSResultSegment.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9653AA3E8466A60BC0B3CCCF9AD44937 /* AZSSharedKeyBlobAuthenticationHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSSharedKeyBlobAuthenticationHandler.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedKeyBlobAuthenticationHandler.h"; sourceTree = "<group>"; };
+		9D5D3DB48FBC9CF387E37D7ECA92E1F3 /* AZSSharedKeyBlobAuthenticationHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSSharedKeyBlobAuthenticationHandler.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedKeyBlobAuthenticationHandler.m"; sourceTree = "<group>"; };
+		9E10374A6D40B46AC4DEE8B5A9501D56 /* AZSSharedAccessBlobParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSSharedAccessBlobParameters.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedAccessBlobParameters.m"; sourceTree = "<group>"; };
+		9E48BDEF49DA3991D9CA54C1AEC58B27 /* AZSExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSExecutor.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSExecutor.h"; sourceTree = "<group>"; };
+		A42160F2CA85D63B2BF93111FAA8D082 /* AZSContinuationToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSContinuationToken.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSContinuationToken.m"; sourceTree = "<group>"; };
+		A82ECEC4DFB2EAB49C543E9C4CCAE929 /* AZSErrors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSErrors.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSErrors.m"; sourceTree = "<group>"; };
+		A870ADD882DFB7B0158CF89DB83DC9B0 /* AZSBlockListItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSBlockListItem.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlockListItem.h"; sourceTree = "<group>"; };
+		A94C41B1070863114F5625EA01CB0A9B /* AZSBlobResponseParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSBlobResponseParser.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobResponseParser.h"; sourceTree = "<group>"; };
+		ACE6242A9D531B2452DF81CF8605F84A /* AZSBlobRequestXML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSBlobRequestXML.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobRequestXML.m"; sourceTree = "<group>"; };
+		ADFF4FCB6474338EF553F4D22F0A3AA6 /* AZSCloudBlockBlob.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSCloudBlockBlob.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudBlockBlob.m"; sourceTree = "<group>"; };
+		B27F95FED74880904D2EB08690A5610A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B36A260ABD54FA60C088E8C164934EBB /* AZSRequestOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSRequestOptions.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRequestOptions.m"; sourceTree = "<group>"; };
+		B3E1D9785F7F2A5F095696226AE26264 /* AZSCopyState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSCopyState.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCopyState.h"; sourceTree = "<group>"; };
 		B56D389735903EE7F8FB68E6E71A3FF8 /* Pods-foodzone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-foodzone.release.xcconfig"; sourceTree = "<group>"; };
+		B866B4430E3A4EAAFD2D42DB312E01F0 /* AZSStorageCredentials.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSStorageCredentials.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSStorageCredentials.m"; sourceTree = "<group>"; };
+		BAC66C0596CCDAC56B2E8D77B05E8422 /* AZSBlobRequestOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSBlobRequestOptions.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobRequestOptions.m"; sourceTree = "<group>"; };
+		BB3472F7C506BADAB5F3F7074C0483FA /* AZSCloudBlobDirectory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSCloudBlobDirectory.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudBlobDirectory.h"; sourceTree = "<group>"; };
+		BB814C3EB5CDAF0C1295DD5915C337B5 /* AZSBlobResponseParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSBlobResponseParser.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobResponseParser.m"; sourceTree = "<group>"; };
+		BC82379C478E105AB1F07E3A68E5E85A /* AZSSharedAccessPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSSharedAccessPolicy.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedAccessPolicy.h"; sourceTree = "<group>"; };
+		BD7D16BE75B871C4CB057EFA91C5DA29 /* AZSCloudBlobClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSCloudBlobClient.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudBlobClient.m"; sourceTree = "<group>"; };
+		BF756FD1ADBF8618CF4905E01E4B8203 /* AZSCloudStorageAccount.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSCloudStorageAccount.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudStorageAccount.m"; sourceTree = "<group>"; };
+		C2A79F50E51BD473BC8D740DC9F31259 /* AZSBlobUploadHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSBlobUploadHelper.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobUploadHelper.h"; sourceTree = "<group>"; };
+		C5657EF04C2CC722D0FBE91ED85203BF /* AZSErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSErrors.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSErrors.h"; sourceTree = "<group>"; };
+		C5CA89A31C49FB5109EDBEE821108398 /* AZSIPRange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSIPRange.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSIPRange.h"; sourceTree = "<group>"; };
+		C7508168B63C2BE9796B7B7BF4150782 /* AZSULLRange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSULLRange.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSULLRange.h"; sourceTree = "<group>"; };
+		CBFFC125001AC04F35F138814DDA113C /* AZSCloudPageBlob.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSCloudPageBlob.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudPageBlob.m"; sourceTree = "<group>"; };
+		CC736CB36081B1842293407DF3F672A0 /* AZSServiceProperties.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSServiceProperties.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSServiceProperties.m"; sourceTree = "<group>"; };
 		D453558EA0CCF2C790C0C98A9EDB8D74 /* Pods-foodzone-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-foodzone-umbrella.h"; sourceTree = "<group>"; };
+		D57A4AFD3AD2A74817CBCCFF276FC77A /* AZSIPRange.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSIPRange.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSIPRange.m"; sourceTree = "<group>"; };
+		D6963AD9BDFC2A177BA17885B56963F1 /* AZSCopyState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSCopyState.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCopyState.m"; sourceTree = "<group>"; };
+		D71C9E8D6DD771AD946436432D4F47E6 /* AZSCloudAppendBlob.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSCloudAppendBlob.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudAppendBlob.h"; sourceTree = "<group>"; };
+		D95FF06FA40C70B0C5D20C83E6D97E56 /* AZSClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSClient.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSClient.h"; sourceTree = "<group>"; };
 		DA1CF1C1292DA1C6F567FF9D50C58327 /* Pods-foodzone-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-foodzone-resources.sh"; sourceTree = "<group>"; };
+		DC8B983722483B7B0C8954B73DD2267B /* AZSRequestFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSRequestFactory.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRequestFactory.h"; sourceTree = "<group>"; };
+		E38AE0A75CCAF0C62370902705360C20 /* AZSSharedAccessHeaders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSSharedAccessHeaders.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedAccessHeaders.h"; sourceTree = "<group>"; };
+		E3E11AF55976D9AB8CD06BE55A48DDE3 /* AZSRetryInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSRetryInfo.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRetryInfo.m"; sourceTree = "<group>"; };
+		E413B5D482A56E6AF4563E17F6074C80 /* AZSOperationContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSOperationContext.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSOperationContext.h"; sourceTree = "<group>"; };
+		E86FBE47F2D99DA7662A3B2068B68888 /* AZSEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSEnums.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSEnums.h"; sourceTree = "<group>"; };
+		EA37199FEF0432432AE804B892A548DE /* AZSCorsRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSCorsRule.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCorsRule.h"; sourceTree = "<group>"; };
+		EB1B6AD33B9B4C0ED6E1CA309F295BD8 /* AZSSharedAccessAccountParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSSharedAccessAccountParameters.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedAccessAccountParameters.h"; sourceTree = "<group>"; };
+		EC84F22779D0F716E41FA08B85702CA7 /* AZSRetryContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSRetryContext.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRetryContext.m"; sourceTree = "<group>"; };
+		EE01B483F48EC59C341F998A5A2C5064 /* AZSCloudBlockBlob.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSCloudBlockBlob.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudBlockBlob.h"; sourceTree = "<group>"; };
+		EEC9B458A0C3D9DDD7E90A67F7B9F208 /* AZSCloudClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSCloudClient.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudClient.m"; sourceTree = "<group>"; };
+		F4C13C5F1B500CC4A3282095B93FFDE9 /* AZSBlockListItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSBlockListItem.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlockListItem.m"; sourceTree = "<group>"; };
+		F54C03334CB823CE9A7F0073E29653F0 /* AZSUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSUtil.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSUtil.m"; sourceTree = "<group>"; };
+		F6063330AF5A219D85DEBE823BC24676 /* AZSLoggingProperties.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSLoggingProperties.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSLoggingProperties.m"; sourceTree = "<group>"; };
+		F7B0AD426B8EB9C5C189385BE70255D1 /* AZSNavigationUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSNavigationUtil.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSNavigationUtil.h"; sourceTree = "<group>"; };
+		F9100D36667142294185FD0B3846DAA8 /* AZSAuthenticationHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSAuthenticationHandler.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSAuthenticationHandler.h"; sourceTree = "<group>"; };
+		FB608041039CF39901BA8B836BF3F2DC /* AZSUriQueryBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSUriQueryBuilder.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSUriQueryBuilder.h"; sourceTree = "<group>"; };
+		FB7F579EC15CB808E528D36E0D356103 /* AZSCloudAppendBlob.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSCloudAppendBlob.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudAppendBlob.m"; sourceTree = "<group>"; };
+		FC77A5BCC7068B7B5F6744709A82E6D6 /* AZSCloudClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSCloudClient.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudClient.h"; sourceTree = "<group>"; };
 		FE01C09D5EB435D890762F6811D736F8 /* Pods-foodzone-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-foodzone-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FE6E32BCFA5DE80A0AB204B08A69837C /* AZSBlobRequestFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSBlobRequestFactory.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobRequestFactory.m"; sourceTree = "<group>"; };
+		FF17FDA65A5FE62DEEBA66AE8C084185 /* AZSBlobRequestXML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSBlobRequestXML.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobRequestXML.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FABE91E6B561C03CC21C876C943C3D4A /* Frameworks */ = {
+		163888C72C6879E5D95FE1EA4E7C3EDE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C1A7299B7D6DBF96C412CD43ECA86AB /* Foundation.framework in Frameworks */,
+				268CC19DB09A67859FF08DBF8AC04046 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E33A0CC0D210AE578E270154B58F9574 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6307F66DA3544BF695DFD036B1AE51DE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27CAD2E072CD349F8051EDF8C0BF5036 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC4AAD5D546BDDC67D79E9A0B425974F /* AZSClient */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		50925D4C1E8AD9C404DF0C32736A71EB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				45770FAB2A04AF59F3B8AC7929BCD97B /* AZSClient.modulemap */,
+				5B589F7D1C4BC7E1B2321382DA968BD9 /* AZSClient.xcconfig */,
+				5EC6133269DAEB73DD14494562AE4770 /* AZSClient-dummy.m */,
+				924613805C8229B9C06F7A037D8FCC89 /* AZSClient-prefix.pch */,
+				3EB92EA63C7E4A79C53EC5D0EF55B5DD /* AZSClient-umbrella.h */,
+				B27F95FED74880904D2EB08690A5610A /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AZSClient";
+			sourceTree = "<group>";
+		};
 		774B42CAA7800E6AF20CADEE0C9BBCF3 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -53,7 +319,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				D255F17CC1BAAFE5F4DC514B7A3012B8 /* Products */,
+				27CAD2E072CD349F8051EDF8C0BF5036 /* Pods */,
+				CEC439CBC416BB96D26343A7AFC83BA6 /* Products */,
 				774B42CAA7800E6AF20CADEE0C9BBCF3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -84,10 +351,128 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D255F17CC1BAAFE5F4DC514B7A3012B8 /* Products */ = {
+		BC4AAD5D546BDDC67D79E9A0B425974F /* AZSClient */ = {
 			isa = PBXGroup;
 			children = (
-				1FE69796BA3D03412A4435EDDD45B43B /* Pods_foodzone.framework */,
+				4916F2858365636CA25E4373D86C95D7 /* AZSAccessCondition.h */,
+				2DF7D79790EDCE220A638CC7BD2A036A /* AZSAccessCondition.m */,
+				F9100D36667142294185FD0B3846DAA8 /* AZSAuthenticationHandler.h */,
+				3C0296638F8B2CCD60C092FC2EC4A8D9 /* AZSBlobContainerProperties.h */,
+				852340EED3051C899B65FF306AE1F03F /* AZSBlobContainerProperties.m */,
+				43E301A18FA325439AB69A945B76F69D /* AZSBlobOutputStream.h */,
+				61786D840985318C63A1EE2269DC528E /* AZSBlobOutputStream.m */,
+				1697F89C1E9203937F9250C887E4B1BA /* AZSBlobProperties.h */,
+				16A6F86C7E7E1940152FD7F8335DC005 /* AZSBlobProperties.m */,
+				5EB4D9C8416283B21872784589A0F482 /* AZSBlobRequestFactory.h */,
+				FE6E32BCFA5DE80A0AB204B08A69837C /* AZSBlobRequestFactory.m */,
+				56808F2CE12B23268647F8B0EAE71843 /* AZSBlobRequestOptions.h */,
+				BAC66C0596CCDAC56B2E8D77B05E8422 /* AZSBlobRequestOptions.m */,
+				FF17FDA65A5FE62DEEBA66AE8C084185 /* AZSBlobRequestXML.h */,
+				ACE6242A9D531B2452DF81CF8605F84A /* AZSBlobRequestXML.m */,
+				A94C41B1070863114F5625EA01CB0A9B /* AZSBlobResponseParser.h */,
+				BB814C3EB5CDAF0C1295DD5915C337B5 /* AZSBlobResponseParser.m */,
+				C2A79F50E51BD473BC8D740DC9F31259 /* AZSBlobUploadHelper.h */,
+				6411B98C44D0F930D8D238036A8CB76B /* AZSBlobUploadHelper.m */,
+				A870ADD882DFB7B0158CF89DB83DC9B0 /* AZSBlockListItem.h */,
+				F4C13C5F1B500CC4A3282095B93FFDE9 /* AZSBlockListItem.m */,
+				D95FF06FA40C70B0C5D20C83E6D97E56 /* AZSClient.h */,
+				565C1D87A9133AD7E9A880D0BBAE3486 /* AZSClient.m */,
+				D71C9E8D6DD771AD946436432D4F47E6 /* AZSCloudAppendBlob.h */,
+				FB7F579EC15CB808E528D36E0D356103 /* AZSCloudAppendBlob.m */,
+				8973AF7DBA47455FB3728C98D7B77C92 /* AZSCloudBlob.h */,
+				1ED88B98EAFEFA572B15707D7195F343 /* AZSCloudBlob.m */,
+				3018A2A99412B873DA6D8BF4AD5EBBAE /* AZSCloudBlobClient.h */,
+				BD7D16BE75B871C4CB057EFA91C5DA29 /* AZSCloudBlobClient.m */,
+				7BDE722DD53EF0D2A07BB89F93DC0D53 /* AZSCloudBlobContainer.h */,
+				00ACC3233903D3261ADD6BB383B7BB8A /* AZSCloudBlobContainer.m */,
+				BB3472F7C506BADAB5F3F7074C0483FA /* AZSCloudBlobDirectory.h */,
+				5EF27486D73752E4A53BBDE6B41C2DBC /* AZSCloudBlobDirectory.m */,
+				EE01B483F48EC59C341F998A5A2C5064 /* AZSCloudBlockBlob.h */,
+				ADFF4FCB6474338EF553F4D22F0A3AA6 /* AZSCloudBlockBlob.m */,
+				FC77A5BCC7068B7B5F6744709A82E6D6 /* AZSCloudClient.h */,
+				EEC9B458A0C3D9DDD7E90A67F7B9F208 /* AZSCloudClient.m */,
+				4F15023EEA4E4B7BD84A8CAC70FAEEF0 /* AZSCloudPageBlob.h */,
+				CBFFC125001AC04F35F138814DDA113C /* AZSCloudPageBlob.m */,
+				3F63CF1FF4171ED8B493485B86085286 /* AZSCloudStorageAccount.h */,
+				BF756FD1ADBF8618CF4905E01E4B8203 /* AZSCloudStorageAccount.m */,
+				4A449A1450A41B1F72F8DF946064AA3A /* AZSConstants.h */,
+				57531ECC10E167AA4561A8E06C49CFB5 /* AZSConstants.m */,
+				5C139E2B65F0893078A39B6CD252583E /* AZSContinuationToken.h */,
+				A42160F2CA85D63B2BF93111FAA8D082 /* AZSContinuationToken.m */,
+				B3E1D9785F7F2A5F095696226AE26264 /* AZSCopyState.h */,
+				D6963AD9BDFC2A177BA17885B56963F1 /* AZSCopyState.m */,
+				EA37199FEF0432432AE804B892A548DE /* AZSCorsRule.h */,
+				5B44CDED67690B545D21775BC7148675 /* AZSCorsRule.m */,
+				E86FBE47F2D99DA7662A3B2068B68888 /* AZSEnums.h */,
+				C5657EF04C2CC722D0FBE91ED85203BF /* AZSErrors.h */,
+				A82ECEC4DFB2EAB49C543E9C4CCAE929 /* AZSErrors.m */,
+				9E48BDEF49DA3991D9CA54C1AEC58B27 /* AZSExecutor.h */,
+				105DCD46839A29E73C1191914EC3065E /* AZSExecutor.m */,
+				C5CA89A31C49FB5109EDBEE821108398 /* AZSIPRange.h */,
+				D57A4AFD3AD2A74817CBCCFF276FC77A /* AZSIPRange.m */,
+				7088E08D5894C87AE5E1822D94D1D587 /* AZSLoggingProperties.h */,
+				F6063330AF5A219D85DEBE823BC24676 /* AZSLoggingProperties.m */,
+				0C162DADA0CA1C687E220297EA79D395 /* AZSMacros.h */,
+				04980CE5969539752120D6E6FB595D6D /* AZSMetricsProperties.h */,
+				8A960F031D1CF97D37128EC369A14ABE /* AZSMetricsProperties.m */,
+				F7B0AD426B8EB9C5C189385BE70255D1 /* AZSNavigationUtil.h */,
+				544B21D966ECE6D1E62506CF78FE413C /* AZSNavigationUtil.m */,
+				5FD3F3B329B05647F8B4DD44876A5D19 /* AZSNoOpAuthenticationHandler.h */,
+				84E97E74F1EB6BDDEB82232BBE95372E /* AZSNoOpAuthenticationHandler.m */,
+				E413B5D482A56E6AF4563E17F6074C80 /* AZSOperationContext.h */,
+				3AE8154C76A1FA80FDD1E634A3E02A93 /* AZSOperationContext.m */,
+				DC8B983722483B7B0C8954B73DD2267B /* AZSRequestFactory.h */,
+				0C888199A82E29887241F3E6D9BDA9D5 /* AZSRequestFactory.m */,
+				7DFD39AFF453C97805F62B53ED5F616D /* AZSRequestOptions.h */,
+				B36A260ABD54FA60C088E8C164934EBB /* AZSRequestOptions.m */,
+				18984135E397A7CD4794E76F958D8007 /* AZSRequestResult.h */,
+				3B05E673CFDE179A84A017072B0648EC /* AZSRequestResult.m */,
+				37694F0B12A588311D1C533ACA269312 /* AZSResponseParser.h */,
+				80E5243B2D2331093DF15E70D907DB16 /* AZSResponseParser.m */,
+				2083A926BD37979146ED04B55A1E5E1A /* AZSResultSegment.h */,
+				935DF917DD334A5B90DF5A8143B02A6C /* AZSResultSegment.m */,
+				5EC2A37384EDB554258769063E824B19 /* AZSRetryContext.h */,
+				EC84F22779D0F716E41FA08B85702CA7 /* AZSRetryContext.m */,
+				19DD6D4DE078DDF25193568E5803B601 /* AZSRetryInfo.h */,
+				E3E11AF55976D9AB8CD06BE55A48DDE3 /* AZSRetryInfo.m */,
+				1E2B3B761B4837D864116B8FFB0FD56F /* AZSRetryPolicy.h */,
+				3C1B1BCD83DBDC47D529BB77B70742FC /* AZSRetryPolicy.m */,
+				6B7864AF02AB9BF9CC43ABAB8A19668C /* AZSServiceProperties.h */,
+				CC736CB36081B1842293407DF3F672A0 /* AZSServiceProperties.m */,
+				EB1B6AD33B9B4C0ED6E1CA309F295BD8 /* AZSSharedAccessAccountParameters.h */,
+				5957B5930F5F351588904AABCDEB1AAD /* AZSSharedAccessAccountParameters.m */,
+				1DCFEB65B3E2A1D4E9AAA27BA2EC485C /* AZSSharedAccessBlobParameters.h */,
+				9E10374A6D40B46AC4DEE8B5A9501D56 /* AZSSharedAccessBlobParameters.m */,
+				E38AE0A75CCAF0C62370902705360C20 /* AZSSharedAccessHeaders.h */,
+				38B6EE5929498C32A944FB302AB6ED6E /* AZSSharedAccessHeaders.m */,
+				BC82379C478E105AB1F07E3A68E5E85A /* AZSSharedAccessPolicy.h */,
+				394E5D7CC5598BF44ECC843995BEC0DC /* AZSSharedAccessPolicy.m */,
+				905E03C0C6B601C8E37A578FDB97AD17 /* AZSSharedAccessSignatureHelper.h */,
+				443D8C9EBD8A8117C2A241337AF466B2 /* AZSSharedAccessSignatureHelper.m */,
+				9653AA3E8466A60BC0B3CCCF9AD44937 /* AZSSharedKeyBlobAuthenticationHandler.h */,
+				9D5D3DB48FBC9CF387E37D7ECA92E1F3 /* AZSSharedKeyBlobAuthenticationHandler.m */,
+				8D56A19E4D650B7FC38B260FF1D30D33 /* AZSStorageCommand.h */,
+				366752616528A1BAA09AADD0002521D1 /* AZSStorageCommand.m */,
+				4E263B93660BF52308322A3BAADB9D2C /* AZSStorageCredentials.h */,
+				B866B4430E3A4EAAFD2D42DB312E01F0 /* AZSStorageCredentials.m */,
+				04790E02F2C6BB589CD16745BA693CEB /* AZSStorageUri.h */,
+				5464191DB00F92A164D2D95FE5836FEF /* AZSStorageUri.m */,
+				C7508168B63C2BE9796B7B7BF4150782 /* AZSULLRange.h */,
+				FB608041039CF39901BA8B836BF3F2DC /* AZSUriQueryBuilder.h */,
+				3FCFA13C5F2BD56E10236959346071AE /* AZSUriQueryBuilder.m */,
+				7FA35AA7DEFF32E1917D59A1BDFE1F09 /* AZSUtil.h */,
+				F54C03334CB823CE9A7F0073E29653F0 /* AZSUtil.m */,
+				50925D4C1E8AD9C404DF0C32736A71EB /* Support Files */,
+			);
+			name = AZSClient;
+			path = AZSClient;
+			sourceTree = "<group>";
+		};
+		CEC439CBC416BB96D26343A7AFC83BA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B1F95B37B121F6D27A6BA2A99B34891 /* AZSClient.framework */,
+				866AA8AFAF712516F50918B0A6AF4DEB /* Pods_foodzone.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,32 +488,114 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		CD024BC418F51529894086A030E4F69C /* Headers */ = {
+		0969962315718FCD7522ECA08C14772C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7FC49428B21C75CDDC5D8EE6F0B25D4 /* Pods-foodzone-umbrella.h in Headers */,
+				8B7ACFEAFCAAC9268A8E75760BCA1D7C /* Pods-foodzone-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17B7E07FB451AA8C774EE2D7B372B81E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4342FDBBB545C7BCFBF77A4816A4F2F /* AZSAccessCondition.h in Headers */,
+				F476D125339601EDF3944CA452B3C7C6 /* AZSAuthenticationHandler.h in Headers */,
+				3D7789D7A2A9128E3855129377AEB6AD /* AZSBlobContainerProperties.h in Headers */,
+				457BDCC61A37805C9041565881816E04 /* AZSBlobOutputStream.h in Headers */,
+				1717BED84A9DAF4FD298305F5ED5EDF6 /* AZSBlobProperties.h in Headers */,
+				E28EFCCD068C7E2E3C86194BF956B8B8 /* AZSBlobRequestFactory.h in Headers */,
+				619A2685E95F605DDC69B1F9BB3D842C /* AZSBlobRequestOptions.h in Headers */,
+				DF456189BECA49AEB3C00AEDB6CB5469 /* AZSBlobRequestXML.h in Headers */,
+				28FC690E43D1F47B6DEB1DCEF26B59AF /* AZSBlobResponseParser.h in Headers */,
+				5461AF30C721618330205C68C4BC1CD5 /* AZSBlobUploadHelper.h in Headers */,
+				D46439A39AA3CDE8307DF8E216410618 /* AZSBlockListItem.h in Headers */,
+				08EC63BA1DA6788F3A0865EDF88709DE /* AZSClient-umbrella.h in Headers */,
+				91C8025A9D8102E64F4A73CA72AEC136 /* AZSClient.h in Headers */,
+				558ACB1352EAE749D1336471208293E4 /* AZSCloudAppendBlob.h in Headers */,
+				C59A9912B0BB66D32D67F1ADF4C8C52F /* AZSCloudBlob.h in Headers */,
+				927E019CF0A78AB2C0505058A28A8812 /* AZSCloudBlobClient.h in Headers */,
+				41529EDA7C7EF6C20C4AFC19187B676D /* AZSCloudBlobContainer.h in Headers */,
+				4CCF01773DCF9C369C994EAD9A19482E /* AZSCloudBlobDirectory.h in Headers */,
+				8D7EF752266FAD223219C6B29F998C62 /* AZSCloudBlockBlob.h in Headers */,
+				E1F9C5779A58FEF92BB2E8A32BFC7599 /* AZSCloudClient.h in Headers */,
+				13B145EF1046F8A2F20D389BCFE84CCB /* AZSCloudPageBlob.h in Headers */,
+				54C357703A60923BAC39F54A7AE80A69 /* AZSCloudStorageAccount.h in Headers */,
+				4334AD415552A7E035EAB7CF148BA43A /* AZSConstants.h in Headers */,
+				0B2B4217A0680A571A1CE2354BF567C1 /* AZSContinuationToken.h in Headers */,
+				E33ED0EE131677F1D86299485A73D564 /* AZSCopyState.h in Headers */,
+				5F21266EE51E8EEECFA2110AB1F78854 /* AZSCorsRule.h in Headers */,
+				BBB8993834D0D104A14BD1A5B2EBE4F6 /* AZSEnums.h in Headers */,
+				E6452E410D6CB65634ECAFA9F1DAB079 /* AZSErrors.h in Headers */,
+				C707F8EDEC538A060652E73686843C5F /* AZSExecutor.h in Headers */,
+				8FFB467069AE6096958B7730C1894DE8 /* AZSIPRange.h in Headers */,
+				CA8D2292880AB4E73BCAB4FB634F061A /* AZSLoggingProperties.h in Headers */,
+				A04D9E5B3B7609AB17F6E5888D306668 /* AZSMacros.h in Headers */,
+				82BAC98A60FC8B2DFA523761D43AE9F9 /* AZSMetricsProperties.h in Headers */,
+				28517434ED5A44974DDC04E6858CC356 /* AZSNavigationUtil.h in Headers */,
+				7FBC69CF50C5F594A963158BFA5DEEE2 /* AZSNoOpAuthenticationHandler.h in Headers */,
+				CD282F17D55D20A2AAF93414099D8446 /* AZSOperationContext.h in Headers */,
+				93460FF8A33A039B3FB3E40A223F6A9C /* AZSRequestFactory.h in Headers */,
+				D80019796DCA09D8BD91269FE8668221 /* AZSRequestOptions.h in Headers */,
+				5150BEB1032666E118B5515E84C6B1DF /* AZSRequestResult.h in Headers */,
+				274AB669D23F9742A55FD1E8B621644E /* AZSResponseParser.h in Headers */,
+				7D2A671A416E47FD40747D4F8B81C15C /* AZSResultSegment.h in Headers */,
+				79DD83CB69EE662816E47019CC1710D3 /* AZSRetryContext.h in Headers */,
+				25230301451E4DC5296AAE371C6A5C8C /* AZSRetryInfo.h in Headers */,
+				D09DA4791A8095836397E53262DC1A82 /* AZSRetryPolicy.h in Headers */,
+				C431E8F3C0A1F1258C60AF75226E5EDD /* AZSServiceProperties.h in Headers */,
+				7427013F81A943903B6D9F5BADC12523 /* AZSSharedAccessAccountParameters.h in Headers */,
+				753D539F26F8B78218F6176759630CB8 /* AZSSharedAccessBlobParameters.h in Headers */,
+				E9521319130382FFBE6C574FE828364D /* AZSSharedAccessHeaders.h in Headers */,
+				3C7C07CECC3B6638CCDF7797FE1623CD /* AZSSharedAccessPolicy.h in Headers */,
+				7E26A9345395D2BBD73D0D211A18EF83 /* AZSSharedAccessSignatureHelper.h in Headers */,
+				C99125900A909E8B3A17D08C5C64A0B4 /* AZSSharedKeyBlobAuthenticationHandler.h in Headers */,
+				BCE1C63A7D8E942BC9055154210198EE /* AZSStorageCommand.h in Headers */,
+				D1372ABBFDE1F53CD9E9AB486DB2730B /* AZSStorageCredentials.h in Headers */,
+				9E037F26FDA801463F3794057914DA65 /* AZSStorageUri.h in Headers */,
+				B9CB19D433F1064D43A6F1C29455C82F /* AZSULLRange.h in Headers */,
+				761EAF8F4EB4E81CFA40B6B8F752F41F /* AZSUriQueryBuilder.h in Headers */,
+				89E181A600B6AB8A12E60BCBA91BF4D2 /* AZSUtil.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		85CFE715A431BFF91CC737C98C2F2A68 /* Pods-foodzone */ = {
+		B057C33533B34EC4EA0116CE0025C20A /* AZSClient */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5247402A17D23E9A909F77AA47C8A11D /* Build configuration list for PBXNativeTarget "Pods-foodzone" */;
+			buildConfigurationList = 89CE9657EDEA890460433536A063ED31 /* Build configuration list for PBXNativeTarget "AZSClient" */;
 			buildPhases = (
-				755FEE546D5D65FC9EAFB45285A59ADF /* Sources */,
-				FABE91E6B561C03CC21C876C943C3D4A /* Frameworks */,
-				CD024BC418F51529894086A030E4F69C /* Headers */,
+				D6AC3C52BA6047C231DFC035F0C70843 /* Sources */,
+				E33A0CC0D210AE578E270154B58F9574 /* Frameworks */,
+				17B7E07FB451AA8C774EE2D7B372B81E /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = AZSClient;
+			productName = AZSClient;
+			productReference = 8B1F95B37B121F6D27A6BA2A99B34891 /* AZSClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF08D9719173B46839A7BA9BEF039580 /* Pods-foodzone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DE0F10E11054CFCBF43FE9758D03FEA /* Build configuration list for PBXNativeTarget "Pods-foodzone" */;
+			buildPhases = (
+				6D7E98CAA2CE363B0280981C8724714B /* Sources */,
+				163888C72C6879E5D95FE1EA4E7C3EDE /* Frameworks */,
+				0969962315718FCD7522ECA08C14772C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E2D1380586CF814204324E95C0A8C23 /* PBXTargetDependency */,
+			);
 			name = "Pods-foodzone";
 			productName = "Pods-foodzone";
-			productReference = 1FE69796BA3D03412A4435EDDD45B43B /* Pods_foodzone.framework */;
+			productReference = 866AA8AFAF712516F50918B0A6AF4DEB /* Pods_foodzone.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -148,25 +615,95 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = D255F17CC1BAAFE5F4DC514B7A3012B8 /* Products */;
+			productRefGroup = CEC439CBC416BB96D26343A7AFC83BA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				85CFE715A431BFF91CC737C98C2F2A68 /* Pods-foodzone */,
+				B057C33533B34EC4EA0116CE0025C20A /* AZSClient */,
+				EF08D9719173B46839A7BA9BEF039580 /* Pods-foodzone */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		755FEE546D5D65FC9EAFB45285A59ADF /* Sources */ = {
+		6D7E98CAA2CE363B0280981C8724714B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D5D6842F0E82E97171DC2DEE119AE4A /* Pods-foodzone-dummy.m in Sources */,
+				880F72B7F154B5BB5B00EB8927384E31 /* Pods-foodzone-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6AC3C52BA6047C231DFC035F0C70843 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8E583BE0A9E7C75E19EB93AA4C3EB59 /* AZSAccessCondition.m in Sources */,
+				66AAC8F29765B5B8A7167D9F0A1D8E7D /* AZSBlobContainerProperties.m in Sources */,
+				104B35E3DF2C188BBE089C5C532970DC /* AZSBlobOutputStream.m in Sources */,
+				648CFE93C7BD95EA6611E1C6D2E94A45 /* AZSBlobProperties.m in Sources */,
+				727490021CA24EF20BCBD0E5E2C84B03 /* AZSBlobRequestFactory.m in Sources */,
+				C0F7A17B540CD6565A7235E7B9F3036F /* AZSBlobRequestOptions.m in Sources */,
+				339B8846C50C9F60B9E622308FEF3256 /* AZSBlobRequestXML.m in Sources */,
+				F6B4B72D72FB901040F7E8BCAA45D832 /* AZSBlobResponseParser.m in Sources */,
+				DBDB542AD3D8B237019EFD5434924F8E /* AZSBlobUploadHelper.m in Sources */,
+				0E0141B9C0489F28575E7C8FCBAB2D55 /* AZSBlockListItem.m in Sources */,
+				5BD8769423EEA42592D24A46FC79D93D /* AZSClient-dummy.m in Sources */,
+				A51A797482450BBE8860AAC0157B4C89 /* AZSClient.m in Sources */,
+				0D06435B32F42381035774D98BA75937 /* AZSCloudAppendBlob.m in Sources */,
+				7AA88E65DBC625DBB9585A363E5D9EB1 /* AZSCloudBlob.m in Sources */,
+				C10B6D9A67F69822D600B89218C166D3 /* AZSCloudBlobClient.m in Sources */,
+				4C1DB50077CC2C855F6CE5B2084831FD /* AZSCloudBlobContainer.m in Sources */,
+				ED338444568CDE238CD644A7AF8B9B55 /* AZSCloudBlobDirectory.m in Sources */,
+				B0E3DB1229BEEF5B3823CADB1D24EFA5 /* AZSCloudBlockBlob.m in Sources */,
+				4536742B0245A1CC1245126DD9E50866 /* AZSCloudClient.m in Sources */,
+				7BE3541814E006C88A68BA2840419B1A /* AZSCloudPageBlob.m in Sources */,
+				20ECFC9C84635F4F4E630A6390561A59 /* AZSCloudStorageAccount.m in Sources */,
+				57A930A2DAD6788718D5AF99D1E667B2 /* AZSConstants.m in Sources */,
+				896F19A3A74D1449AB335E4F04836D1C /* AZSContinuationToken.m in Sources */,
+				46171B299ADF6817DE94F8FF9B2C1E91 /* AZSCopyState.m in Sources */,
+				282E63764B2ED49E72296317B5515811 /* AZSCorsRule.m in Sources */,
+				18A7BCC6E14C2F6D3A66C12275C4F3AC /* AZSErrors.m in Sources */,
+				8044266EBC027564B1D047D011A183C8 /* AZSExecutor.m in Sources */,
+				7AD718C3D4815CEDF6F8C81799F24E4E /* AZSIPRange.m in Sources */,
+				A1705D12C3B0E3683FEEC3EC8D154EC6 /* AZSLoggingProperties.m in Sources */,
+				A2D8F7809D403E05D9A7510BFB225991 /* AZSMetricsProperties.m in Sources */,
+				6AE67CF92E6AE9DD087604236275327F /* AZSNavigationUtil.m in Sources */,
+				03E20C8F7FADD8F691F2DEC4BA8D0C18 /* AZSNoOpAuthenticationHandler.m in Sources */,
+				C939666FD59203A5EDD9F395CEC7D1C0 /* AZSOperationContext.m in Sources */,
+				F885F448166D263C11859643B61C30E3 /* AZSRequestFactory.m in Sources */,
+				292029A1991FE7D3C34DEF8A27ECEB61 /* AZSRequestOptions.m in Sources */,
+				1224C9ECFC2BEA444E30D3206A640CC0 /* AZSRequestResult.m in Sources */,
+				C61558644AA43C3DC8AC2CA57BA05452 /* AZSResponseParser.m in Sources */,
+				EB7534B03B683D7DF58BC43535B756E0 /* AZSResultSegment.m in Sources */,
+				BCA34F63DF8F22B2DE0896A3A42245A4 /* AZSRetryContext.m in Sources */,
+				355B94FE485DC458D4DF6DFDDCD2649F /* AZSRetryInfo.m in Sources */,
+				77BC0D697493DBFBE2C7CECC689C6A6F /* AZSRetryPolicy.m in Sources */,
+				D78CC90AFA0FFC3FC5C3560D60BE3BC6 /* AZSServiceProperties.m in Sources */,
+				A63AB3153C67531B26E9190CFAD19FA9 /* AZSSharedAccessAccountParameters.m in Sources */,
+				AE96F073113DAD62C26932E5EEFBACB6 /* AZSSharedAccessBlobParameters.m in Sources */,
+				411179808F6BCA635F50D9AC3ACFA903 /* AZSSharedAccessHeaders.m in Sources */,
+				40DC8A07D3523D8C7940F5E6D70723C3 /* AZSSharedAccessPolicy.m in Sources */,
+				5B23B804E921F66453F78745272A5C7A /* AZSSharedAccessSignatureHelper.m in Sources */,
+				027E057F62F4E3A311350588A26AECCA /* AZSSharedKeyBlobAuthenticationHandler.m in Sources */,
+				938D1829492AB3708B4FC4E62FF6A286 /* AZSStorageCommand.m in Sources */,
+				BA416103C38330DA80CC72433207ECEE /* AZSStorageCredentials.m in Sources */,
+				2B636E42353B26323D5BE51891846AC0 /* AZSStorageUri.m in Sources */,
+				BE6826DE1AA42F1CEE6E85DC54D5906E /* AZSUriQueryBuilder.m in Sources */,
+				1E8BD21C7482E8D05F0035C5B9A3E005 /* AZSUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E2D1380586CF814204324E95C0A8C23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AZSClient;
+			target = B057C33533B34EC4EA0116CE0025C20A /* AZSClient */;
+			targetProxy = 8E7A9652B07DB2C3BC3D052CACB74BAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
@@ -232,7 +769,7 @@
 			};
 			name = Debug;
 		};
-		6BBE9BD9A149BC560B53F6B786B4B3CB /* Release */ = {
+		5771C35C2153FB8520FAD97A740928FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B56D389735903EE7F8FB68E6E71A3FF8 /* Pods-foodzone.release.xcconfig */;
 			buildSettings = {
@@ -266,7 +803,7 @@
 			};
 			name = Release;
 		};
-		BB44BF0C845D48AE5894E06AC2285183 /* Debug */ = {
+		7B11C4EB80F3377E29BC8B0920E15BBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E7F410E979ED3BA11D5900B93453D53 /* Pods-foodzone.debug.xcconfig */;
 			buildSettings = {
@@ -298,6 +835,69 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		AA25C15DFE4C8C00BE1C9BCC1CF47B5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B589F7D1C4BC7E1B2321382DA968BD9 /* AZSClient.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AZSClient/AZSClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AZSClient/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AZSClient/AZSClient.modulemap";
+				PRODUCT_MODULE_NAME = AZSClient;
+				PRODUCT_NAME = AZSClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F69F65D4854FE28EF9A3594C9DDF7214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B589F7D1C4BC7E1B2321382DA968BD9 /* AZSClient.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AZSClient/AZSClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AZSClient/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AZSClient/AZSClient.modulemap";
+				PRODUCT_MODULE_NAME = AZSClient;
+				PRODUCT_NAME = AZSClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -360,6 +960,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1DE0F10E11054CFCBF43FE9758D03FEA /* Build configuration list for PBXNativeTarget "Pods-foodzone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B11C4EB80F3377E29BC8B0920E15BBE /* Debug */,
+				5771C35C2153FB8520FAD97A740928FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -369,11 +978,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5247402A17D23E9A909F77AA47C8A11D /* Build configuration list for PBXNativeTarget "Pods-foodzone" */ = {
+		89CE9657EDEA890460433536A063ED31 /* Build configuration list for PBXNativeTarget "AZSClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BB44BF0C845D48AE5894E06AC2285183 /* Debug */,
-				6BBE9BD9A149BC560B53F6B786B4B3CB /* Release */,
+				AA25C15DFE4C8C00BE1C9BCC1CF47B5F /* Debug */,
+				F69F65D4854FE28EF9A3594C9DDF7214 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

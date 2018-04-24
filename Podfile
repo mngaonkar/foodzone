@@ -6,5 +6,5 @@ target 'foodzone' do
   use_frameworks!
 
   # Pods for foodzone
-
+  pod 'AZSClient'
 end

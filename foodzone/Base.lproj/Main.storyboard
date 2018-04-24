@@ -150,7 +150,9 @@
                                 <rect key="frame" x="16" y="617" width="106" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Select Image"/>
+                                <state key="normal" title="Select Image">
+                                    <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="selectImageClicked:" destination="Gs7-78-jUB" eventType="touchUpInside" id="CeW-cd-FQw"/>
                                 </connections>
@@ -159,7 +161,9 @@
                                 <rect key="frame" x="256" y="616" width="103" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Submit Info"/>
+                                <state key="normal" title="Submit Info">
+                                    <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="submitInfoClicked:" destination="Gs7-78-jUB" eventType="touchUpInside" id="k63-CW-mb0"/>
                                 </connections>
@@ -168,7 +172,9 @@
                                 <rect key="frame" x="133" y="617" width="112" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Scan Code"/>
+                                <state key="normal" title="Scan Code">
+                                    <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="scanCodeClicked:" destination="Gs7-78-jUB" eventType="touchUpInside" id="b3o-8p-jhx"/>
                                 </connections>
