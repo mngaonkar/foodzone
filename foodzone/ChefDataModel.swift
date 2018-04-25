@@ -22,9 +22,9 @@ public class ChefDataModel {
     public init() {
         chefName = ""
         chefExperience = 0
-        cookingCare = []
+        cookingCare = [""]
         cookingOil = ""
-        herbsAdded = []
+        herbsAdded = [""]
         foodID = 0
         message = ""
         status = false

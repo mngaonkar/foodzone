@@ -21,23 +21,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IRW-5z-KjW">
-                                <rect key="frame" x="67" y="217.5" width="240" height="232"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poopoo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Qts-Tl-3ts">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="232"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="232" id="3my-jP-vfC"/>
-                                            <constraint firstAttribute="width" constant="240" id="WyP-5m-DIY"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_dish.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Qts-Tl-3ts">
+                                <rect key="frame" x="0.0" y="52" width="375" height="563"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Food Zone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8BL-d1-dLX">
+                                <rect key="frame" x="84" y="503" width="206" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="IRW-5z-KjW" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="8Ii-aU-brO"/>
-                            <constraint firstItem="IRW-5z-KjW" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="irq-9E-Rpd"/>
+                            <constraint firstItem="8BL-d1-dLX" firstAttribute="top" secondItem="Qts-Tl-3ts" secondAttribute="bottom" constant="8" id="28I-nH-jq5"/>
+                            <constraint firstAttribute="trailing" secondItem="Qts-Tl-3ts" secondAttribute="trailing" id="7Uc-IQ-TJK"/>
+                            <constraint firstItem="8BL-d1-dLX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Zdc-GX-0CQ"/>
+                            <constraint firstItem="Qts-Tl-3ts" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="dfl-Hu-lJr"/>
+                            <constraint firstItem="Qts-Tl-3ts" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ld6-PV-Yqm"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -47,6 +47,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="poopoo.jpg" width="2445" height="2225"/>
+        <image name="restaurant_dish.jpg" width="1000" height="563"/>
     </resources>
 </document>

@@ -27,7 +27,7 @@ class RestaurantViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        getChefData(url: CHEF_DATA_URL, parameters: ["ChefName":"Peter"])
+        getChefData(url: CHEF_DATA_URL, param: ["LobsterId":12])
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,14 +40,14 @@ class RestaurantViewController: UIViewController {
     }
     
     // Get chef entered data from service
-    func getChefData(url : String, parameters : [String:String]) {
+    func getChefData(url : String, param : [String:Any]) {
         let chefEnteredInfo = ChefDataModel()
         var endpoint = url
         endpoint.append("/v1/GetChefInfo")
         print(endpoint)
-        print(parameters)
+        print(param)
         
-        Alamofire.request(endpoint, method: .get, parameters: parameters).responseData {
+        Alamofire.request(endpoint, method: .get, parameters: param).responseData {
             response in
             if response.result.isSuccess {
                 print("Chef data received")
