@@ -17,25 +17,7 @@ public class ServiceEndpoint {
         endPoint = "http://vmethereumenu.westindia.cloudapp.azure.com:8087"
     }
     
-    public func sendRequest(endpoint : String, requestType : HTTPMethod, param : [String:Any]) -> JSON{
-        var responseData : JSON = ""
-        
-        Alamofire.request(endpoint, method: requestType, parameters: param).responseData {
-            response in
-            if response.result.isSuccess {
-                print("response received")
-                if response.response?.statusCode == 200 {
-                    responseData = JSON(response.result.value!)
-                }
-                else {
-                    
-                }
-            }
-            else {
-                
-            }
-        }
-        return responseData
+    public func sendRequest(endpoint : String, requestType : HTTPMethod, param : [String:Any]) {
     }
 }
 

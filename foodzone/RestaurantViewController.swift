@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SwiftyJSON
+import Alamofire
 
 class RestaurantViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
@@ -27,17 +29,23 @@ class RestaurantViewController: UIViewController, UIPickerViewDataSource, UIPick
     
     @IBAction func submitPressed(_ sender: Any) {
         var endpoint = serviceEndPoint?.endPoint
-        var parameters : [String:Any]
+        var param : [String:Any]
         endpoint?.append("/v1/SetChefInfo")
-        parameters = ["LobsterId": Int(foodID.text!),
+        param = ["LobsterId": Int(foodID.text!),
                           "ChefName": chefName.text,
                           "ChefExperience": Int(chefExperience.text!),
                           "HerbsAdded":[herbs.text],
                           "CookingCare": [cookingCare.text],
                           "CookingOil": cookingOil.text]
-        let result = serviceEndPoint?.sendRequest(endpoint: endpoint!, requestType: .post, param: parameters)
-        print(result)
-        
+
+        Alamofire.request(endpoint!, method: .post, parameters: param, encoding: JSONEncoding.default, headers: nil).responseData { (response) in
+            if response.result.isSuccess {
+                print("Data received")
+                if response.response?.statusCode == 200 {
+                    let responseData : JSON = JSON(response.result.value!)
+                }
+            }
+        }
     }
     
     override func viewDidLoad() {
