@@ -12,6 +12,9 @@
 		6D038EC220909040002B8209 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D038EC120909040002B8209 /* RestaurantViewController.swift */; };
 		6D038EC42090A16C002B8209 /* blockchain.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D038EC32090A16B002B8209 /* blockchain.png */; };
 		6D038EC62090A8B1002B8209 /* ServiceEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D038EC52090A8B1002B8209 /* ServiceEndpoint.swift */; };
+		6D038EC8209100AC002B8209 /* green-apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D038EC7209100AB002B8209 /* green-apple.png */; };
+		6D038ECA20910432002B8209 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D038EC920910432002B8209 /* logo.png */; };
+		6D038ECC2091062F002B8209 /* qr-code.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D038ECB2091062F002B8209 /* qr-code.png */; };
 		6D0604F3208F9E6B00CC4FBE /* FoodFeaturesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0604F2208F9E6B00CC4FBE /* FoodFeaturesModel.swift */; };
 		6D0604F5208FA00C00CC4FBE /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0604F4208FA00C00CC4FBE /* CustomerViewController.swift */; };
 		6D0604F7208FA04C00CC4FBE /* ChefDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0604F6208FA04C00CC4FBE /* ChefDataModel.swift */; };
@@ -39,6 +42,9 @@
 		6D038EC120909040002B8209 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		6D038EC32090A16B002B8209 /* blockchain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blockchain.png; sourceTree = "<group>"; };
 		6D038EC52090A8B1002B8209 /* ServiceEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEndpoint.swift; sourceTree = "<group>"; };
+		6D038EC7209100AB002B8209 /* green-apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green-apple.png"; sourceTree = "<group>"; };
+		6D038EC920910432002B8209 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		6D038ECB2091062F002B8209 /* qr-code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr-code.png"; sourceTree = "<group>"; };
 		6D0604F2208F9E6B00CC4FBE /* FoodFeaturesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFeaturesModel.swift; sourceTree = "<group>"; };
 		6D0604F4208FA00C00CC4FBE /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
 		6D0604F6208FA04C00CC4FBE /* ChefDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefDataModel.swift; sourceTree = "<group>"; };
@@ -113,9 +119,12 @@
 		A2D9CBC01943C2540017F096 /* foodzone */ = {
 			isa = PBXGroup;
 			children = (
+				6D038ECB2091062F002B8209 /* qr-code.png */,
+				6D038EC920910432002B8209 /* logo.png */,
 				6D038EC32090A16B002B8209 /* blockchain.png */,
-				6D038EBF20907CCB002B8209 /* restaurant_dish.jpg */,
+				6D038EC7209100AB002B8209 /* green-apple.png */,
 				6D038EBD20907A45002B8209 /* poopoo.jpg */,
+				6D038EBF20907CCB002B8209 /* restaurant_dish.jpg */,
 				6D0604FA208FA76C00CC4FBE /* lobster_chef.png */,
 				6D0604F8208FA55F00CC4FBE /* lobster_dish.jpeg */,
 				A2BD20951AC8A731007F7181 /* QSTodoDataModel.xcdatamodeld */,
@@ -229,13 +238,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2D9CBCC1943C2540017F096 /* Main.storyboard in Resources */,
+				6D038ECC2091062F002B8209 /* qr-code.png in Resources */,
 				A2D9CBCE1943C2540017F096 /* Images.xcassets in Resources */,
 				6D038EC020907CCB002B8209 /* restaurant_dish.jpg in Resources */,
 				6D0604FB208FA76C00CC4FBE /* lobster_chef.png in Resources */,
 				6D038EBE20907A45002B8209 /* poopoo.jpg in Resources */,
 				A31A89F71BF3FDFA00C7B656 /* Launch Screen.storyboard in Resources */,
+				6D038ECA20910432002B8209 /* logo.png in Resources */,
 				6D0604F9208FA55F00CC4FBE /* lobster_dish.jpeg in Resources */,
 				6D038EC42090A16C002B8209 /* blockchain.png in Resources */,
+				6D038EC8209100AC002B8209 /* green-apple.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

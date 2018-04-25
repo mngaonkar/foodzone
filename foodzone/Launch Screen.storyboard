@@ -21,23 +21,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_dish.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Qts-Tl-3ts">
-                                <rect key="frame" x="0.0" y="52" width="375" height="563"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Zone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8BL-d1-dLX">
-                                <rect key="frame" x="84" y="470" width="206" height="54"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food Zone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8BL-d1-dLX">
+                                <rect key="frame" x="75" y="450" width="224" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qr-code.png" translatesAutoresizingMaskIntoConstraints="NO" id="0L2-Ow-hlr">
+                                <rect key="frame" x="117" y="264" width="140" height="139"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Qts-Tl-3ts" secondAttribute="trailing" id="7Uc-IQ-TJK"/>
-                            <constraint firstItem="8BL-d1-dLX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="WiO-Yg-Jj9"/>
-                            <constraint firstItem="Qts-Tl-3ts" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="dfl-Hu-lJr"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="8BL-d1-dLX" secondAttribute="bottom" constant="143" id="eLr-H1-bVz"/>
-                            <constraint firstItem="Qts-Tl-3ts" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ld6-PV-Yqm"/>
+                            <constraint firstItem="0L2-Ow-hlr" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="gHG-7o-2sd"/>
+                            <constraint firstItem="0L2-Ow-hlr" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jph-yQ-Swe"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -47,6 +44,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="restaurant_dish.jpg" width="1000" height="563"/>
+        <image name="qr-code.png" width="140" height="139"/>
     </resources>
 </document>

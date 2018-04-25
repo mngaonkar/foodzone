@@ -14,6 +14,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var imageLink: UITextView!
     @IBOutlet weak var selectedImage: UIImageView!
     @IBOutlet weak var codeInfo: UILabel!
+    @IBOutlet weak var foodGrade: UILabel!
+    
     var session : AVCaptureSession!
     var video : AVCaptureVideoPreviewLayer!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -56,6 +58,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             //activityIndicator.startAnimating()
             blob.upload(from: imageData!, completionHandler:{(NSError) -> Void in
                 //self.activityIndicator.stopAnimating()
+                self.foodGrade.text = "Grade I"
                 print(NSError.debugDescription)
             })
         }
