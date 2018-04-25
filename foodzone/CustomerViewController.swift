@@ -21,6 +21,7 @@ class CustomerViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
     @IBOutlet weak var cookingOil: UILabel!
     @IBOutlet weak var herbs: UILabel!
     @IBOutlet weak var foodID: UILabel!
+    @IBOutlet weak var mapView: MKMapView!
     
     var session : AVCaptureSession!
     var video : AVCaptureVideoPreviewLayer!
@@ -66,7 +67,7 @@ class CustomerViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
         if metadataObjects != nil && metadataObjects.count != 0 {
             if let object = metadataObjects[0] as? AVMetadataMachineReadableCodeObject {
                 if object.type == AVMetadataObject.ObjectType.qr {
-                    let alert = UIAlertController(title: "QR Code", message: object.stringValue, preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Food ID", message: object.stringValue, preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Retake", style: .default, handler: nil))
                     alert.addAction(UIAlertAction(title: "Copy", style: .default, handler: { (nil) in UIPasteboard.general.string = object.stringValue
                         self.chefDataStatus.text = "Lobster ID = \(object.stringValue!)"
@@ -155,6 +156,15 @@ class CustomerViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
         */
     }
     
+    
+    // Update food location on map
+    func updateMapLocation() {
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = CLLocationCoordinate2D(latitude: 37.806577, longitude: -122.405407)
+        self.mapView.addAnnotation(annotation)
+        self.mapView.setCenter(annotation.coordinate, animated: true)
+    }
+    
     // Update chef data in UI
     func updateChefData(chefData : ChefDataModel) {
         clearChefData()
@@ -172,6 +182,8 @@ class CustomerViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
     
         cookingOil.text = chefData.cookingOil
         foodID.text = String(chefData.foodID)
+        
+        updateMapLocation()
     }
     
     /*

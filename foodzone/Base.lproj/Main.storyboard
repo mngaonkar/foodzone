@@ -549,6 +549,7 @@
                         <outlet property="cookingOil" destination="tK0-qT-Y9M" id="YwX-rA-ZxX"/>
                         <outlet property="foodID" destination="YcN-o7-rIO" id="j0J-1g-qNF"/>
                         <outlet property="herbs" destination="HVk-q9-pTs" id="Mny-Vt-jmb"/>
+                        <outlet property="mapView" destination="ygA-uH-M8i" id="ANZ-WS-bQz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i41-00-KBb" userLabel="First Responder" sceneMemberID="firstResponder"/>
