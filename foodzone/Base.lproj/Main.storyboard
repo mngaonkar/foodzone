@@ -335,13 +335,25 @@
                                                     <action selector="backPressed:" destination="Nl7-KX-kt6" eventType="touchUpInside" id="mFm-G6-3hj"/>
                                                 </connections>
                                             </button>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lobster_dish.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="kAL-ir-VX4">
-                                                <rect key="frame" x="0.0" y="30" width="150" height="80"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="80" id="G1u-21-r8g"/>
-                                                    <constraint firstAttribute="width" constant="150" id="boF-5n-d2w"/>
-                                                </constraints>
-                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="21L-6J-I9C">
+                                                <rect key="frame" x="0.0" y="30" width="343" height="80"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lobster_dish.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="kAL-ir-VX4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="80"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="G1u-21-r8g"/>
+                                                            <constraint firstAttribute="width" constant="150" id="boF-5n-d2w"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vac-To-xwp">
+                                                        <rect key="frame" x="150" y="0.0" width="193" height="30"/>
+                                                        <state key="normal" title="Scan Code"/>
+                                                        <connections>
+                                                            <action selector="scanCodePressed:" destination="Nl7-KX-kt6" eventType="touchUpInside" id="2fq-IP-YTg"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBb-Vr-gRe">
                                                 <rect key="frame" x="0.0" y="110" width="343" height="30"/>
                                                 <constraints>
@@ -352,6 +364,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="21L-6J-I9C" secondAttribute="trailing" id="wZT-CJ-TmI"/>
+                                            <constraint firstItem="21L-6J-I9C" firstAttribute="leading" secondItem="gRR-zW-w8b" secondAttribute="leading" id="yOe-Dr-ywQ"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5Ub-Jf-nej">
                                         <rect key="frame" x="0.0" y="140" width="343" height="488"/>

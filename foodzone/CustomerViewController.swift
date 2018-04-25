@@ -9,8 +9,9 @@
 import UIKit
 import SwiftyJSON
 import Alamofire
+import AVFoundation
 
-class CustomerViewController: UIViewController {
+class CustomerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
 
     @IBOutlet weak var chefDataStatus: UILabel!
     @IBOutlet weak var chefName: UILabel!
@@ -19,6 +20,10 @@ class CustomerViewController: UIViewController {
     @IBOutlet weak var cookingOil: UILabel!
     @IBOutlet weak var herbs: UILabel!
     @IBOutlet weak var foodID: UILabel!
+    
+    var session : AVCaptureSession!
+    var video : AVCaptureVideoPreviewLayer!
+    var foodQRCode : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +38,48 @@ class CustomerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func scanCodePressed(_ sender: Any) {
+        session = AVCaptureSession()
+        let captureDevice = AVCaptureDevice.default(for: AVMediaType.video)
+        
+        do {
+            let input = try AVCaptureDeviceInput(device: captureDevice!)
+            session.addInput(input)
+        }
+        catch {
+            print("Error in capture device")
+        }
+        
+        let output = AVCaptureMetadataOutput()
+        session.addOutput(output)
+        output.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
+        output.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
+        
+        video = AVCaptureVideoPreviewLayer(session: session)
+        video?.frame = view.layer.bounds
+        view.layer.addSublayer(video!)
+        session.startRunning()
+    }
+    
+    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+        if metadataObjects != nil && metadataObjects.count != 0 {
+            if let object = metadataObjects[0] as? AVMetadataMachineReadableCodeObject {
+                if object.type == AVMetadataObject.ObjectType.qr {
+                    let alert = UIAlertController(title: "QR Code", message: object.stringValue, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Retake", style: .default, handler: nil))
+                    alert.addAction(UIAlertAction(title: "Copy", style: .default, handler: { (nil) in UIPasteboard.general.string = object.stringValue
+                        self.chefDataStatus.text = "Lobster ID = \(object.stringValue!)"
+                        self.foodQRCode = Int(object.stringValue!)!
+                        self.session?.stopRunning()
+                        self.video.removeFromSuperlayer()
+                        self.getChefData(url: ServiceEndpoint().endPoint, param: ["LobsterId":self.foodQRCode])
+                    }))
+                    present(alert, animated: true, completion: nil)
+                }
+            }
+        }
+    }
+
     @IBAction func backPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
