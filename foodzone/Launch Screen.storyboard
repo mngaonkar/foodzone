@@ -21,9 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food Zone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8BL-d1-dLX">
-                                <rect key="frame" x="75" y="450" width="224" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Zone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8BL-d1-dLX">
+                                <rect key="frame" x="75" y="450" width="224" height="58.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="49"/>
                                 <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -33,6 +32,8 @@
                             </imageView>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="8BL-d1-dLX" firstAttribute="top" secondItem="0L2-Ow-hlr" secondAttribute="bottom" constant="47" id="60J-nk-O17"/>
+                            <constraint firstItem="8BL-d1-dLX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Qgs-tj-C7B"/>
                             <constraint firstItem="0L2-Ow-hlr" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="gHG-7o-2sd"/>
                             <constraint firstItem="0L2-Ow-hlr" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jph-yQ-Swe"/>
                         </constraints>
