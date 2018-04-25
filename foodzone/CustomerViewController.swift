@@ -20,14 +20,12 @@ class CustomerViewController: UIViewController {
     @IBOutlet weak var herbs: UILabel!
     @IBOutlet weak var foodID: UILabel!
     
-    
-    let CHEF_DATA_URL = "http://vmethereumenu.westindia.cloudapp.azure.com:8087"
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let serviceEndpoint = ServiceEndpoint()
 
         // Do any additional setup after loading the view.
-        getChefData(url: CHEF_DATA_URL, param: ["LobsterId":12])
+        getChefData(url: serviceEndpoint.endPoint, param: ["LobsterId":12])
     }
 
     override func didReceiveMemoryWarning() {

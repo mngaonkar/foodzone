@@ -339,8 +339,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5Ub-Jf-nej">
-                                <rect key="frame" x="16" y="310" width="343" height="350"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5Ub-Jf-nej">
+                                <rect key="frame" x="16" y="310" width="343" height="488"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jFn-gh-wWf">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
@@ -487,6 +487,9 @@
                                             <constraint firstItem="HVk-q9-pTs" firstAttribute="leading" secondItem="3sz-FT-xMd" secondAttribute="trailing" id="Ekl-cA-44c"/>
                                         </constraints>
                                     </stackView>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ygA-uH-M8i">
+                                        <rect key="frame" x="103" y="360" width="240" height="128"/>
+                                    </mapView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="HKe-i8-jcL" firstAttribute="leading" secondItem="5Ub-Jf-nej" secondAttribute="leading" id="740-XF-qj1"/>
@@ -538,7 +541,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tJ3-X6-RHZ">
-                                <rect key="frame" x="0.0" y="85.5" width="375" height="230"/>
+                                <rect key="frame" x="0.0" y="85.5" width="375" height="270"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ecQ-LR-j3k">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
@@ -663,6 +666,14 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmZ-nb-hsR">
+                                        <rect key="frame" x="0.0" y="240" width="375" height="30"/>
+                                        <state key="normal" title="Submit"/>
+                                        <connections>
+                                            <action selector="submitInfo:" destination="Fwo-KT-Ioz" eventType="touchUpInside" id="qwr-6i-Kfq"/>
+                                            <action selector="submitPressed:" destination="Fwo-KT-Ioz" eventType="touchUpInside" id="Cns-QO-eyu"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="ecQ-LR-j3k" firstAttribute="leading" secondItem="tJ3-X6-RHZ" secondAttribute="leading" id="4Ga-31-AG1"/>
@@ -675,6 +686,7 @@
                                     <constraint firstAttribute="trailing" secondItem="MJU-sr-hBD" secondAttribute="trailing" id="anF-jX-dmM"/>
                                     <constraint firstItem="Of5-pf-OIP" firstAttribute="leading" secondItem="tJ3-X6-RHZ" secondAttribute="leading" id="b8a-Jn-6ck"/>
                                     <constraint firstItem="jbp-47-VnY" firstAttribute="leading" secondItem="tJ3-X6-RHZ" secondAttribute="leading" id="j3w-ce-mdH"/>
+                                    <constraint firstItem="VmZ-nb-hsR" firstAttribute="centerX" secondItem="tJ3-X6-RHZ" secondAttribute="centerX" id="pP8-YU-KPT"/>
                                     <constraint firstAttribute="trailing" secondItem="jbp-47-VnY" secondAttribute="trailing" id="tKu-Et-h9l"/>
                                     <constraint firstItem="MJU-sr-hBD" firstAttribute="leading" secondItem="tJ3-X6-RHZ" secondAttribute="leading" id="v7C-2v-l7f"/>
                                 </constraints>
@@ -701,6 +713,11 @@
                     </view>
                     <connections>
                         <outlet property="chefExperience" destination="Pkw-fm-UkE" id="awo-ME-NZg"/>
+                        <outlet property="chefName" destination="lZJ-b9-Ek3" id="BZf-Xz-jN4"/>
+                        <outlet property="cookingCare" destination="APD-pX-dtK" id="q52-Py-7I4"/>
+                        <outlet property="cookingOil" destination="m0e-fr-vB0" id="Pr7-aq-nE4"/>
+                        <outlet property="foodID" destination="gdd-GK-Sz1" id="0UY-rm-tqM"/>
+                        <outlet property="herbs" destination="lV2-XP-qVD" id="XmY-0E-UHF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nrn-5e-3uf" userLabel="First Responder" sceneMemberID="firstResponder"/>
