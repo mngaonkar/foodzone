@@ -59,7 +59,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sn7-zH-IVo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2786" y="161"/>
+            <point key="canvasLocation" x="4959" y="197"/>
         </scene>
         <!--Add Item-->
         <scene sceneID="RI1-O5-vZS">
@@ -104,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MmN-xB-6h2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3554" y="161"/>
+            <point key="canvasLocation" x="6372" y="197"/>
         </scene>
         <!--Azure Mobile Apps-->
         <scene sceneID="yNt-7v-plj">
@@ -128,7 +128,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FRr-xT-xwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2034" y="161"/>
+            <point key="canvasLocation" x="4023" y="197"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ca4-Vt-Sj6">
@@ -143,10 +143,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8r9-M3-QIp">
-                                <rect key="frame" x="54" y="189" width="267" height="289"/>
+                                <rect key="frame" x="54" y="164" width="267" height="339"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CM0-Vy-2uP">
-                                        <rect key="frame" x="0.0" y="0.0" width="267" height="289"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="267" height="339"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lobster_chef.png" translatesAutoresizingMaskIntoConstraints="NO" id="SDX-Co-fXF">
                                                 <rect key="frame" x="0.0" y="0.0" width="267" height="189"/>
@@ -163,8 +163,13 @@
                                                 <rect key="frame" x="0.0" y="259" width="267" height="30"/>
                                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Restaurant"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUa-Ht-NkI">
+                                                <rect key="frame" x="0.0" y="309" width="267" height="30"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Customer"/>
                                                 <connections>
-                                                    <segue destination="Nl7-KX-kt6" kind="show" id="Ye7-sj-FoB"/>
+                                                    <segue destination="Nl7-KX-kt6" kind="show" id="bL5-7a-Xh0"/>
                                                 </connections>
                                             </button>
                                         </subviews>
