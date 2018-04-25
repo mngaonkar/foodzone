@@ -10,6 +10,7 @@ import UIKit
 import SwiftyJSON
 import Alamofire
 import AVFoundation
+import MapKit
 
 class CustomerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
 
@@ -84,6 +85,14 @@ class CustomerViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
         dismiss(animated: true, completion: nil)
     }
     
+    func clearChefData() {
+        self.chefName.text = ""
+        self.chefExperience.text = ""
+        self.cookingOil.text = ""
+        self.cookingCare.text = ""
+        self.herbs.text = ""
+    }
+    
     // Get chef entered data from service
     func getChefData(url : String, param : [String:Any]) {
         let chefEnteredInfo = ChefDataModel()
@@ -148,6 +157,7 @@ class CustomerViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
     
     // Update chef data in UI
     func updateChefData(chefData : ChefDataModel) {
+        clearChefData()
         chefName.text = chefData.chefName
         chefExperience.text = "\(chefData.chefExperience) years"
         for item in chefData.cookingCare {
