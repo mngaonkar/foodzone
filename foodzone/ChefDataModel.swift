@@ -9,17 +9,17 @@
 import Foundation
 import SwiftyJSON
 
-class ChefDataModel {
-    var chefExperience : Int
-    var chefName : String
-    var cookingCare : [String]
-    var cookingOil : String
-    var herbsAdded : [String]
-    var foodID : Int
+public class ChefDataModel {
+    public var chefExperience : Int
+    public var chefName : String
+    public var cookingCare : [String]
+    public var cookingOil : String
+    public var herbsAdded : [String]
+    public var foodID : Int
     var message : String
     var status : Bool
     
-    init() {
+    public init() {
         chefName = ""
         chefExperience = 0
         cookingCare = []

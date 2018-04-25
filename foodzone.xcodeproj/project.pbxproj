@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D038EB620904A23002B8209 /* poopoo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D038EB520904A23002B8209 /* poopoo.jpg */; };
 		6D0604F3208F9E6B00CC4FBE /* FoodFeaturesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0604F2208F9E6B00CC4FBE /* FoodFeaturesModel.swift */; };
 		6D0604F5208FA00C00CC4FBE /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0604F4208FA00C00CC4FBE /* RestaurantViewController.swift */; };
 		6D0604F7208FA04C00CC4FBE /* ChefDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0604F6208FA04C00CC4FBE /* ChefDataModel.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D038EB520904A23002B8209 /* poopoo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = poopoo.jpg; sourceTree = "<group>"; };
 		6D0604F2208F9E6B00CC4FBE /* FoodFeaturesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFeaturesModel.swift; sourceTree = "<group>"; };
 		6D0604F4208FA00C00CC4FBE /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		6D0604F6208FA04C00CC4FBE /* ChefDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefDataModel.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				6D0604FA208FA76C00CC4FBE /* lobster_chef.png */,
+				6D038EB520904A23002B8209 /* poopoo.jpg */,
 				6D0604F8208FA55F00CC4FBE /* lobster_dish.jpeg */,
 				A2BD20951AC8A731007F7181 /* QSTodoDataModel.xcdatamodeld */,
 				A2D9CBC31943C2540017F096 /* AppDelegate.swift */,
@@ -216,6 +219,7 @@
 				A2D9CBCC1943C2540017F096 /* Main.storyboard in Resources */,
 				A2D9CBCE1943C2540017F096 /* Images.xcassets in Resources */,
 				6D0604FB208FA76C00CC4FBE /* lobster_chef.png in Resources */,
+				6D038EB620904A23002B8209 /* poopoo.jpg in Resources */,
 				A31A89F71BF3FDFA00C7B656 /* Launch Screen.storyboard in Resources */,
 				6D0604F9208FA55F00CC4FBE /* lobster_dish.jpeg in Resources */,
 			);
