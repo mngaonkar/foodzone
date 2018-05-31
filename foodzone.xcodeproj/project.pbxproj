@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D038EBE20907A45002B8209 /* poopoo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D038EBD20907A45002B8209 /* poopoo.jpg */; };
 		6D038EC020907CCB002B8209 /* restaurant_dish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D038EBF20907CCB002B8209 /* restaurant_dish.jpg */; };
 		6D038EC220909040002B8209 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D038EC120909040002B8209 /* RestaurantViewController.swift */; };
 		6D038EC42090A16C002B8209 /* blockchain.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D038EC32090A16B002B8209 /* blockchain.png */; };
@@ -37,7 +36,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6D038EBD20907A45002B8209 /* poopoo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = poopoo.jpg; path = ../../../../poopoo.jpg; sourceTree = "<group>"; };
 		6D038EBF20907CCB002B8209 /* restaurant_dish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = restaurant_dish.jpg; sourceTree = "<group>"; };
 		6D038EC120909040002B8209 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		6D038EC32090A16B002B8209 /* blockchain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blockchain.png; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 				6D038EC920910432002B8209 /* logo.png */,
 				6D038EC32090A16B002B8209 /* blockchain.png */,
 				6D038EC7209100AB002B8209 /* green-apple.png */,
-				6D038EBD20907A45002B8209 /* poopoo.jpg */,
 				6D038EBF20907CCB002B8209 /* restaurant_dish.jpg */,
 				6D0604FA208FA76C00CC4FBE /* lobster_chef.png */,
 				6D0604F8208FA55F00CC4FBE /* lobster_dish.jpeg */,
@@ -242,7 +239,6 @@
 				A2D9CBCE1943C2540017F096 /* Images.xcassets in Resources */,
 				6D038EC020907CCB002B8209 /* restaurant_dish.jpg in Resources */,
 				6D0604FB208FA76C00CC4FBE /* lobster_chef.png in Resources */,
-				6D038EBE20907A45002B8209 /* poopoo.jpg in Resources */,
 				A31A89F71BF3FDFA00C7B656 /* Launch Screen.storyboard in Resources */,
 				6D038ECA20910432002B8209 /* logo.png in Resources */,
 				6D0604F9208FA55F00CC4FBE /* lobster_dish.jpeg in Resources */,
