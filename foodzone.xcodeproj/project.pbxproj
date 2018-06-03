@@ -95,6 +95,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D7D0CA720C0F64400052C8E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				6DA726CC20C0727A0060B1FA /* chef.png */,
+				6DA726D620C074970060B1FA /* lobster.png */,
+				6DA726D420C073EA0060B1FA /* location.png */,
+				6D038EC32090A16B002B8209 /* blockchain.png */,
+				6DA726C620C071070060B1FA /* recipe.png */,
+				6D038EC920910432002B8209 /* logo.png */,
+				6D038EC7209100AB002B8209 /* green-apple.png */,
+				6D038EBF20907CCB002B8209 /* restaurant_dish.jpg */,
+				6D0604FA208FA76C00CC4FBE /* lobster_chef.png */,
+				6D0604F8208FA55F00CC4FBE /* lobster_dish.jpeg */,
+				6D038ECB2091062F002B8209 /* qr-code.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		9CA121741DAC7FFD000C2FCA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,17 +145,7 @@
 		A2D9CBC01943C2540017F096 /* foodzone */ = {
 			isa = PBXGroup;
 			children = (
-				6DA726CC20C0727A0060B1FA /* chef.png */,
-				6DA726D620C074970060B1FA /* lobster.png */,
-				6DA726D420C073EA0060B1FA /* location.png */,
-				6DA726C620C071070060B1FA /* recipe.png */,
-				6D038ECB2091062F002B8209 /* qr-code.png */,
-				6D038EC920910432002B8209 /* logo.png */,
-				6D038EC32090A16B002B8209 /* blockchain.png */,
-				6D038EC7209100AB002B8209 /* green-apple.png */,
-				6D038EBF20907CCB002B8209 /* restaurant_dish.jpg */,
-				6D0604FA208FA76C00CC4FBE /* lobster_chef.png */,
-				6D0604F8208FA55F00CC4FBE /* lobster_dish.jpeg */,
+				6D7D0CA720C0F64400052C8E /* images */,
 				A2BD20951AC8A731007F7181 /* QSTodoDataModel.xcdatamodeld */,
 				A2D9CBC31943C2540017F096 /* AppDelegate.swift */,
 				A2D9CBCA1943C2540017F096 /* Main.storyboard */,
