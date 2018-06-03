@@ -930,7 +930,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="lobsterDataStatus" destination="Nt2-aY-6FK" id="154-4F-hsv"/>
+                        <outlet property="lobsterDataStatus" destination="Nt2-aY-6FK" id="GwN-XB-M1d"/>
+                        <outlet property="lobsterGrade" destination="mKp-aD-hx4" id="Nq8-wb-ODN"/>
+                        <outlet property="lobsterSize" destination="ZEs-vZ-05H" id="GR1-PD-m8q"/>
+                        <outlet property="lobsterType" destination="gUg-Gh-LoU" id="Htg-M4-1o7"/>
+                        <outlet property="lobsterWeight" destination="fDY-jU-n0X" id="K47-Ur-mbe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ykm-O1-cIt" userLabel="First Responder" sceneMemberID="firstResponder"/>

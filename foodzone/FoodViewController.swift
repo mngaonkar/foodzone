@@ -13,6 +13,12 @@ import SwiftyJSON
 class FoodViewController: UIViewController {
 
     @IBOutlet weak var lobsterDataStatus: UILabel!
+    @IBOutlet weak var lobsterType: UILabel!
+    @IBOutlet weak var lobsterGrade: UILabel!
+    @IBOutlet weak var lobsterWeight: UILabel!
+    @IBOutlet weak var lobsterSize: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -72,12 +78,16 @@ class FoodViewController: UIViewController {
                 print("Network error = \(response.result.error)")
                 self.lobsterDataStatus.text = "Not able to get lobster information"
             }
+            self.updateLobsterDataUI(lobsterData: lobsterInfo)
         }
 
     }
     
     func updateLobsterDataUI(lobsterData : LobsterDataModel){
-        
+        lobsterType.text = lobsterData.Type
+        lobsterGrade.text = lobsterData.Grade
+        lobsterWeight.text = lobsterData.Weight
+        lobsterSize.text = lobsterData.Size
     }
 
 }
