@@ -54,13 +54,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "foodzone/CustomerViewController.swift"
-            timestampString = "549713320.714854"
+            timestampString = "549735700.697551"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "120"
             endingLineNumber = "120"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "getChefData(url:param:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

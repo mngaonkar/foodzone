@@ -24,6 +24,8 @@
 		6D4B2C2020C40871001C4B21 /* ChefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B2C1F20C40871001C4B21 /* ChefViewController.swift */; };
 		6D4B2C2220C40940001C4B21 /* gordon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6D4B2C2120C40940001C4B21 /* gordon.jpeg */; };
 		6D4B2C2420C40A14001C4B21 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B2C2320C40A14001C4B21 /* FoodViewController.swift */; };
+		6D4B2C2620C41E58001C4B21 /* LobsterDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B2C2520C41E58001C4B21 /* LobsterDataModel.swift */; };
+		6D4B2C2820C44A07001C4B21 /* lobster-live.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6D4B2C2720C44A07001C4B21 /* lobster-live.jpeg */; };
 		6D5B4CD3208E47D9000A436D /* FreightStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5B4CD2208E47D9000A436D /* FreightStationViewController.swift */; };
 		6D7D0CA920C3F8A700052C8E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D0CA820C3F8A700052C8E /* MapViewController.swift */; };
 		6DA726BF20C06B8D0060B1FA /* CustomerViewControllerModern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA726BE20C06B8D0060B1FA /* CustomerViewControllerModern.swift */; };
@@ -63,6 +65,8 @@
 		6D4B2C1F20C40871001C4B21 /* ChefViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefViewController.swift; sourceTree = "<group>"; };
 		6D4B2C2120C40940001C4B21 /* gordon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gordon.jpeg; sourceTree = "<group>"; };
 		6D4B2C2320C40A14001C4B21 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		6D4B2C2520C41E58001C4B21 /* LobsterDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobsterDataModel.swift; sourceTree = "<group>"; };
+		6D4B2C2720C44A07001C4B21 /* lobster-live.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lobster-live.jpeg"; sourceTree = "<group>"; };
 		6D5B4CD2208E47D9000A436D /* FreightStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreightStationViewController.swift; sourceTree = "<group>"; };
 		6D7D0CA820C3F8A700052C8E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		6DA726BE20C06B8D0060B1FA /* CustomerViewControllerModern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewControllerModern.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				6D4B2C2120C40940001C4B21 /* gordon.jpeg */,
+				6D4B2C2720C44A07001C4B21 /* lobster-live.jpeg */,
 				6DA726CC20C0727A0060B1FA /* chef.png */,
 				6DA726D620C074970060B1FA /* lobster.png */,
 				6DA726D420C073EA0060B1FA /* location.png */,
@@ -120,7 +125,6 @@
 				6D0604FA208FA76C00CC4FBE /* lobster_chef.png */,
 				6D0604F8208FA55F00CC4FBE /* lobster_dish.jpeg */,
 				6D038ECB2091062F002B8209 /* qr-code.png */,
-				6D4B2C2320C40A14001C4B21 /* FoodViewController.swift */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -161,6 +165,7 @@
 				A2BD20951AC8A731007F7181 /* QSTodoDataModel.xcdatamodeld */,
 				A2D9CBC31943C2540017F096 /* AppDelegate.swift */,
 				A2D9CBCA1943C2540017F096 /* Main.storyboard */,
+				6D4B2C2320C40A14001C4B21 /* FoodViewController.swift */,
 				6D4B2C1F20C40871001C4B21 /* ChefViewController.swift */,
 				6D4B2C1D20C40597001C4B21 /* RecipeViewController.swift */,
 				6D7D0CA820C3F8A700052C8E /* MapViewController.swift */,
@@ -170,6 +175,7 @@
 				6D5B4CD2208E47D9000A436D /* FreightStationViewController.swift */,
 				6D0604F2208F9E6B00CC4FBE /* FoodFeaturesModel.swift */,
 				6D0604F6208FA04C00CC4FBE /* ChefDataModel.swift */,
+				6D4B2C2520C41E58001C4B21 /* LobsterDataModel.swift */,
 				6D038EC52090A8B1002B8209 /* ServiceEndpoint.swift */,
 				6D0604FC208FB0FF00CC4FBE /* Utilities.swift */,
 				A2D9CBCD1943C2540017F096 /* Images.xcassets */,
@@ -285,6 +291,7 @@
 				6D038ECA20910432002B8209 /* logo.png in Resources */,
 				6D0604F9208FA55F00CC4FBE /* lobster_dish.jpeg in Resources */,
 				6D038EC42090A16C002B8209 /* blockchain.png in Resources */,
+				6D4B2C2820C44A07001C4B21 /* lobster-live.jpeg in Resources */,
 				6DA726D520C073EA0060B1FA /* location.png in Resources */,
 				6D038EC8209100AC002B8209 /* green-apple.png in Resources */,
 			);
@@ -349,6 +356,7 @@
 				6D0604F5208FA00C00CC4FBE /* CustomerViewController.swift in Sources */,
 				6D038EC62090A8B1002B8209 /* ServiceEndpoint.swift in Sources */,
 				6D7D0CA920C3F8A700052C8E /* MapViewController.swift in Sources */,
+				6D4B2C2620C41E58001C4B21 /* LobsterDataModel.swift in Sources */,
 				A2E767C6194594DC00869113 /* ToDoItemViewController.swift in Sources */,
 				6D4B2C2420C40A14001C4B21 /* FoodViewController.swift in Sources */,
 				A2BD20971AC8A731007F7181 /* QSTodoDataModel.xcdatamodeld in Sources */,
