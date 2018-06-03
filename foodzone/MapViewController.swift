@@ -14,12 +14,14 @@ class MapViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var mapLocation: UILabel!
+    @IBOutlet weak var lobsterLocationInfo: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         updateMapLocation()
+        updateLocationInfo()
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,15 +53,13 @@ class MapViewController: UIViewController {
             }
         }
     }
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func updateLocationInfo(){
+        let lobsterInfoText = "<h1>Your Pacific lobster is sourced from exotic location of \(mapLocation.text as! String)</h1>"
+        let attributeString = try? NSAttributedString(
+            data: lobsterInfoText.data(using: String.Encoding.unicode)!,
+            options: [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.html],
+            documentAttributes: nil)
+        lobsterLocationInfo.attributedText = attributeString
     }
-    */
-
 }
