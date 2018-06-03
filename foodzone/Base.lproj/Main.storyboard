@@ -1124,7 +1124,6 @@
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="lWw-wg-W61" firstAttribute="leading" secondItem="fRH-QK-bxs" secondAttribute="trailing" id="NJn-Mj-MmT"/>
                                             <constraint firstAttribute="trailing" secondItem="lWw-wg-W61" secondAttribute="trailing" id="d3U-s5-TIk"/>
                                             <constraint firstAttribute="height" constant="50" id="jnl-OP-OEf"/>
                                         </constraints>
