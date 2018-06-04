@@ -25,6 +25,10 @@ class FoodViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         let serviceEndpoint = ServiceEndpoint()
+        if self.lobsterID == nil {
+            self.lobsterID = "LB-2018-05-001"
+        }
+        
         getLobsterDetails(url: serviceEndpoint.endPoint, param: ["LobsterId":self.lobsterID])
     }
 

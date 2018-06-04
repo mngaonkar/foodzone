@@ -10,10 +10,15 @@ import UIKit
 
 class ChefViewController: UIViewController {
 
+    var chefEnteredInfo : ChefDataModel!
+    
+    @IBOutlet weak var chefName: UILabel!
+    @IBOutlet weak var chefExperience: UILabel!
+    @IBOutlet weak var awards: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        updateChefInfo(chefEnteredInfo: self.chefEnteredInfo)
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,14 +30,8 @@ class ChefViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func updateChefInfo(chefEnteredInfo: ChefDataModel){
+        chefName.text = chefEnteredInfo.chefName
+        chefExperience.text = "\(chefEnteredInfo.chefExperience) Years"
     }
-    */
-
 }

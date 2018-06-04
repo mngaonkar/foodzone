@@ -15,7 +15,7 @@ public class ChefDataModel {
     public var cookingCare : [String]
     public var cookingOil : String
     public var herbsAdded : [String]
-    public var foodID : Int
+    public var foodID : String
     var message : String
     var status : Bool
     
@@ -25,7 +25,7 @@ public class ChefDataModel {
         cookingCare = [""]
         cookingOil = ""
         herbsAdded = [""]
-        foodID = 0
+        foodID = ""
         message = ""
         status = false
     }

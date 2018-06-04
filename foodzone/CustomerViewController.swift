@@ -133,7 +133,7 @@ class CustomerViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
                 }
                 
                 if chefData["lobster_id"].exists(){
-                    chefEnteredInfo.foodID = chefData["lobster_id"].int!
+                    chefEnteredInfo.foodID = chefData["lobster_id"].string!
                 }
                 
                 self.updateChefData(chefData : chefEnteredInfo)

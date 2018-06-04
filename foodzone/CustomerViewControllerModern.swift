@@ -131,7 +131,7 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
     // Get chef entered data from service
     func getChefData(url : String, param : [String:Any]) {
         var endpoint = url
-        endpoint.append("/v1/GetChefInfo")
+        endpoint.append("/v1/GetChefInfo?LobsterId=\(param["LobsterId"] as! String)")
         print(endpoint)
         print(param)
         
@@ -166,7 +166,7 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
                 }
                 
                 if chefData["lobster_id"].exists(){
-                    self.chefEnteredInfo.foodID = chefData["lobster_id"].int!
+                    self.chefEnteredInfo.foodID = chefData["lobster_id"].string!
                 }
                 self.chefDataStatus.text = "Recieved chef information"
             }
@@ -195,11 +195,13 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
         }else if segue.identifier == "foodView" {
             let destination = segue.destination as! FoodViewController
             destination.lobsterID = self.foodQRCode
-            
         } else if segue.identifier == "locationView"{
             let destination = segue.destination as! MapViewController
             destination.location = self.lobsterInfo.Port_Of_Loading
             destination.lobsterType = self.lobsterInfo.Type
+        } else if segue.identifier == "chefView" {
+            let destination = segue.destination as! ChefViewController
+            destination.chefEnteredInfo = self.chefEnteredInfo
         }
     }
 }
