@@ -24,7 +24,7 @@ class FoodViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         let serviceEndpoint = ServiceEndpoint()
-        getLobsterDetails(url: serviceEndpoint.endPoint, param: ["LobsterId":12])
+        getLobsterDetails(url: serviceEndpoint.endPoint, param: ["LobsterId":"LB-2018-05-001"])
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,7 +39,7 @@ class FoodViewController: UIViewController {
     func getLobsterDetails(url : String, param : [String: Any]){
         let lobsterInfo = LobsterDataModel()
         var endpoint = url
-        endpoint.append("/getLobsterDetails?lobsterId=\(param["LobsterId"] as! Int)")
+        endpoint.append("/getLobsterDetails?lobsterId=\(param["LobsterId"] as! String)")
         print("Endpoint = \(endpoint)")
         
         Alamofire.request(endpoint, method: .get, parameters: param).responseData {

@@ -16,7 +16,7 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
     var session : AVCaptureSession!
     var video : AVCaptureVideoPreviewLayer!
     @IBOutlet weak var chefDataStatus: UILabel!
-    var foodQRCode : Int = 0
+    var foodQRCode : String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,7 +68,7 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
                     alert.addAction(UIAlertAction(title: "Retake", style: .default, handler: nil))
                     alert.addAction(UIAlertAction(title: "Copy", style: .default, handler: { (nil) in UIPasteboard.general.string = object.stringValue
                         self.chefDataStatus.text = "Lobster ID = \(object.stringValue!)"
-                        self.foodQRCode = Int(object.stringValue!)!
+                        self.foodQRCode = object.stringValue!
                         self.session?.stopRunning()
                         self.video.removeFromSuperlayer()
                         self.getChefData(url: ServiceEndpoint().endPoint, param: ["LobsterId":self.foodQRCode])
@@ -120,6 +120,7 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
                 if chefData["lobster_id"].exists(){
                     chefEnteredInfo.foodID = chefData["lobster_id"].int!
                 }
+                self.chefDataStatus.text = "Recieved chef information"
             }
             else {
                 print("Network error = \(response.result.error)")
@@ -138,14 +139,4 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
          updateChefData(chefData: chefEnteredInfo)
          */
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

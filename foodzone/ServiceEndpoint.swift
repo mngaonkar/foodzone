@@ -14,7 +14,7 @@ public class ServiceEndpoint {
     public var endPoint : String
     
     public init() {
-        endPoint = "http://vmethereumenu.westindia.cloudapp.azure.com:8087"
+        endPoint = "http://vmethereumenu.westindia.cloudapp.azure.com:8081"
     }
     
     public func sendRequest(endpoint : String, requestType : HTTPMethod, param : [String:Any]) {

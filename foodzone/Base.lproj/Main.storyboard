@@ -998,7 +998,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chef Data Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5F-MH-fsj">
-                                <rect key="frame" x="16" y="106" width="343" height="21"/>
+                                <rect key="frame" x="16" y="126" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1016,14 +1016,23 @@
                                     <action selector="scanPressed:" destination="Opa-mx-Ddj" eventType="touchUpInside" id="5Eg-D9-Dja"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diner Experience" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ip6-An-Fmg">
+                                <rect key="frame" x="16" y="66" width="343" height="40"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ip6-An-Fmg" secondAttribute="trailing" id="3YL-iN-AKJ"/>
                             <constraint firstItem="lls-Ad-7E4" firstAttribute="leading" secondItem="Rsn-zK-snN" secondAttribute="leadingMargin" id="Ad1-As-aJ3"/>
-                            <constraint firstItem="E5F-MH-fsj" firstAttribute="leading" secondItem="Rsn-zK-snN" secondAttribute="leadingMargin" id="LBP-8X-cQB"/>
+                            <constraint firstItem="ip6-An-Fmg" firstAttribute="leading" secondItem="Rsn-zK-snN" secondAttribute="leadingMargin" id="DEm-jK-vS3"/>
+                            <constraint firstItem="ip6-An-Fmg" firstAttribute="top" secondItem="lls-Ad-7E4" secondAttribute="bottom" constant="10" id="Fih-74-n19"/>
+                            <constraint firstItem="E5F-MH-fsj" firstAttribute="leading" secondItem="Rsn-zK-snN" secondAttribute="leadingMargin" id="MNb-ns-AM3"/>
                             <constraint firstItem="lls-Ad-7E4" firstAttribute="top" secondItem="2Kk-Nz-bir" secondAttribute="bottom" id="Obi-Dj-9oW"/>
-                            <constraint firstItem="E5F-MH-fsj" firstAttribute="top" secondItem="lls-Ad-7E4" secondAttribute="bottom" constant="50" id="RPL-BR-pmx"/>
-                            <constraint firstItem="E5F-MH-fsj" firstAttribute="trailing" secondItem="Rsn-zK-snN" secondAttribute="trailingMargin" id="Yka-dc-nlA"/>
+                            <constraint firstItem="E5F-MH-fsj" firstAttribute="trailing" secondItem="Rsn-zK-snN" secondAttribute="trailingMargin" id="UnY-VF-cyt"/>
+                            <constraint firstItem="E5F-MH-fsj" firstAttribute="top" secondItem="ip6-An-Fmg" secondAttribute="bottom" constant="20" id="kCm-nv-sLm"/>
                         </constraints>
                     </view>
                     <connections>
