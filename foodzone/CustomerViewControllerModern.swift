@@ -17,6 +17,8 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
     var video : AVCaptureVideoPreviewLayer!
     @IBOutlet weak var chefDataStatus: UILabel!
     var foodQRCode : String!
+    let chefEnteredInfo = ChefDataModel()
+    let lobsterInfo = LobsterDataModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,6 +74,7 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
                         self.session?.stopRunning()
                         self.video.removeFromSuperlayer()
                         self.getChefData(url: ServiceEndpoint().endPoint, param: ["LobsterId":self.foodQRCode])
+                        self.getLobsterDetails(url: ServiceEndpoint().endPoint, param: ["LobsterId":self.foodQRCode])
                     }))
                     present(alert, animated: true, completion: nil)
                 }
@@ -79,9 +82,54 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
         }
     }
     
+    func getLobsterDetails(url : String, param : [String: Any]){
+        var endpoint = url
+        endpoint.append("/getLobsterDetails?lobsterId=\(param["LobsterId"] as! String)")
+        print("Endpoint = \(endpoint)")
+        
+        Alamofire.request(endpoint, method: .get, parameters: param).responseData {
+            response in
+            if response.result.isSuccess {
+                print("Lobster info received")
+                let lobsterData : JSON = JSON(response.result.value!)
+                
+                if lobsterData["Catch_Zone"].exists(){
+                    self.lobsterInfo.Catch_Zone = lobsterData["Catch_Zone"].string!
+                }
+                
+                if lobsterData["Port_Of_Loading"].exists(){
+                    self.lobsterInfo.Port_Of_Loading = lobsterData["Port_Of_Loading"].string!
+                }
+                
+                if lobsterData["Type"].exists(){
+                    self.lobsterInfo.Type = lobsterData["Type"].string!
+                }
+                
+                if lobsterData["Grade"].exists(){
+                    self.lobsterInfo.Grade = lobsterData["Grade"].string!
+                }
+                
+                if lobsterData["Weight"].exists(){
+                    self.lobsterInfo.Weight = lobsterData["Weight"].string!
+                }
+                
+                if lobsterData["Size"].exists(){
+                    self.lobsterInfo.Size = lobsterData["Size"].string!
+                }
+                
+                if lobsterData["Port_Of_Loading"].exists(){
+                    self.lobsterInfo.Port_Of_Loading = lobsterData["Port_Of_Loading"].string!
+                }
+            }
+            else {
+                print("Network error = \(response.result.error)")
+                self.chefDataStatus.text = "Not able to get lobster information"
+            }
+        }
+    }
+
     // Get chef entered data from service
     func getChefData(url : String, param : [String:Any]) {
-        let chefEnteredInfo = ChefDataModel()
         var endpoint = url
         endpoint.append("/v1/GetChefInfo")
         print(endpoint)
@@ -94,31 +142,31 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
                 let chefData : JSON = JSON(response.result.value!)
                 
                 if chefData["chef_name"].exists(){
-                    chefEnteredInfo.chefName = chefData["chef_name"].string!
+                    self.chefEnteredInfo.chefName = chefData["chef_name"].string!
                 }
                 
                 if chefData["chef_experience"].exists(){
-                    chefEnteredInfo.chefExperience = chefData["chef_experience"].int!
+                    self.chefEnteredInfo.chefExperience = chefData["chef_experience"].int!
                 }
                 
                 if chefData["cooking_care"].exists(){
                     for item in chefData["cooking_care"].array! {
-                        chefEnteredInfo.cookingCare.append(item.string!)
+                        self.chefEnteredInfo.cookingCare.append(item.string!)
                     }
                 }
                 
                 if chefData["herbs_added"].exists(){
                     for item in chefData["herbs_added"].array! {
-                        chefEnteredInfo.herbsAdded.append(item.string!)
+                        self.chefEnteredInfo.herbsAdded.append(item.string!)
                     }
                 }
                 
                 if chefData["cooking_oil"].exists(){
-                    chefEnteredInfo.cookingOil = chefData["cooking_oil"].string!
+                    self.chefEnteredInfo.cookingOil = chefData["cooking_oil"].string!
                 }
                 
                 if chefData["lobster_id"].exists(){
-                    chefEnteredInfo.foodID = chefData["lobster_id"].int!
+                    self.chefEnteredInfo.foodID = chefData["lobster_id"].int!
                 }
                 self.chefDataStatus.text = "Recieved chef information"
             }
@@ -138,5 +186,20 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
          "cooking_care": ["Low Flame", "Low Spices"]])
          updateChefData(chefData: chefEnteredInfo)
          */
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "recipeView" {
+            let destination = segue.destination as! RecipeViewController
+            destination.chefEnteredInfo = self.chefEnteredInfo
+        }else if segue.identifier == "foodView" {
+            let destination = segue.destination as! FoodViewController
+            destination.lobsterID = self.foodQRCode
+            
+        } else if segue.identifier == "locationView"{
+            let destination = segue.destination as! MapViewController
+            destination.location = self.lobsterInfo.Port_Of_Loading
+            destination.lobsterType = self.lobsterInfo.Type
+        }
     }
 }

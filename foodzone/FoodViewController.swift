@@ -18,13 +18,14 @@ class FoodViewController: UIViewController {
     @IBOutlet weak var lobsterWeight: UILabel!
     @IBOutlet weak var lobsterSize: UILabel!
     
+    var lobsterID: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         let serviceEndpoint = ServiceEndpoint()
-        getLobsterDetails(url: serviceEndpoint.endPoint, param: ["LobsterId":"LB-2018-05-001"])
+        getLobsterDetails(url: serviceEndpoint.endPoint, param: ["LobsterId":self.lobsterID])
     }
 
     override func didReceiveMemoryWarning() {

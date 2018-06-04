@@ -207,15 +207,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9l-sI-jLJ">
-                                <rect key="frame" x="6" y="20" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="6" y="20" width="44" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="backPressed:" destination="Gs7-78-jUB" eventType="touchUpInside" id="4PH-86-PEf"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GIj-yl-1Ye">
-                                <rect key="frame" x="0.0" y="55" width="375" height="487"/>
+                                <rect key="frame" x="0.0" y="61" width="375" height="487"/>
                                 <subviews>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="AWK-G7-gi3">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
@@ -332,20 +332,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hKW-R2-tjl">
-                                <rect key="frame" x="16" y="20" width="343" height="628"/>
+                                <rect key="frame" x="16" y="17" width="343" height="634"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="gRR-zW-w8b">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="140"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="146"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9t-WO-0VM">
-                                                <rect key="frame" x="0.0" y="0.0" width="34" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="Back"/>
                                                 <connections>
                                                     <action selector="backPressed:" destination="Nl7-KX-kt6" eventType="touchUpInside" id="mFm-G6-3hj"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="21L-6J-I9C">
-                                                <rect key="frame" x="0.0" y="30" width="343" height="80"/>
+                                                <rect key="frame" x="0.0" y="36" width="343" height="80"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lobster_dish.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="kAL-ir-VX4">
                                                         <rect key="frame" x="0.0" y="0.0" width="150" height="80"/>
@@ -365,7 +366,7 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBb-Vr-gRe">
-                                                <rect key="frame" x="0.0" y="110" width="343" height="30"/>
+                                                <rect key="frame" x="0.0" y="116" width="343" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="m4d-IS-7bK"/>
                                                 </constraints>
@@ -380,7 +381,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5Ub-Jf-nej">
-                                        <rect key="frame" x="0.0" y="140" width="343" height="488"/>
+                                        <rect key="frame" x="0.0" y="146" width="343" height="488"/>
                                         <subviews>
                                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ygA-uH-M8i">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="128"/>
@@ -578,7 +579,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tJ3-X6-RHZ">
-                                <rect key="frame" x="0.0" y="85.5" width="375" height="463"/>
+                                <rect key="frame" x="0.0" y="91.5" width="375" height="463"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lobster_dish.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Rgj-0H-c4P">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="183"/>
@@ -734,7 +735,8 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKu-Pg-LpM">
-                                <rect key="frame" x="6" y="20" width="34" height="30"/>
+                                <rect key="frame" x="6" y="20" width="44" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="backPressed:" destination="Nl7-KX-kt6" eventType="touchUpInside" id="Dq6-YC-qhM"/>
@@ -976,7 +978,7 @@
                                 <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Chef" image="location.png"/>
                                 <connections>
-                                    <segue destination="jT6-ER-xl9" kind="show" id="Vti-3Y-0yA"/>
+                                    <segue destination="jT6-ER-xl9" kind="show" identifier="locationView" id="Vti-3Y-0yA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="326-xP-fIO">
@@ -985,7 +987,7 @@
                                 <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Chef" image="recipe.png"/>
                                 <connections>
-                                    <segue destination="zSS-yX-dF1" kind="show" id="5hg-s3-Mzu"/>
+                                    <segue destination="zSS-yX-dF1" kind="show" identifier="recipeView" id="5hg-s3-Mzu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMT-Mv-TfL">
@@ -994,7 +996,7 @@
                                 <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Chef" image="lobster.png"/>
                                 <connections>
-                                    <segue destination="qbh-k2-Zfg" kind="show" id="DNL-ns-at4"/>
+                                    <segue destination="qbh-k2-Zfg" kind="show" identifier="foodView" id="DNL-ns-at4"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chef Data Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5F-MH-fsj">
@@ -1101,7 +1103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcD-l4-kRN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1373.5999999999999" y="877.51124437781118"/>
+            <point key="canvasLocation" x="1297" y="1361"/>
         </scene>
         <!--Recipe View Controller-->
         <scene sceneID="Hor-gZ-WEc">
@@ -1220,6 +1222,11 @@
                             <constraint firstItem="Yk8-hb-KQl" firstAttribute="leading" secondItem="VUn-d5-kpt" secondAttribute="leadingMargin" id="oMc-cK-Abx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cookingCare" destination="IdJ-H8-MxC" id="IjF-oc-Kry"/>
+                        <outlet property="cookingOil" destination="QtC-1R-xNI" id="rUE-jQ-fph"/>
+                        <outlet property="herbs" destination="vi8-0a-Pu2" id="SES-rD-ac7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYe-Hd-7Cj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1364,7 +1371,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Wy-iA-que" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2664.8000000000002" y="877.51124437781118"/>
+            <point key="canvasLocation" x="2655" y="1170"/>
         </scene>
     </scenes>
     <resources>
