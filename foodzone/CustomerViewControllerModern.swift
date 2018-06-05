@@ -197,7 +197,8 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
             destination.lobsterID = self.foodQRCode
         } else if segue.identifier == "locationView"{
             let destination = segue.destination as! MapViewController
-            destination.location = self.lobsterInfo.Port_Of_Loading
+            destination.sourceLocation = self.lobsterInfo.Port_Of_Loading
+            destination.destinationLocation = self.lobsterInfo.Final_Destination
             destination.lobsterType = self.lobsterInfo.Type
         } else if segue.identifier == "chefView" {
             let destination = segue.destination as! ChefViewController

@@ -579,13 +579,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tJ3-X6-RHZ">
-                                <rect key="frame" x="16" y="91.5" width="343" height="533"/>
+                                <rect key="frame" x="0.0" y="91.5" width="375" height="533"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lobster_dish.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Rgj-0H-c4P">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="183"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="183"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ecQ-LR-j3k">
-                                        <rect key="frame" x="0.0" y="203" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="203" width="375" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SN-d7-Qf2">
                                                 <rect key="frame" x="0.0" y="0.0" width="126" height="20.5"/>
@@ -597,13 +597,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gdd-GK-Sz1">
-                                                <rect key="frame" x="146" y="0.0" width="142" height="30"/>
+                                                <rect key="frame" x="146" y="0.0" width="174" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEM-zl-Tmf">
-                                                <rect key="frame" x="308" y="0.0" width="35" height="30"/>
+                                                <rect key="frame" x="340" y="0.0" width="35" height="30"/>
                                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Scan"/>
                                                 <connections>
@@ -613,7 +613,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Of5-pf-OIP">
-                                        <rect key="frame" x="0.0" y="253" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="253" width="375" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chef Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1x-od-dSf">
                                                 <rect key="frame" x="0.0" y="0.0" width="126" height="30"/>
@@ -625,7 +625,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lZJ-b9-Ek3">
-                                                <rect key="frame" x="146" y="0.0" width="197" height="30"/>
+                                                <rect key="frame" x="146" y="0.0" width="229" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -633,7 +633,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MJU-sr-hBD">
-                                        <rect key="frame" x="0.0" y="303" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="303" width="375" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chef Experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vwl-Bq-LJn">
                                                 <rect key="frame" x="0.0" y="0.0" width="126" height="30"/>
@@ -642,7 +642,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pkw-fm-UkE">
-                                                <rect key="frame" x="146" y="0.0" width="197" height="30"/>
+                                                <rect key="frame" x="146" y="0.0" width="229" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -650,7 +650,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="u3C-KC-Zyh">
-                                        <rect key="frame" x="0.0" y="353" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="353" width="375" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cooking Care" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muY-Mx-zH2">
                                                 <rect key="frame" x="0.0" y="0.0" width="126" height="30"/>
@@ -662,7 +662,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="APD-pX-dtK">
-                                                <rect key="frame" x="146" y="0.0" width="197" height="30"/>
+                                                <rect key="frame" x="146" y="0.0" width="229" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -673,7 +673,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Mrm-IP-rdo">
-                                        <rect key="frame" x="0.0" y="403" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="403" width="375" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cooking Oil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGL-hE-0PH">
                                                 <rect key="frame" x="0.0" y="0.0" width="126" height="30"/>
@@ -685,7 +685,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m0e-fr-vB0">
-                                                <rect key="frame" x="146" y="0.0" width="197" height="30"/>
+                                                <rect key="frame" x="146" y="0.0" width="229" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -696,7 +696,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jbp-47-VnY">
-                                        <rect key="frame" x="0.0" y="453" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="453" width="375" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Herbs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTg-da-dsn">
                                                 <rect key="frame" x="0.0" y="0.0" width="126" height="30"/>
@@ -708,7 +708,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lV2-XP-qVD">
-                                                <rect key="frame" x="146" y="0.0" width="197" height="30"/>
+                                                <rect key="frame" x="146" y="0.0" width="229" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -716,7 +716,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmZ-nb-hsR">
-                                        <rect key="frame" x="0.0" y="503" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="503" width="375" height="30"/>
                                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Submit"/>
                                         <connections>
@@ -1007,7 +1007,7 @@
                                 <rect key="frame" x="22" y="306" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Chef" image="lobster.png"/>
+                                <state key="normal" title="Chef" image="lobster-pink.png"/>
                                 <connections>
                                     <segue destination="qbh-k2-Zfg" kind="show" identifier="foodView" id="DNL-ns-at4"/>
                                 </connections>
@@ -1412,7 +1412,7 @@
         <image name="chef.png" width="194" height="260"/>
         <image name="gordon.jpeg" width="183" height="275"/>
         <image name="lobster-live.jpeg" width="640" height="640"/>
-        <image name="lobster.png" width="225" height="225"/>
+        <image name="lobster-pink.png" width="128" height="128"/>
         <image name="lobster_dish.jpeg" width="276" height="183"/>
         <image name="location.png" width="225" height="225"/>
         <image name="recipe.png" width="216" height="233"/>

@@ -16,7 +16,8 @@ class MapViewController: UIViewController {
     @IBOutlet weak var mapLocation: UILabel!
     @IBOutlet weak var lobsterLocationInfo: UILabel!
     
-    var location: String!
+    var sourceLocation: String!
+    var destinationLocation: String!
     var lobsterType: String!
     
     override func viewDidLoad() {
@@ -38,27 +39,45 @@ class MapViewController: UIViewController {
     
     // Update food location on map
     func updateMapLocation() {
-        let geocoder = CLGeocoder()
+        let geocoder1 = CLGeocoder()
+        let sourceAnnotation = MKPointAnnotation()
+        let destinationAnnotation = MKPointAnnotation()
         
-        mapLocation.text = self.location
-        geocoder.geocodeAddressString(self.location) { (placemarks, error) in
+        mapLocation.text = self.sourceLocation
+        geocoder1.geocodeAddressString(self.sourceLocation) { (placemarks, error) in
             if (error == nil){
                 if let placemark = placemarks?.first {
                     let coordinate: CLLocationCoordinate2D = placemark.location!.coordinate
                 
-                    let annotation = MKPointAnnotation()
-                    
                     //annotation.coordinate = CLLocationCoordinate2D(latitude: 37.806577, longitude: -122.405407)
-                    annotation.coordinate = coordinate
-                    self.mapView.addAnnotation(annotation)
-                    self.mapView.setCenter(annotation.coordinate, animated: true)
+                    sourceAnnotation.coordinate = coordinate
+                    sourceAnnotation.title = "Lobster journey begins here"
+                    self.mapView.addAnnotation(sourceAnnotation)
+                    
+                    //self.mapView.setCenter(sourceAnnotation.coordinate, animated: true)
+                }
+            }
+        }
+        
+        let geocoder2 = CLGeocoder()
+        geocoder2.geocodeAddressString(self.destinationLocation) { (placemarks, error) in
+            if (error == nil){
+                if let placemark = placemarks?.first {
+                    let coordinate: CLLocationCoordinate2D = placemark.location!.coordinate
+                    
+                    destinationAnnotation.coordinate = coordinate
+                    destinationAnnotation.title = "Lobster journey ends here"
+                    self.mapView.addAnnotation(destinationAnnotation)
+                    
+                    //self.mapView.setCenter(destinationAnnotation.coordinate, animated: true)
+                    self.mapView.showAnnotations([sourceAnnotation, destinationAnnotation], animated: true)
                 }
             }
         }
     }
 
     func updateLocationInfo(){
-        let lobsterInfoText = "<h1>Your \(self.lobsterType!) lobster is sourced from exotic location of \(mapLocation.text as! String)</h1>"
+        let lobsterInfoText = "<h1>Your \(self.lobsterType!) lobster is sourced from exotic location of \(self.sourceLocation as! String) and has travelled to its final destination of \(self.destinationLocation as! String)</h1>"
         let attributeString = try? NSAttributedString(
             data: lobsterInfoText.data(using: String.Encoding.unicode)!,
             options: [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.html],

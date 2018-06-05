@@ -14,6 +14,7 @@
 		6D038EC8209100AC002B8209 /* green-apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D038EC7209100AB002B8209 /* green-apple.png */; };
 		6D038ECA20910432002B8209 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D038EC920910432002B8209 /* logo.png */; };
 		6D038ECC2091062F002B8209 /* qr-code.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D038ECB2091062F002B8209 /* qr-code.png */; };
+		6D04B18420C709C900472720 /* lobster.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D04B18320C709C900472720 /* lobster.png */; };
 		6D0604F3208F9E6B00CC4FBE /* FoodFeaturesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0604F2208F9E6B00CC4FBE /* FoodFeaturesModel.swift */; };
 		6D0604F5208FA00C00CC4FBE /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0604F4208FA00C00CC4FBE /* CustomerViewController.swift */; };
 		6D0604F7208FA04C00CC4FBE /* ChefDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0604F6208FA04C00CC4FBE /* ChefDataModel.swift */; };
@@ -33,6 +34,7 @@
 		6DA726CD20C0727B0060B1FA /* chef.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DA726CC20C0727A0060B1FA /* chef.png */; };
 		6DA726D520C073EA0060B1FA /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DA726D420C073EA0060B1FA /* location.png */; };
 		6DA726D720C074970060B1FA /* lobster.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DA726D620C074970060B1FA /* lobster.png */; };
+		6DDB361720C70AAB00ECD562 /* lobster-pink.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DDB361620C70AAA00ECD562 /* lobster-pink.png */; };
 		9C35A4B41DE4EF8000650581 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C35A4B31DE4EF8000650581 /* SafariServices.framework */; };
 		9C35A4B61DE4EF8500650581 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C35A4B51DE4EF8500650581 /* Security.framework */; };
 		9CA121761DAC7FFD000C2FCA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA121751DAC7FFD000C2FCA /* WebKit.framework */; };
@@ -55,6 +57,7 @@
 		6D038EC7209100AB002B8209 /* green-apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green-apple.png"; sourceTree = "<group>"; };
 		6D038EC920910432002B8209 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		6D038ECB2091062F002B8209 /* qr-code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr-code.png"; sourceTree = "<group>"; };
+		6D04B18320C709C900472720 /* lobster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lobster.png; path = ../../../../../../../Downloads/lobster.png; sourceTree = "<group>"; };
 		6D0604F2208F9E6B00CC4FBE /* FoodFeaturesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFeaturesModel.swift; sourceTree = "<group>"; };
 		6D0604F4208FA00C00CC4FBE /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
 		6D0604F6208FA04C00CC4FBE /* ChefDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefDataModel.swift; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 		6DA726CC20C0727A0060B1FA /* chef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chef.png; sourceTree = "<group>"; };
 		6DA726D420C073EA0060B1FA /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
 		6DA726D620C074970060B1FA /* lobster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lobster.png; sourceTree = "<group>"; };
+		6DDB361620C70AAA00ECD562 /* lobster-pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lobster-pink.png"; sourceTree = "<group>"; };
 		86EEEE6A65D0E5149BDCCF23 /* Pods-foodzone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodzone.release.xcconfig"; path = "Pods/Target Support Files/Pods-foodzone/Pods-foodzone.release.xcconfig"; sourceTree = "<group>"; };
 		9C35A4B31DE4EF8000650581 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		9C35A4B51DE4EF8500650581 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -112,6 +116,8 @@
 		6D7D0CA720C0F64400052C8E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				6D04B18320C709C900472720 /* lobster.png */,
+				6DDB361620C70AAA00ECD562 /* lobster-pink.png */,
 				6D4B2C2120C40940001C4B21 /* gordon.jpeg */,
 				6D4B2C2720C44A07001C4B21 /* lobster-live.jpeg */,
 				6DA726CC20C0727A0060B1FA /* chef.png */,
@@ -279,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2D9CBCC1943C2540017F096 /* Main.storyboard in Resources */,
+				6DDB361720C70AAB00ECD562 /* lobster-pink.png in Resources */,
 				6DA726CD20C0727B0060B1FA /* chef.png in Resources */,
 				6D4B2C2220C40940001C4B21 /* gordon.jpeg in Resources */,
 				6DA726C720C071070060B1FA /* recipe.png in Resources */,
@@ -292,6 +299,7 @@
 				6D0604F9208FA55F00CC4FBE /* lobster_dish.jpeg in Resources */,
 				6D038EC42090A16C002B8209 /* blockchain.png in Resources */,
 				6D4B2C2820C44A07001C4B21 /* lobster-live.jpeg in Resources */,
+				6D04B18420C709C900472720 /* lobster.png in Resources */,
 				6DA726D520C073EA0060B1FA /* location.png in Resources */,
 				6D038EC8209100AC002B8209 /* green-apple.png in Resources */,
 			);
