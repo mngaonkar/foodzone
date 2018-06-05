@@ -1024,7 +1024,7 @@
                                     <segue destination="qbh-k2-Zfg" kind="show" identifier="foodView" id="DNL-ns-at4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chef Data Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5F-MH-fsj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bon Appétit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5F-MH-fsj">
                                 <rect key="frame" x="16" y="126" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -1052,9 +1052,16 @@
                                 <color key="textColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan dish code to know about your amazing dinning experince" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTl-WA-wEs">
+                                <rect key="frame" x="16" y="535.5" width="343" height="93.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="CTl-WA-wEs" secondAttribute="bottom" constant="38" id="377-Fg-RUh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ip6-An-Fmg" secondAttribute="trailing" id="3YL-iN-AKJ"/>
                             <constraint firstItem="lls-Ad-7E4" firstAttribute="leading" secondItem="Rsn-zK-snN" secondAttribute="leadingMargin" id="Ad1-As-aJ3"/>
                             <constraint firstItem="ip6-An-Fmg" firstAttribute="leading" secondItem="Rsn-zK-snN" secondAttribute="leadingMargin" id="DEm-jK-vS3"/>
@@ -1065,6 +1072,8 @@
                             <constraint firstItem="lls-Ad-7E4" firstAttribute="top" secondItem="2Kk-Nz-bir" secondAttribute="bottom" id="Obi-Dj-9oW"/>
                             <constraint firstItem="E5F-MH-fsj" firstAttribute="trailing" secondItem="Rsn-zK-snN" secondAttribute="trailingMargin" id="UnY-VF-cyt"/>
                             <constraint firstItem="gna-ts-CBn" firstAttribute="top" secondItem="4e9-mV-fpm" secondAttribute="bottom" constant="12" id="au4-Lg-mxm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CTl-WA-wEs" secondAttribute="trailing" id="bU1-Ph-VDg"/>
+                            <constraint firstItem="CTl-WA-wEs" firstAttribute="leading" secondItem="Rsn-zK-snN" secondAttribute="leadingMargin" id="eFy-Qg-2cA"/>
                             <constraint firstItem="lMT-Mv-TfL" firstAttribute="top" secondItem="E5F-MH-fsj" secondAttribute="bottom" constant="159" id="eUP-eI-xC7"/>
                             <constraint firstItem="QRI-5Z-Qgm" firstAttribute="leading" secondItem="gna-ts-CBn" secondAttribute="trailing" constant="19" id="fXC-jU-08r"/>
                             <constraint firstItem="326-xP-fIO" firstAttribute="centerX" secondItem="Rsn-zK-snN" secondAttribute="centerX" id="gCH-u6-Gz1"/>
