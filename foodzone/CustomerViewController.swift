@@ -133,7 +133,7 @@ class CustomerViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
                 }
                 
                 if chefData["lobster_id"].exists(){
-                    chefEnteredInfo.foodID = chefData["lobster_id"].int!
+                    chefEnteredInfo.foodID = chefData["lobster_id"].string!
                 }
                 
                 self.updateChefData(chefData : chefEnteredInfo)
@@ -185,15 +185,4 @@ class CustomerViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
         
         updateMapLocation()
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

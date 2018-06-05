@@ -31,7 +31,7 @@ class RestaurantViewController: UIViewController, UIPickerViewDataSource, UIPick
         var endpoint = serviceEndPoint?.endPoint
         var param : [String:Any]
         endpoint?.append("/v1/SetChefInfo")
-        param = ["LobsterId": Int(foodID.text!),
+        param = ["LobsterId": foodID.text!,
                           "ChefName": chefName.text,
                           "ChefExperience": Int(chefExperience.text!),
                           "HerbsAdded":[herbs.text],
