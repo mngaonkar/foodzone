@@ -43,7 +43,7 @@ class MapViewController: UIViewController {
         let sourceAnnotation = MKPointAnnotation()
         let destinationAnnotation = MKPointAnnotation()
         
-        mapLocation.text = self.sourceLocation
+        mapLocation.text = "Journey"
         geocoder1.geocodeAddressString(self.sourceLocation) { (placemarks, error) in
             if (error == nil){
                 if let placemark = placemarks?.first {
@@ -51,7 +51,7 @@ class MapViewController: UIViewController {
                 
                     //annotation.coordinate = CLLocationCoordinate2D(latitude: 37.806577, longitude: -122.405407)
                     sourceAnnotation.coordinate = coordinate
-                    sourceAnnotation.title = "Lobster journey begins here"
+                    sourceAnnotation.title = "Lobster journey begins here - \(self.sourceLocation as String)"
                     self.mapView.addAnnotation(sourceAnnotation)
                     
                     //self.mapView.setCenter(sourceAnnotation.coordinate, animated: true)
@@ -66,7 +66,7 @@ class MapViewController: UIViewController {
                     let coordinate: CLLocationCoordinate2D = placemark.location!.coordinate
                     
                     destinationAnnotation.coordinate = coordinate
-                    destinationAnnotation.title = "Lobster journey ends here"
+                    destinationAnnotation.title = "Lobster journey ends here - \(self.destinationLocation as String)"
                     self.mapView.addAnnotation(destinationAnnotation)
                     
                     //self.mapView.setCenter(destinationAnnotation.coordinate, animated: true)
@@ -77,7 +77,7 @@ class MapViewController: UIViewController {
     }
 
     func updateLocationInfo(){
-        let lobsterInfoText = "<h1>Your \(self.lobsterType!) lobster is sourced from exotic location of \(self.sourceLocation as! String) and has travelled to its final destination of \(self.destinationLocation as! String)</h1>"
+        let lobsterInfoText = "<h1>Your \(self.lobsterType!) lobster is sourced from exotic location of <font color=\"green\">\(self.sourceLocation as! String)</font> and has travelled to its final destination of <font color=\"blue\">\(self.destinationLocation as! String)</font></h1>"
         let attributeString = try? NSAttributedString(
             data: lobsterInfoText.data(using: String.Encoding.unicode)!,
             options: [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.html],
