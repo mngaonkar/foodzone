@@ -1078,20 +1078,19 @@
                                     <action selector="backPressed:" destination="jT6-ER-xl9" eventType="touchUpInside" id="sjv-ci-hFw"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TnT-Az-L5b">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TnT-Az-L5b">
                                 <rect key="frame" x="16" y="71" width="343" height="573.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSW-Au-1PS">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSW-Au-1PS">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="39.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
                                         <color key="textColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HSJ-zT-tGv">
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HSJ-zT-tGv">
                                         <rect key="frame" x="0.0" y="59.5" width="343" height="294"/>
                                     </mapView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIv-rN-Lht">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIv-rN-Lht">
                                         <rect key="frame" x="0.0" y="373.5" width="343" height="200"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="3ge-57-ePI"/>
@@ -1104,8 +1103,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="TnT-Az-L5b" firstAttribute="trailing" secondItem="1FV-CL-Ohe" secondAttribute="trailingMargin" id="7Jj-M0-2lW"/>
+                            <constraint firstItem="TnT-Az-L5b" firstAttribute="top" secondItem="7MK-JA-55L" secondAttribute="bottom" constant="15" id="AmW-8J-Yqo"/>
+                            <constraint firstItem="6zK-9m-5AS" firstAttribute="top" secondItem="TnT-Az-L5b" secondAttribute="bottom" constant="22.5" id="NJ5-ad-rgc"/>
                             <constraint firstItem="7MK-JA-55L" firstAttribute="top" secondItem="exC-13-hrb" secondAttribute="bottom" id="QMb-rY-QmX"/>
                             <constraint firstItem="7MK-JA-55L" firstAttribute="leading" secondItem="1FV-CL-Ohe" secondAttribute="leadingMargin" id="ZcE-gj-OPB"/>
+                            <constraint firstItem="TnT-Az-L5b" firstAttribute="leading" secondItem="1FV-CL-Ohe" secondAttribute="leadingMargin" id="gj7-S1-hYt"/>
                         </constraints>
                     </view>
                     <connections>
