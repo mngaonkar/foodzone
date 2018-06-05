@@ -1062,7 +1062,7 @@
                                 <color key="textColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan dish code to know about your amazing dinning experince" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTl-WA-wEs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan dish code to know about your amazing dinning experience" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTl-WA-wEs">
                                 <rect key="frame" x="16" y="535.5" width="343" height="93.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1196,16 +1196,16 @@
                                 <rect key="frame" x="16" y="115.5" width="343" height="174"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Icc-0P-kiv">
-                                        <rect key="frame" x="32" y="0.0" width="311" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cooking Care" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WE4-Hm-wLl">
-                                                <rect key="frame" x="0.0" y="0.0" width="104" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="136" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Low Flame" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IdJ-H8-MxC">
-                                                <rect key="frame" x="114" y="0.0" width="197" height="50"/>
+                                                <rect key="frame" x="146" y="0.0" width="197" height="50"/>
                                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="197" id="Oug-2A-l36"/>
@@ -1220,16 +1220,16 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="t7H-8p-NSv">
-                                        <rect key="frame" x="47.5" y="62" width="295.5" height="50"/>
+                                        <rect key="frame" x="0.0" y="62" width="343" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cooking Oil" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mV-Tr-fPS">
-                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="136" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Multiple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtC-1R-xNI">
-                                                <rect key="frame" x="98.5" y="0.0" width="197" height="50"/>
+                                                <rect key="frame" x="146" y="0.0" width="197" height="50"/>
                                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="197" id="h17-yf-Owp"/>
@@ -1244,16 +1244,16 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rqM-XS-7gf">
-                                        <rect key="frame" x="89.5" y="124" width="253.5" height="50"/>
+                                        <rect key="frame" x="0.0" y="124" width="343" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Herbs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYY-7n-k8z">
-                                                <rect key="frame" x="0.0" y="0.0" width="46.5" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="136" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red Chillies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vi8-0a-Pu2">
-                                                <rect key="frame" x="56.5" y="0.0" width="197" height="50"/>
+                                                <rect key="frame" x="146" y="0.0" width="197" height="50"/>
                                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="197" id="HdA-zf-JLu"/>
@@ -1268,6 +1268,14 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="t7H-8p-NSv" secondAttribute="trailing" id="CHn-LB-EpT"/>
+                                    <constraint firstItem="t7H-8p-NSv" firstAttribute="leading" secondItem="cb1-cS-cWi" secondAttribute="leading" id="Ts9-bE-QtZ"/>
+                                    <constraint firstItem="rqM-XS-7gf" firstAttribute="leading" secondItem="cb1-cS-cWi" secondAttribute="leading" id="UUt-6p-y1Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="rqM-XS-7gf" secondAttribute="trailing" id="byG-np-H7X"/>
+                                    <constraint firstAttribute="trailing" secondItem="Icc-0P-kiv" secondAttribute="trailing" id="lbO-Ce-U6f"/>
+                                    <constraint firstItem="Icc-0P-kiv" firstAttribute="leading" secondItem="cb1-cS-cWi" secondAttribute="leading" id="xOv-iW-cTY"/>
+                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delicacy prepared from Australian Lobster, with a hint of mediterranean preparation, served with hot sour soup." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwi-yw-Sra">
                                 <rect key="frame" x="16" y="308" width="343" height="200"/>
