@@ -976,37 +976,49 @@
                                     <action selector="backPressed:" destination="Opa-mx-Ddj" eventType="touchUpInside" id="FW0-Jt-gSl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4e9-mV-fpm">
-                                <rect key="frame" x="141" y="204" width="90" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4e9-mV-fpm">
+                                <rect key="frame" x="142.5" y="204" width="90" height="90"/>
                                 <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="kDD-38-2LG"/>
+                                    <constraint firstAttribute="height" constant="90" id="ujQ-bd-W3m"/>
+                                </constraints>
                                 <state key="normal" title="Chef" image="chef.png"/>
                                 <connections>
                                     <segue destination="DEO-aH-yYD" kind="show" identifier="chefView" id="OLM-vt-Dzv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRI-5Z-Qgm">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRI-5Z-Qgm">
                                 <rect key="frame" x="257" y="306" width="90" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="6mP-Gn-lXg"/>
+                                    <constraint firstAttribute="width" constant="90" id="HDe-Xl-d1M"/>
+                                </constraints>
                                 <state key="normal" title="Chef" image="location.png"/>
                                 <connections>
                                     <segue destination="jT6-ER-xl9" kind="show" identifier="locationView" id="Vti-3Y-0yA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="326-xP-fIO">
-                                <rect key="frame" x="141" y="425" width="90" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="326-xP-fIO">
+                                <rect key="frame" x="142.5" y="425" width="90" height="90"/>
                                 <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="KDP-6t-r7T"/>
+                                    <constraint firstAttribute="height" constant="90" id="ZjI-WJ-wRX"/>
+                                </constraints>
                                 <state key="normal" title="Chef" image="recipe.png"/>
                                 <connections>
                                     <segue destination="zSS-yX-dF1" kind="show" identifier="recipeView" id="5hg-s3-Mzu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMT-Mv-TfL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMT-Mv-TfL">
                                 <rect key="frame" x="22" y="306" width="90" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="atH-2V-BhX"/>
+                                    <constraint firstAttribute="height" constant="90" id="tay-zN-FLy"/>
+                                </constraints>
                                 <state key="normal" title="Chef" image="lobster-pink.png"/>
                                 <connections>
                                     <segue destination="qbh-k2-Zfg" kind="show" identifier="foodView" id="DNL-ns-at4"/>
@@ -1018,10 +1030,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gna-ts-CBn">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gna-ts-CBn">
                                 <rect key="frame" x="138" y="306" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="UlR-qe-e4w"/>
+                                    <constraint firstAttribute="width" constant="100" id="qPn-Fc-rDN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Scan">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1043,11 +1058,21 @@
                             <constraint firstAttribute="trailingMargin" secondItem="ip6-An-Fmg" secondAttribute="trailing" id="3YL-iN-AKJ"/>
                             <constraint firstItem="lls-Ad-7E4" firstAttribute="leading" secondItem="Rsn-zK-snN" secondAttribute="leadingMargin" id="Ad1-As-aJ3"/>
                             <constraint firstItem="ip6-An-Fmg" firstAttribute="leading" secondItem="Rsn-zK-snN" secondAttribute="leadingMargin" id="DEm-jK-vS3"/>
+                            <constraint firstItem="4e9-mV-fpm" firstAttribute="top" secondItem="E5F-MH-fsj" secondAttribute="bottom" constant="57" id="Dk0-mO-hAy"/>
                             <constraint firstItem="ip6-An-Fmg" firstAttribute="top" secondItem="lls-Ad-7E4" secondAttribute="bottom" constant="10" id="Fih-74-n19"/>
+                            <constraint firstItem="gna-ts-CBn" firstAttribute="leading" secondItem="lMT-Mv-TfL" secondAttribute="trailing" constant="26" id="I5a-iy-llm"/>
                             <constraint firstItem="E5F-MH-fsj" firstAttribute="leading" secondItem="Rsn-zK-snN" secondAttribute="leadingMargin" id="MNb-ns-AM3"/>
                             <constraint firstItem="lls-Ad-7E4" firstAttribute="top" secondItem="2Kk-Nz-bir" secondAttribute="bottom" id="Obi-Dj-9oW"/>
                             <constraint firstItem="E5F-MH-fsj" firstAttribute="trailing" secondItem="Rsn-zK-snN" secondAttribute="trailingMargin" id="UnY-VF-cyt"/>
+                            <constraint firstItem="gna-ts-CBn" firstAttribute="top" secondItem="4e9-mV-fpm" secondAttribute="bottom" constant="12" id="au4-Lg-mxm"/>
+                            <constraint firstItem="lMT-Mv-TfL" firstAttribute="top" secondItem="E5F-MH-fsj" secondAttribute="bottom" constant="159" id="eUP-eI-xC7"/>
+                            <constraint firstItem="QRI-5Z-Qgm" firstAttribute="leading" secondItem="gna-ts-CBn" secondAttribute="trailing" constant="19" id="fXC-jU-08r"/>
+                            <constraint firstItem="326-xP-fIO" firstAttribute="centerX" secondItem="Rsn-zK-snN" secondAttribute="centerX" id="gCH-u6-Gz1"/>
                             <constraint firstItem="E5F-MH-fsj" firstAttribute="top" secondItem="ip6-An-Fmg" secondAttribute="bottom" constant="20" id="kCm-nv-sLm"/>
+                            <constraint firstItem="gna-ts-CBn" firstAttribute="centerX" secondItem="Rsn-zK-snN" secondAttribute="centerX" id="lJ1-Ta-mZT"/>
+                            <constraint firstItem="4e9-mV-fpm" firstAttribute="centerX" secondItem="Rsn-zK-snN" secondAttribute="centerX" id="lPe-2w-lka"/>
+                            <constraint firstItem="QRI-5Z-Qgm" firstAttribute="top" secondItem="E5F-MH-fsj" secondAttribute="bottom" constant="159" id="pwB-fV-Y2v"/>
+                            <constraint firstItem="326-xP-fIO" firstAttribute="top" secondItem="gna-ts-CBn" secondAttribute="bottom" constant="19" id="yzE-bl-Fln"/>
                         </constraints>
                     </view>
                     <connections>
