@@ -17,6 +17,7 @@ class RecipeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        clearChefData()
         updateChefData(chefData: chefEnteredInfo)
     }
 
@@ -44,4 +45,9 @@ class RecipeViewController: UIViewController {
         cookingOil.text = chefData.cookingOil
     }
 
+    func clearChefData() {
+        self.cookingOil.text = ""
+        self.cookingCare.text = ""
+        self.herbs.text = ""
+    }
 }
