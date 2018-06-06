@@ -9,8 +9,9 @@
 import UIKit
 import SwiftyJSON
 import Alamofire
+import AVFoundation
 
-class RestaurantViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class RestaurantViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, AVCaptureMetadataOutputObjectsDelegate {
 
     @IBOutlet weak var chefExperience: UITextField!
     @IBOutlet weak var foodID: UITextField!
@@ -26,6 +27,9 @@ class RestaurantViewController: UIViewController, UIPickerViewDataSource, UIPick
     let cookingOilData = ["Single", "Multiple"]
     let herbsData = ["Cinnamon", "Red Chillies"]
     var serviceEndPoint : ServiceEndpoint? = nil
+    var session : AVCaptureSession!
+    var video : AVCaptureVideoPreviewLayer!
+    var foodQRCode : String!
     
     @IBAction func submitPressed(_ sender: Any) {
         var endpoint = serviceEndPoint?.endPoint
@@ -157,14 +161,46 @@ class RestaurantViewController: UIViewController, UIPickerViewDataSource, UIPick
         return title
     }
     
-    /*
-    // MARK: - Navigation
+    @IBAction func scanPressed(_ sender: UIButton) {
+        session = AVCaptureSession()
+        let captureDevice = AVCaptureDevice.default(for: AVMediaType.video)
+        
+        do {
+            let input = try AVCaptureDeviceInput(device: captureDevice!)
+            session.addInput(input)
+        }
+        catch {
+            print("Error in capture device")
+        }
+        
+        let output = AVCaptureMetadataOutput()
+        session.addOutput(output)
+        output.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
+        output.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
+        
+        video = AVCaptureVideoPreviewLayer(session: session)
+        video?.frame = view.layer.bounds
+        view.layer.addSublayer(video!)
+        session.startRunning()
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
+    
+    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+        if metadataObjects != nil && metadataObjects.count != 0 {
+            if let object = metadataObjects[0] as? AVMetadataMachineReadableCodeObject {
+                if object.type == AVMetadataObject.ObjectType.qr {
+                    let alert = UIAlertController(title: "Food ID", message: object.stringValue, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Retake", style: .default, handler: nil))
+                    alert.addAction(UIAlertAction(title: "Copy", style: .default, handler: { (nil) in UIPasteboard.general.string = object.stringValue
+                        self.foodID.text = "\(object.stringValue!)"
+                        self.foodQRCode = object.stringValue!
+                        self.session?.stopRunning()
+                        self.video.removeFromSuperlayer()
+                    }))
+                    present(alert, animated: true, completion: nil)
+                }
+            }
+        }
+    }
 
 }
