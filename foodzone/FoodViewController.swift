@@ -19,6 +19,7 @@ class FoodViewController: UIViewController {
     @IBOutlet weak var lobsterSize: UILabel!
     
     var lobsterID: String!
+    var lobsterInfo = LobsterDataModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +43,6 @@ class FoodViewController: UIViewController {
     }
     
     func getLobsterDetails(url : String, param : [String: Any]){
-        let lobsterInfo = LobsterDataModel()
         var endpoint = url
         endpoint.append("/getLobsterDetails?lobsterId=\(param["LobsterId"] as! String)")
         print("Endpoint = \(endpoint)")
@@ -54,36 +54,36 @@ class FoodViewController: UIViewController {
                 let lobsterData : JSON = JSON(response.result.value!)
                 
                 if lobsterData["Catch_Zone"].exists(){
-                    lobsterInfo.Catch_Zone = lobsterData["Catch_Zone"].string!
+                    self.lobsterInfo.Catch_Zone = lobsterData["Catch_Zone"].string!
                 }
                 
                 if lobsterData["Port_Of_Loading"].exists(){
-                    lobsterInfo.Port_Of_Loading = lobsterData["Port_Of_Loading"].string!
+                    self.lobsterInfo.Port_Of_Loading = lobsterData["Port_Of_Loading"].string!
                 }
                 
                 if lobsterData["Type"].exists(){
-                    lobsterInfo.Type = lobsterData["Type"].string!
+                    self.lobsterInfo.Type = lobsterData["Type"].string!
                 }
 
                 if lobsterData["Grade"].exists(){
-                    lobsterInfo.Grade = lobsterData["Grade"].string!
+                    self.lobsterInfo.Grade = lobsterData["Grade"].string!
                 }
                 
                 if lobsterData["Weight"].exists(){
-                    lobsterInfo.Weight = lobsterData["Weight"].string!
+                    self.lobsterInfo.Weight = lobsterData["Weight"].string!
                 }
                 
                 if lobsterData["Size"].exists(){
-                    lobsterInfo.Size = lobsterData["Size"].string!
+                    self.lobsterInfo.Size = lobsterData["Size"].string!
                 }
                 
-                self.updateLobsterDataUI(lobsterData : lobsterInfo)
+                self.updateLobsterDataUI(lobsterData : self.lobsterInfo)
             }
             else {
                 print("Network error = \(response.result.error)")
                 self.lobsterDataStatus.text = "Not able to get lobster information"
             }
-            self.updateLobsterDataUI(lobsterData: lobsterInfo)
+            self.updateLobsterDataUI(lobsterData: self.lobsterInfo)
         }
 
     }
@@ -94,5 +94,11 @@ class FoodViewController: UIViewController {
         lobsterWeight.text = lobsterData.Weight
         lobsterSize.text = lobsterData.Size
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "healthView" {
+            let destination = segue.destination as! HealthViewController
+            destination.containerId = self.lobsterInfo.CATC_ID
+        }
+    }
 }
