@@ -38,17 +38,17 @@ class RestaurantViewController: UIViewController, UIPickerViewDataSource, UIPick
         var param : [String:Any]
         endpoint?.append("/v1/SetChefInfo")
         param = ["LobsterId": foodID.text!,
-                          "ChefName": chefName.text,
-                          "ChefExperience": Int(chefExperience.text!),
+                          "ChefName": chefName.text as Any,
+                          "ChefExperience": Int(chefExperience.text!) as Any,
                           "HerbsAdded":[herbs.text],
                           "CookingCare": [cookingCare.text],
-                          "CookingOil": cookingOil.text]
+                          "CookingOil": cookingOil.text as Any]
 
         Alamofire.request(endpoint!, method: .post, parameters: param, encoding: JSONEncoding.default, headers: nil).responseData { (response) in
             if response.result.isSuccess {
                 print("Data received")
                 if response.response?.statusCode == 200 {
-                    let responseData : JSON = JSON(response.result.value!)
+                    let _ : JSON = JSON(response.result.value!)
                 }
             }
         }
