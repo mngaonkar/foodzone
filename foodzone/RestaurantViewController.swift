@@ -88,10 +88,10 @@ class RestaurantViewController: UIViewController, UIPickerViewDataSource, UIPick
         serviceEndPoint = ServiceEndpoint()
         
         //show food image from URL
-        let url = URL(string: "http://i.imgur.com/w5rkSIj.jpg")
-        let content = try? Data(contentsOf: url!)
-        if let imageContent = content {
-            foodImage.image = UIImage(data: imageContent)
+        Alamofire.request("https://static.independent.co.uk/s3fs-public/thumbnails/image/2009/11/20/23/03lobsteralamy.jpeg").responseImage { response in
+            if let picture = response.result.value {
+                self.foodImage.image = picture
+            }
         }
     }
 
