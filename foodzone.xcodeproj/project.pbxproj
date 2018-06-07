@@ -37,6 +37,7 @@
 		6DDB361720C70AAB00ECD562 /* lobster-pink.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DDB361620C70AAA00ECD562 /* lobster-pink.png */; };
 		6DDB361B20C7AC8A00ECD562 /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB361A20C7AC8A00ECD562 /* HealthViewController.swift */; };
 		6DDB361D20C7C21200ECD562 /* HealthDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB361C20C7C21200ECD562 /* HealthDataModel.swift */; };
+		6DDB361F20C9074400ECD562 /* chef-pic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6DDB361E20C9074300ECD562 /* chef-pic.jpeg */; };
 		9C35A4B41DE4EF8000650581 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C35A4B31DE4EF8000650581 /* SafariServices.framework */; };
 		9C35A4B61DE4EF8500650581 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C35A4B51DE4EF8500650581 /* Security.framework */; };
 		9CA121761DAC7FFD000C2FCA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA121751DAC7FFD000C2FCA /* WebKit.framework */; };
@@ -82,6 +83,7 @@
 		6DDB361620C70AAA00ECD562 /* lobster-pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lobster-pink.png"; sourceTree = "<group>"; };
 		6DDB361A20C7AC8A00ECD562 /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
 		6DDB361C20C7C21200ECD562 /* HealthDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataModel.swift; sourceTree = "<group>"; };
+		6DDB361E20C9074300ECD562 /* chef-pic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "chef-pic.jpeg"; sourceTree = "<group>"; };
 		86EEEE6A65D0E5149BDCCF23 /* Pods-foodzone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodzone.release.xcconfig"; path = "Pods/Target Support Files/Pods-foodzone/Pods-foodzone.release.xcconfig"; sourceTree = "<group>"; };
 		9C35A4B31DE4EF8000650581 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		9C35A4B51DE4EF8500650581 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -120,6 +122,7 @@
 		6D7D0CA720C0F64400052C8E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				6DDB361E20C9074300ECD562 /* chef-pic.jpeg */,
 				6D04B18320C709C900472720 /* lobster.png */,
 				6DDB361620C70AAA00ECD562 /* lobster-pink.png */,
 				6D4B2C2120C40940001C4B21 /* gordon.jpeg */,
@@ -297,6 +300,7 @@
 				6DA726C720C071070060B1FA /* recipe.png in Resources */,
 				6D038ECC2091062F002B8209 /* qr-code.png in Resources */,
 				A2D9CBCE1943C2540017F096 /* Images.xcassets in Resources */,
+				6DDB361F20C9074400ECD562 /* chef-pic.jpeg in Resources */,
 				6DA726D720C074970060B1FA /* lobster.png in Resources */,
 				6D038EC020907CCB002B8209 /* restaurant_dish.jpg in Resources */,
 				6D0604FB208FA76C00CC4FBE /* lobster_chef.png in Resources */,

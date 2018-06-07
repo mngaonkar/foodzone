@@ -16,6 +16,7 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
     var session : AVCaptureSession!
     var video : AVCaptureVideoPreviewLayer!
     @IBOutlet weak var chefDataStatus: UILabel!
+    @IBOutlet weak var scanButton: UIButton!
     var foodQRCode : String!
     let chefEnteredInfo = ChefDataModel()
     let lobsterInfo = LobsterDataModel()
@@ -23,7 +24,8 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        scanButton.layer.cornerRadius = scanButton.frame.width/2
+        scanButton.layer.masksToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
