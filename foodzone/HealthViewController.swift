@@ -70,7 +70,7 @@ class HealthViewController: UIViewController {
                         self.healthInfo.waterTransparency = value
                     }
                 }
-                self.healthStatus.text = "Here is the lobster health data"
+                self.healthStatus.text = "Here is the lobster environment data"
                 self.updateHealthDataUI(healthInfo: self.healthInfo)
             }
             else {
