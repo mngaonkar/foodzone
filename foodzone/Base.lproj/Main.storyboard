@@ -986,6 +986,7 @@
                     <connections>
                         <outlet property="lobsterDataStatus" destination="Nt2-aY-6FK" id="GwN-XB-M1d"/>
                         <outlet property="lobsterGrade" destination="mKp-aD-hx4" id="Nq8-wb-ODN"/>
+                        <outlet property="lobsterImage" destination="8YG-gt-GyW" id="GIN-KW-Kk0"/>
                         <outlet property="lobsterSize" destination="ZEs-vZ-05H" id="GR1-PD-m8q"/>
                         <outlet property="lobsterType" destination="gUg-Gh-LoU" id="Htg-M4-1o7"/>
                         <outlet property="lobsterWeight" destination="fDY-jU-n0X" id="K47-Ur-mbe"/>

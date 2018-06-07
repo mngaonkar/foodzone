@@ -17,9 +17,11 @@ class FoodViewController: UIViewController {
     @IBOutlet weak var lobsterGrade: UILabel!
     @IBOutlet weak var lobsterWeight: UILabel!
     @IBOutlet weak var lobsterSize: UILabel!
+    @IBOutlet weak var lobsterImage: UIImageView!
     
     var lobsterID: String!
     var lobsterInfo = LobsterDataModel()
+    var lobsterInfoPassed : LobsterDataModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,6 +95,13 @@ class FoodViewController: UIViewController {
         lobsterGrade.text = lobsterData.Grade
         lobsterWeight.text = lobsterData.Weight
         lobsterSize.text = lobsterData.Size
+        
+        //show lobster image from URL
+        Alamofire.request(self.lobsterInfoPassed.Image).responseImage { response in
+            if let picture = response.result.value {
+                self.lobsterImage.image = picture
+            }
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -77,6 +77,7 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
                         self.video.removeFromSuperlayer()
                         self.getChefData(url: ServiceEndpoint().endPoint, param: ["LobsterId":self.foodQRCode])
                         self.getLobsterDetails(url: ServiceEndpoint().endPoint, param: ["LobsterId":self.foodQRCode])
+                        self.getLobsterImage(url: ServiceEndpoint().endPoint, param: ["LobsterId":self.foodQRCode])
                     }))
                     present(alert, animated: true, completion: nil)
                 }
@@ -203,6 +204,30 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
          */
     }
     
+    // Get chef entered data from service
+    func getLobsterImage(url : String, param : [String:Any]) {
+        var endpoint = url
+        endpoint.append("/v1/getLobsterImage?lobsterId=\(param["LobsterId"] as! String)")
+        print(endpoint)
+        print(param)
+        
+        Alamofire.request(endpoint, method: .get, parameters: param).responseData {
+            response in
+            if response.result.isSuccess {
+                print("Chef data received")
+                let imageData : JSON = JSON(response.result.value!)
+                
+                if imageData["url"].exists(){
+                    self.lobsterInfo.Image = imageData["url"].string!
+                }
+                
+            } else {
+                print("Network error = \(response.result.error)")
+                self.chefDataStatus.text = "Not able to get lobster image information"
+            }
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "recipeView" {
             let destination = segue.destination as! RecipeViewController
@@ -210,6 +235,7 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
         }else if segue.identifier == "foodView" {
             let destination = segue.destination as! FoodViewController
             destination.lobsterID = self.foodQRCode
+            destination.lobsterInfoPassed = self.lobsterInfo
         } else if segue.identifier == "locationView"{
             let destination = segue.destination as! MapViewController
             destination.sourceLocation = self.lobsterInfo.Port_Of_Loading
