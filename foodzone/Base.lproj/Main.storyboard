@@ -1521,6 +1521,7 @@
                         <outlet property="cookingCare" destination="IdJ-H8-MxC" id="IjF-oc-Kry"/>
                         <outlet property="cookingOil" destination="QtC-1R-xNI" id="rUE-jQ-fph"/>
                         <outlet property="herbs" destination="vi8-0a-Pu2" id="SES-rD-ac7"/>
+                        <outlet property="recipe" destination="lwi-yw-Sra" id="4VV-NK-Yqn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYe-Hd-7Cj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1666,6 +1667,7 @@
                     <connections>
                         <outlet property="awards" destination="jb7-45-OR5" id="O1c-68-tU6"/>
                         <outlet property="chefExperience" destination="Bp0-LC-qHm" id="s2E-aJ-lIa"/>
+                        <outlet property="chefImage" destination="7OJ-Px-KJY" id="c2U-Ko-uwQ"/>
                         <outlet property="chefName" destination="lWw-wg-W61" id="4hn-q9-bbc"/>
                     </connections>
                 </viewController>

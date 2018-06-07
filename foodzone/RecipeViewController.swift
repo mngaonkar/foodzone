@@ -14,6 +14,7 @@ class RecipeViewController: UIViewController {
     @IBOutlet weak var cookingCare: UILabel!
     @IBOutlet weak var cookingOil: UILabel!
     @IBOutlet weak var herbs: UILabel!
+    @IBOutlet weak var recipe: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,11 +44,13 @@ class RecipeViewController: UIViewController {
         }
         
         cookingOil.text = chefData.cookingOil
+        recipe.text = chefData.recipeDetail
     }
 
     func clearChefData() {
         self.cookingOil.text = ""
         self.cookingCare.text = ""
         self.herbs.text = ""
+        self.recipe.text = ""
     }
 }

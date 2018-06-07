@@ -16,6 +16,9 @@ public class ChefDataModel {
     public var cookingOil : String
     public var herbsAdded : [String]
     public var foodID : String
+    public var url : String
+    public var awardDetails : String
+    public var recipeDetail : String
     var message : String
     var status : Bool
     
@@ -26,6 +29,9 @@ public class ChefDataModel {
         cookingOil = ""
         herbsAdded = [""]
         foodID = ""
+        url = ""
+        awardDetails = ""
+        recipeDetail = ""
         message = ""
         status = false
     }

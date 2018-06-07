@@ -170,6 +170,19 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
                 if chefData["lobster_id"].exists(){
                     self.chefEnteredInfo.foodID = chefData["lobster_id"].string!
                 }
+                
+                if chefData["url"].exists(){
+                    self.chefEnteredInfo.url = chefData["url"].string!
+                }
+                
+                if chefData["award_details"].exists(){
+                    self.chefEnteredInfo.awardDetails = chefData["award_details"].string!
+                }
+                
+                if chefData["recipe_detail"].exists(){
+                    self.chefEnteredInfo.recipeDetail = chefData["recipe_detail"].string!
+                }
+                
                 self.chefDataStatus.text = "Recieved chef information"
             }
             else {

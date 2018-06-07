@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class ChefViewController: UIViewController {
 
@@ -15,6 +17,7 @@ class ChefViewController: UIViewController {
     @IBOutlet weak var chefName: UILabel!
     @IBOutlet weak var chefExperience: UILabel!
     @IBOutlet weak var awards: UILabel!
+    @IBOutlet weak var chefImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,5 +36,13 @@ class ChefViewController: UIViewController {
     func updateChefInfo(chefEnteredInfo: ChefDataModel){
         chefName.text = chefEnteredInfo.chefName
         chefExperience.text = "\(chefEnteredInfo.chefExperience) Years"
+        awards.text = chefEnteredInfo.awardDetails
+        
+        //show chef image from URL
+        Alamofire.request(self.chefEnteredInfo.url).responseImage { response in
+            if let picture = response.result.value {
+                self.chefImage.image = picture
+            }
+        }
     }
 }
