@@ -1558,10 +1558,14 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chef-pic.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="7OJ-Px-KJY">
-                                <rect key="frame" x="16" y="115.5" width="343" height="182"/>
+                                <rect key="frame" x="16" y="115.5" width="350" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="F3r-ub-ABk"/>
+                                    <constraint firstAttribute="width" constant="350" id="TVW-C3-Rmg"/>
+                                </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8Ur-ih-DxX">
-                                <rect key="frame" x="16" y="317.5" width="343" height="170"/>
+                                <rect key="frame" x="16" y="485.5" width="343" height="170"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wmr-qH-YFg">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
