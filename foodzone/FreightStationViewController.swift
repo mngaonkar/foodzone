@@ -112,7 +112,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func submitInfoClicked(_ sender: Any) {
         //let imageURL = uploadImage(image: selectedImage.image!)
-        imageLink.text = imageURL
+        //imageLink.text = imageURL
     }
     
     @IBAction func selectImageClicked(_ sender: Any) {
