@@ -575,8 +575,12 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tJ3-X6-RHZ">
                                 <rect key="frame" x="16" y="92" width="339" height="533"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lobster_dish.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Rgj-0H-c4P">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lobster-live.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Rgj-0H-c4P">
                                         <rect key="frame" x="0.0" y="0.0" width="339" height="183"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="183" id="edR-Gr-Qll"/>
+                                            <constraint firstAttribute="width" constant="339" id="pgv-0t-E7O"/>
+                                        </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ecQ-LR-j3k">
                                         <rect key="frame" x="0.0" y="203" width="339" height="30"/>
@@ -778,6 +782,7 @@
                         <outlet property="cookingCare" destination="APD-pX-dtK" id="q52-Py-7I4"/>
                         <outlet property="cookingOil" destination="m0e-fr-vB0" id="Pr7-aq-nE4"/>
                         <outlet property="foodID" destination="gdd-GK-Sz1" id="0UY-rm-tqM"/>
+                        <outlet property="foodImage" destination="Rgj-0H-c4P" id="DbA-Cp-TbB"/>
                         <outlet property="herbs" destination="lV2-XP-qVD" id="XmY-0E-UHF"/>
                     </connections>
                 </viewController>

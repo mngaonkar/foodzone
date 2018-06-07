@@ -9,6 +9,7 @@
 import UIKit
 import SwiftyJSON
 import Alamofire
+import AlamofireImage
 import AVFoundation
 
 class RestaurantViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, AVCaptureMetadataOutputObjectsDelegate {
@@ -19,6 +20,7 @@ class RestaurantViewController: UIViewController, UIPickerViewDataSource, UIPick
     @IBOutlet weak var cookingCare: UITextField!
     @IBOutlet weak var cookingOil: UITextField!
     @IBOutlet weak var herbs: UITextField!
+    @IBOutlet weak var foodImage: UIImageView!
     
     
     let experienceData = ["5", "10", "15", "20", "30"]
@@ -84,6 +86,13 @@ class RestaurantViewController: UIViewController, UIPickerViewDataSource, UIPick
         herbs.inputView = herbsPicker
         
         serviceEndPoint = ServiceEndpoint()
+        
+        //show food image from URL
+        let url = URL(string: "http://i.imgur.com/w5rkSIj.jpg")
+        let content = try? Data(contentsOf: url!)
+        if let imageContent = content {
+            foodImage.image = UIImage(data: imageContent)
+        }
     }
 
     override func didReceiveMemoryWarning() {

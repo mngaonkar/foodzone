@@ -9,4 +9,5 @@ target 'foodzone' do
   pod 'AZSClient'
   pod 'SwiftyJSON'
   pod 'Alamofire'
+  pod 'AlamofireImage'
 end

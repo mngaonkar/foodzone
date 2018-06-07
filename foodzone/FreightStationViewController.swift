@@ -33,7 +33,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     func uploadImage(image : UIImage) -> String{
-        let sasURL = "https://foodzone.blob.core.windows.net/images?sv=2017-07-29&ss=bfqt&srt=sco&sp=rwdlacup&se=2018-12-31T03:08:00Z&st=2018-04-24T19:08:00Z&spr=https&sig=hgCd5RfZvwL87NzF8Gtej7fR0yM5hghfYCz1HlT5feY%3D"
+        let sasURL = "put SAS URL here"
 
         var error : NSError?
         var imageURL : String = ""
@@ -111,7 +111,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @IBAction func submitInfoClicked(_ sender: Any) {
-        let imageURL = uploadImage(image: selectedImage.image!)
+        //let imageURL = uploadImage(image: selectedImage.image!)
         imageLink.text = imageURL
     }
     
