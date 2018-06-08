@@ -15,7 +15,7 @@ class HealthViewController: UIViewController {
     var healthInfo = HealthDataModel()
     
     @IBOutlet weak var temperature: UILabel!
-    @IBOutlet weak var humidity: UILabel!
+    @IBOutlet weak var ph: UILabel!
     @IBOutlet weak var waterTransparency: UILabel!
     @IBOutlet weak var healthStatus: UILabel!
     
@@ -24,8 +24,8 @@ class HealthViewController: UIViewController {
         
         temperature.layer.cornerRadius = temperature.frame.width/2
         temperature.layer.masksToBounds = true
-        humidity.layer.cornerRadius = humidity.frame.width/2
-        humidity.layer.masksToBounds = true
+        ph.layer.cornerRadius = ph.frame.width/2
+        ph.layer.masksToBounds = true
         waterTransparency.layer.cornerRadius = waterTransparency.frame.width/2
         waterTransparency.layer.masksToBounds = true
         
@@ -59,9 +59,9 @@ class HealthViewController: UIViewController {
                     }
                 }
                 
-                if healthData["humidity"].exists(){
-                    if let value = healthData["humidity"].int {
-                        self.healthInfo.humidity = value
+                if healthData["ph"].exists(){
+                    if let value = healthData["ph"].int {
+                        self.healthInfo.ph = value
                     }
                 }
                 
@@ -93,20 +93,23 @@ class HealthViewController: UIViewController {
         }
     
         
-        humidity.text = "\(self.healthInfo.humidity)"
-        switch self.healthInfo.humidity {
-        case 1...40:
-            humidity.backgroundColor = UIColor.red
-        case 41...80:
-            humidity.backgroundColor = UIColor.orange
-        case 81...100:
-            humidity.backgroundColor = UIColor(red: 0, green: 0.6275, blue: 0.2824, alpha: 1.0)
+        ph.text = "\(self.healthInfo.ph)"
+        switch self.healthInfo.ph {
+        case 0...3:
+            ph.backgroundColor = UIColor.red
+        case 4...6:
+            ph.backgroundColor = UIColor.orange
+        case 7...8:
+            ph.backgroundColor = UIColor(red: 0, green: 0.6275, blue: 0.2824, alpha: 1.0)
+        case 9...11:
+            ph.backgroundColor = UIColor.orange
+        case 12...14:
+            ph.backgroundColor = UIColor.red
         default:
-            humidity.backgroundColor = UIColor(red: 0, green: 0.6275, blue: 0.2824, alpha: 1.0)
+            ph.backgroundColor = UIColor(red: 0, green: 0.6275, blue: 0.2824, alpha: 1.0)
         }
         
         waterTransparency.text = "\(self.healthInfo.waterTransparency)"
-        humidity.text = "\(self.healthInfo.humidity)"
         switch self.healthInfo.waterTransparency {
         case 1...25:
             waterTransparency.backgroundColor = UIColor.red

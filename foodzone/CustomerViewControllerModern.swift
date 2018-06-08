@@ -153,12 +153,14 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
                 }
                 
                 if chefData["cooking_care"].exists(){
+                    self.chefEnteredInfo.cookingCare.removeAll()
                     for item in chefData["cooking_care"].array! {
                         self.chefEnteredInfo.cookingCare.append(item.string!)
                     }
                 }
                 
                 if chefData["herbs_added"].exists(){
+                    self.chefEnteredInfo.herbsAdded.removeAll()
                     for item in chefData["herbs_added"].array! {
                         self.chefEnteredInfo.herbsAdded.append(item.string!)
                     }

@@ -42,7 +42,7 @@ public class LobsterDataModel {
         Type = "Pacific"
         Grade = "G"
         Weight = "2.5 Kg"
-        Size = "Image Processing"
+        Size = "Medium"
         Processing_Estd = "65146516"
         Processing_Date = "6544161646"
         Fishing_Company = "Alaska Crab Fishing"
