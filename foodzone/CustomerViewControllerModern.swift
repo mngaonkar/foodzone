@@ -16,6 +16,7 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
     var session : AVCaptureSession!
     var video : AVCaptureVideoPreviewLayer!
     @IBOutlet weak var chefDataStatus: UILabel!
+    @IBOutlet weak var scanButton: UIButton!
     var foodQRCode : String!
     let chefEnteredInfo = ChefDataModel()
     let lobsterInfo = LobsterDataModel()
@@ -23,7 +24,8 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        scanButton.layer.cornerRadius = scanButton.frame.width/2
+        scanButton.layer.masksToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,6 +77,7 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
                         self.video.removeFromSuperlayer()
                         self.getChefData(url: ServiceEndpoint().endPoint, param: ["LobsterId":self.foodQRCode])
                         self.getLobsterDetails(url: ServiceEndpoint().endPoint, param: ["LobsterId":self.foodQRCode])
+                        self.getLobsterImage(url: ServiceEndpoint().endPoint, param: ["LobsterId":self.foodQRCode])
                     }))
                     present(alert, animated: true, completion: nil)
                 }
@@ -150,12 +153,14 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
                 }
                 
                 if chefData["cooking_care"].exists(){
+                    self.chefEnteredInfo.cookingCare.removeAll()
                     for item in chefData["cooking_care"].array! {
                         self.chefEnteredInfo.cookingCare.append(item.string!)
                     }
                 }
                 
                 if chefData["herbs_added"].exists(){
+                    self.chefEnteredInfo.herbsAdded.removeAll()
                     for item in chefData["herbs_added"].array! {
                         self.chefEnteredInfo.herbsAdded.append(item.string!)
                     }
@@ -168,6 +173,23 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
                 if chefData["lobster_id"].exists(){
                     self.chefEnteredInfo.foodID = chefData["lobster_id"].string!
                 }
+                
+                if chefData["url"].exists(){
+                    self.chefEnteredInfo.url = chefData["url"].string!
+                }
+                
+                if chefData["award_details"].exists(){
+                    self.chefEnteredInfo.awardDetails = chefData["award_details"].string!
+                }
+                
+                if chefData["recipe_detail"].exists(){
+                    self.chefEnteredInfo.recipeDetail = chefData["recipe_detail"].string!
+                }
+                
+                if chefData["status"].exists(){
+                    self.chefEnteredInfo.status = chefData["status"].bool!
+                }
+                
                 self.chefDataStatus.text = "Recieved chef information"
             }
             else {
@@ -188,6 +210,30 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
          */
     }
     
+    // Get chef entered data from service
+    func getLobsterImage(url : String, param : [String:Any]) {
+        var endpoint = url
+        endpoint.append("/v1/getLobsterImage?lobsterId=\(param["LobsterId"] as! String)")
+        print(endpoint)
+        print(param)
+        
+        Alamofire.request(endpoint, method: .get, parameters: param).responseData {
+            response in
+            if response.result.isSuccess {
+                print("Chef data received")
+                let imageData : JSON = JSON(response.result.value!)
+                
+                if imageData["url"].exists(){
+                    self.lobsterInfo.Image = imageData["url"].string!
+                }
+                
+            } else {
+                print("Network error = \(response.result.error)")
+                self.chefDataStatus.text = "Not able to get lobster image information"
+            }
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "recipeView" {
             let destination = segue.destination as! RecipeViewController
@@ -195,6 +241,7 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
         }else if segue.identifier == "foodView" {
             let destination = segue.destination as! FoodViewController
             destination.lobsterID = self.foodQRCode
+            destination.lobsterInfoPassed = self.lobsterInfo
         } else if segue.identifier == "locationView"{
             let destination = segue.destination as! MapViewController
             destination.sourceLocation = self.lobsterInfo.Port_Of_Loading

@@ -25,6 +25,7 @@ public class LobsterDataModel {
     public var Processing_Date : String
     public var Fishing_Company : String
     public var CATC_ID : String
+    public var Image : String
     
     var message : String
     var status : Bool
@@ -41,11 +42,12 @@ public class LobsterDataModel {
         Type = "Pacific"
         Grade = "G"
         Weight = "2.5 Kg"
-        Size = "Image Processing"
+        Size = "Medium"
         Processing_Estd = "65146516"
         Processing_Date = "6544161646"
         Fishing_Company = "Alaska Crab Fishing"
         CATC_ID = "CN-001"
+        Image = ""
         
         message = ""
         status = false

@@ -257,9 +257,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bky-Nx-dIl">
                                                 <rect key="frame" x="0.0" y="0.0" width="118.5" height="30"/>
                                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Select Image">
-                                                    <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
+                                                <state key="normal" title="Select Image"/>
                                                 <connections>
                                                     <action selector="selectImageClicked:" destination="Gs7-78-jUB" eventType="touchUpInside" id="CeW-cd-FQw"/>
                                                 </connections>
@@ -267,9 +265,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWr-zd-vKt">
                                                 <rect key="frame" x="128.5" y="0.0" width="118" height="30"/>
                                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Scan Code">
-                                                    <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
+                                                <state key="normal" title="Scan Code"/>
                                                 <connections>
                                                     <action selector="scanCodeClicked:" destination="Gs7-78-jUB" eventType="touchUpInside" id="b3o-8p-jhx"/>
                                                 </connections>
@@ -277,9 +273,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yq2-fE-RTd">
                                                 <rect key="frame" x="256.5" y="0.0" width="118.5" height="30"/>
                                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Submit Info">
-                                                    <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
+                                                <state key="normal" title="Submit Info"/>
                                                 <connections>
                                                     <action selector="submitInfoClicked:" destination="Gs7-78-jUB" eventType="touchUpInside" id="k63-CW-mb0"/>
                                                 </connections>
@@ -581,8 +575,12 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tJ3-X6-RHZ">
                                 <rect key="frame" x="16" y="92" width="339" height="533"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lobster_dish.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Rgj-0H-c4P">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lobster-live.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Rgj-0H-c4P">
                                         <rect key="frame" x="0.0" y="0.0" width="339" height="183"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="183" id="edR-Gr-Qll"/>
+                                            <constraint firstAttribute="width" constant="339" id="pgv-0t-E7O"/>
+                                        </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ecQ-LR-j3k">
                                         <rect key="frame" x="0.0" y="203" width="339" height="30"/>
@@ -784,6 +782,7 @@
                         <outlet property="cookingCare" destination="APD-pX-dtK" id="q52-Py-7I4"/>
                         <outlet property="cookingOil" destination="m0e-fr-vB0" id="Pr7-aq-nE4"/>
                         <outlet property="foodID" destination="gdd-GK-Sz1" id="0UY-rm-tqM"/>
+                        <outlet property="foodImage" destination="Rgj-0H-c4P" id="DbA-Cp-TbB"/>
                         <outlet property="herbs" destination="lV2-XP-qVD" id="XmY-0E-UHF"/>
                     </connections>
                 </viewController>
@@ -987,6 +986,7 @@
                     <connections>
                         <outlet property="lobsterDataStatus" destination="Nt2-aY-6FK" id="GwN-XB-M1d"/>
                         <outlet property="lobsterGrade" destination="mKp-aD-hx4" id="Nq8-wb-ODN"/>
+                        <outlet property="lobsterImage" destination="8YG-gt-GyW" id="GIN-KW-Kk0"/>
                         <outlet property="lobsterSize" destination="ZEs-vZ-05H" id="GR1-PD-m8q"/>
                         <outlet property="lobsterType" destination="gUg-Gh-LoU" id="Htg-M4-1o7"/>
                         <outlet property="lobsterWeight" destination="fDY-jU-n0X" id="K47-Ur-mbe"/>
@@ -1017,61 +1017,67 @@
                                     <action selector="backPressed:" destination="RKb-SR-3om" eventType="touchUpInside" id="VJ3-3R-PPa"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4KN-KC-qER">
-                                <rect key="frame" x="0.0" y="75" width="375" height="518"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4KN-KC-qER">
+                                <rect key="frame" x="0.0" y="75" width="375" height="474"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lobsters enjoy being in temperature from 1 to 15°C. Also, they like more neutral and cleaner waters." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfo-yu-fhH">
+                                        <rect key="frame" x="12" y="0.0" width="351.5" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m57-3s-DYg">
-                                        <rect key="frame" x="162.5" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="162.5" y="76" width="50" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature (°C)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPN-iL-YNr">
-                                        <rect key="frame" x="77" y="60" width="221.5" height="36"/>
+                                        <rect key="frame" x="77" y="141" width="221.5" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFT-ed-smB">
-                                        <rect key="frame" x="137.5" y="106" width="100" height="100"/>
+                                        <rect key="frame" x="162.5" y="192" width="50" height="50"/>
                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="2QM-QB-9dX"/>
-                                            <constraint firstAttribute="width" constant="100" id="r9c-Jr-7aL"/>
+                                            <constraint firstAttribute="height" constant="50" id="huL-Ll-FRZ"/>
+                                            <constraint firstAttribute="width" constant="50" id="mPf-LM-aO2"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humidity (%)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPb-iV-M1L">
-                                        <rect key="frame" x="104" y="216" width="167.5" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPb-iV-M1L">
+                                        <rect key="frame" x="168.5" y="257" width="38.5" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Jj-tr-PZr">
-                                        <rect key="frame" x="137.5" y="262" width="100" height="100"/>
+                                        <rect key="frame" x="162.5" y="308" width="50" height="50"/>
                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="FIM-nB-A6E"/>
-                                            <constraint firstAttribute="width" constant="100" id="p5T-zz-rln"/>
+                                            <constraint firstAttribute="width" constant="50" id="a8u-lo-Kdk"/>
+                                            <constraint firstAttribute="height" constant="50" id="kuT-rX-sqk"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water Transparency (%)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0W-Ds-UM1">
-                                        <rect key="frame" x="34.5" y="372" width="306.5" height="36"/>
+                                        <rect key="frame" x="34.5" y="373" width="306.5" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="55" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F25-oV-QxV">
-                                        <rect key="frame" x="137.5" y="418" width="100" height="100"/>
+                                        <rect key="frame" x="162.5" y="424" width="50" height="50"/>
                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="1CY-sn-BCa"/>
-                                            <constraint firstAttribute="width" constant="100" id="hJm-sY-Oh3"/>
+                                            <constraint firstAttribute="width" constant="50" id="Es7-Ei-LUk"/>
+                                            <constraint firstAttribute="height" constant="50" id="Khu-Th-BwB"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1166,7 +1172,7 @@
                     </view>
                     <connections>
                         <outlet property="healthStatus" destination="m57-3s-DYg" id="vfD-Ds-Y7x"/>
-                        <outlet property="humidity" destination="7Jj-tr-PZr" id="7ly-GT-YzN"/>
+                        <outlet property="ph" destination="7Jj-tr-PZr" id="EgS-mN-0pA"/>
                         <outlet property="temperature" destination="uFT-ed-smB" id="JGo-qD-hSP"/>
                         <outlet property="waterTransparency" destination="F25-oV-QxV" id="DJI-rA-Rzd"/>
                     </connections>
@@ -1251,7 +1257,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gna-ts-CBn">
                                 <rect key="frame" x="138" y="306" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="UlR-qe-e4w"/>
                                     <constraint firstAttribute="width" constant="100" id="qPn-Fc-rDN"/>
@@ -1271,10 +1277,10 @@
                                 <color key="textColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan dish code to know about your amazing dinning experience" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTl-WA-wEs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan dish code to know about chef, recipe, sea food and source location." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTl-WA-wEs">
                                 <rect key="frame" x="16" y="535.5" width="343" height="93.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -1305,6 +1311,7 @@
                     </view>
                     <connections>
                         <outlet property="chefDataStatus" destination="E5F-MH-fsj" id="D0c-I6-mmY"/>
+                        <outlet property="scanButton" destination="gna-ts-CBn" id="oH3-aK-su4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Do4-5l-egJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1487,12 +1494,12 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delicacy prepared from Australian Lobster, with a hint of mediterranean preparation, served with hot sour soup." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwi-yw-Sra">
-                                <rect key="frame" x="16" y="308" width="343" height="200"/>
+                                <rect key="frame" x="16" y="308" width="343" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="YwR-BN-9Pm"/>
+                                    <constraint firstAttribute="height" constant="300" id="YwR-BN-9Pm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -1515,6 +1522,7 @@
                         <outlet property="cookingCare" destination="IdJ-H8-MxC" id="IjF-oc-Kry"/>
                         <outlet property="cookingOil" destination="QtC-1R-xNI" id="rUE-jQ-fph"/>
                         <outlet property="herbs" destination="vi8-0a-Pu2" id="SES-rD-ac7"/>
+                        <outlet property="recipe" destination="lwi-yw-Sra" id="4VV-NK-Yqn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYe-Hd-7Cj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1549,11 +1557,15 @@
                                     <action selector="backPressed:" destination="DEO-aH-yYD" eventType="touchUpInside" id="rLH-7j-82L"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gordon.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="7OJ-Px-KJY">
-                                <rect key="frame" x="16" y="115.5" width="343" height="275"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chef_pic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7OJ-Px-KJY">
+                                <rect key="frame" x="16" y="115.5" width="350" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="F3r-ub-ABk"/>
+                                    <constraint firstAttribute="width" constant="350" id="TVW-C3-Rmg"/>
+                                </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8Ur-ih-DxX">
-                                <rect key="frame" x="16" y="410.5" width="343" height="170"/>
+                                <rect key="frame" x="16" y="485.5" width="343" height="170"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wmr-qH-YFg">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
@@ -1564,7 +1576,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gordon Ramasay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWw-wg-W61">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWw-wg-W61">
                                                 <rect key="frame" x="146" y="0.0" width="197" height="50"/>
                                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -1660,6 +1672,7 @@
                     <connections>
                         <outlet property="awards" destination="jb7-45-OR5" id="O1c-68-tU6"/>
                         <outlet property="chefExperience" destination="Bp0-LC-qHm" id="s2E-aJ-lIa"/>
+                        <outlet property="chefImage" destination="7OJ-Px-KJY" id="c2U-Ko-uwQ"/>
                         <outlet property="chefName" destination="lWw-wg-W61" id="4hn-q9-bbc"/>
                     </connections>
                 </viewController>
@@ -1671,7 +1684,7 @@
     <resources>
         <image name="blockchain.png" width="259" height="194"/>
         <image name="chef.png" width="194" height="260"/>
-        <image name="gordon.jpeg" width="183" height="275"/>
+        <image name="chef_pic.jpg" width="300" height="300"/>
         <image name="lobster-live.jpeg" width="640" height="640"/>
         <image name="lobster-pink.png" width="128" height="128"/>
         <image name="lobster_dish.jpeg" width="276" height="183"/>
