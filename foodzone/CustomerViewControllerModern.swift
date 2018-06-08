@@ -184,6 +184,10 @@ class CustomerViewControllerModern: UIViewController, AVCaptureMetadataOutputObj
                     self.chefEnteredInfo.recipeDetail = chefData["recipe_detail"].string!
                 }
                 
+                if chefData["status"].exists(){
+                    self.chefEnteredInfo.status = chefData["status"].bool!
+                }
+                
                 self.chefDataStatus.text = "Recieved chef information"
             }
             else {

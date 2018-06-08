@@ -34,9 +34,15 @@ class ChefViewController: UIViewController {
     }
     
     func updateChefInfo(chefEnteredInfo: ChefDataModel){
-        chefName.text = chefEnteredInfo.chefName
-        chefExperience.text = "\(chefEnteredInfo.chefExperience) Years"
-        awards.text = chefEnteredInfo.awardDetails
+        if chefEnteredInfo.status {
+            chefName.text = chefEnteredInfo.chefName
+            chefExperience.text = "\(chefEnteredInfo.chefExperience) Years"
+            awards.text = chefEnteredInfo.awardDetails
+        }else {
+            chefName.text = "Roger"
+            chefExperience.text = "10 Years"
+            awards.text = "Super Chef 2017"
+        }
         
         //show chef image from URL
         Alamofire.request(self.chefEnteredInfo.url).responseImage { response in
