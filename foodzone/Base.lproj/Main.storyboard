@@ -1557,7 +1557,7 @@
                                     <action selector="backPressed:" destination="DEO-aH-yYD" eventType="touchUpInside" id="rLH-7j-82L"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chef-pic.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="7OJ-Px-KJY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chef_pic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7OJ-Px-KJY">
                                 <rect key="frame" x="16" y="115.5" width="350" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="350" id="F3r-ub-ABk"/>
@@ -1683,8 +1683,8 @@
     </scenes>
     <resources>
         <image name="blockchain.png" width="259" height="194"/>
-        <image name="chef-pic.jpeg" width="157" height="182"/>
         <image name="chef.png" width="194" height="260"/>
+        <image name="chef_pic.jpg" width="300" height="300"/>
         <image name="lobster-live.jpeg" width="640" height="640"/>
         <image name="lobster-pink.png" width="128" height="128"/>
         <image name="lobster_dish.jpeg" width="276" height="183"/>

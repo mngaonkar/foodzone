@@ -17,6 +17,7 @@
 		6D0604F7208FA04C00CC4FBE /* ChefDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0604F6208FA04C00CC4FBE /* ChefDataModel.swift */; };
 		6D0604F9208FA55F00CC4FBE /* lobster_dish.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6D0604F8208FA55F00CC4FBE /* lobster_dish.jpeg */; };
 		6D0604FD208FB0FF00CC4FBE /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0604FC208FB0FF00CC4FBE /* Utilities.swift */; };
+		6D0D358F20CAC9B900B6CD50 /* chef_pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D0D358E20CAC9B800B6CD50 /* chef_pic.jpg */; };
 		6D4B2C1E20C40597001C4B21 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B2C1D20C40597001C4B21 /* RecipeViewController.swift */; };
 		6D4B2C2020C40871001C4B21 /* ChefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B2C1F20C40871001C4B21 /* ChefViewController.swift */; };
 		6D4B2C2420C40A14001C4B21 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B2C2320C40A14001C4B21 /* FoodViewController.swift */; };
@@ -57,6 +58,7 @@
 		6D0604F6208FA04C00CC4FBE /* ChefDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefDataModel.swift; sourceTree = "<group>"; };
 		6D0604F8208FA55F00CC4FBE /* lobster_dish.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lobster_dish.jpeg; sourceTree = "<group>"; };
 		6D0604FC208FB0FF00CC4FBE /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		6D0D358E20CAC9B800B6CD50 /* chef_pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = chef_pic.jpg; path = ../../../../../../../Downloads/chef_pic.jpg; sourceTree = "<group>"; };
 		6D4B2C1D20C40597001C4B21 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		6D4B2C1F20C40871001C4B21 /* ChefViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefViewController.swift; sourceTree = "<group>"; };
 		6D4B2C2320C40A14001C4B21 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		6D7D0CA720C0F64400052C8E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				6D0D358E20CAC9B800B6CD50 /* chef_pic.jpg */,
 				6DDB361E20C9074300ECD562 /* chef-pic.jpeg */,
 				6D04B18320C709C900472720 /* lobster.png */,
 				6DDB361620C70AAA00ECD562 /* lobster-pink.png */,
@@ -249,6 +252,7 @@
 						CreatedOnToolsVersion = 6.0;
 						DevelopmentTeam = 8DXANRED7S;
 						LastSwiftMigration = 0930;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -279,6 +283,7 @@
 				6DDB361720C70AAB00ECD562 /* lobster-pink.png in Resources */,
 				6DA726CD20C0727B0060B1FA /* chef.png in Resources */,
 				6DA726C720C071070060B1FA /* recipe.png in Resources */,
+				6D0D358F20CAC9B900B6CD50 /* chef_pic.jpg in Resources */,
 				6D038ECC2091062F002B8209 /* qr-code.png in Resources */,
 				A2D9CBCE1943C2540017F096 /* Images.xcassets in Resources */,
 				6DDB361F20C9074400ECD562 /* chef-pic.jpeg in Resources */,
@@ -491,6 +496,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 8DXANRED7S;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -502,6 +509,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mgaonkar.foodzone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "foodzone/foodzone-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
@@ -515,6 +523,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DXANRED7S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -525,6 +535,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mgaonkar.foodzone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "foodzone/foodzone-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
