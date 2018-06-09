@@ -97,9 +97,9 @@ class HealthViewController: UIViewController {
         switch self.healthInfo.ph {
         case 0...3:
             ph.backgroundColor = UIColor.red
-        case 4...6:
+        case 4...5:
             ph.backgroundColor = UIColor.orange
-        case 7...8:
+        case 6...8:
             ph.backgroundColor = UIColor(red: 0, green: 0.6275, blue: 0.2824, alpha: 1.0)
         case 9...11:
             ph.backgroundColor = UIColor.orange

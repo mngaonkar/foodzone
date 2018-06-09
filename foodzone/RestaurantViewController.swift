@@ -205,6 +205,7 @@ class RestaurantViewController: UIViewController, UIPickerViewDataSource, UIPick
                         self.foodQRCode = object.stringValue!
                         self.session?.stopRunning()
                         self.video.removeFromSuperlayer()
+                        self.getLobsterImage(lobsterId: self.foodQRCode)
                     }))
                     present(alert, animated: true, completion: nil)
                 }
@@ -212,4 +213,36 @@ class RestaurantViewController: UIViewController, UIPickerViewDataSource, UIPick
         }
     }
 
+    func getLobsterImage(lobsterId: String) {
+        var endpoint = ServiceEndpoint().endPoint
+        var imageURL: String!
+        
+        // Get lobster image URL
+        endpoint.append("/v1/getLobsterImage?lobsterId=\(lobsterId)")
+
+        Alamofire.request(endpoint, method: .get, parameters: nil).responseData {
+            response in
+            if response.result.isSuccess {
+                print("Chef data received")
+                let imageData : JSON = JSON(response.result.value!)
+                
+                if imageData["url"].exists(){
+                    imageURL = imageData["url"].string!
+                    //imageURL = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Blockchain_Black.jpg/800px-Blockchain_Black.jpg"
+                    
+                    // Download image from URL and show
+                    if imageURL != nil {
+                        Alamofire.request(imageURL).responseImage { response in
+                            if let picture = response.result.value {
+                                self.foodImage.image = picture
+                            }
+                        }
+                    }
+                }
+                
+            } else {
+                print("Network error = \(response.result.error)")
+            }
+        }
+    }
 }
