@@ -23,6 +23,8 @@
 		6D4B2C2420C40A14001C4B21 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B2C2320C40A14001C4B21 /* FoodViewController.swift */; };
 		6D4B2C2620C41E58001C4B21 /* LobsterDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B2C2520C41E58001C4B21 /* LobsterDataModel.swift */; };
 		6D4B2C2820C44A07001C4B21 /* lobster-live.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6D4B2C2720C44A07001C4B21 /* lobster-live.jpeg */; };
+		6D597A0D20CBBF7000A7DAC1 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D597A0C20CBBF7000A7DAC1 /* title.png */; };
+		6D597A0F20CBC2C700A7DAC1 /* title-world.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D597A0E20CBC2C600A7DAC1 /* title-world.png */; };
 		6D5B4CD3208E47D9000A436D /* FreightStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5B4CD2208E47D9000A436D /* FreightStationViewController.swift */; };
 		6D7D0CA920C3F8A700052C8E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D0CA820C3F8A700052C8E /* MapViewController.swift */; };
 		6DA726BF20C06B8D0060B1FA /* CustomerViewControllerModern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA726BE20C06B8D0060B1FA /* CustomerViewControllerModern.swift */; };
@@ -64,6 +66,8 @@
 		6D4B2C2320C40A14001C4B21 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		6D4B2C2520C41E58001C4B21 /* LobsterDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobsterDataModel.swift; sourceTree = "<group>"; };
 		6D4B2C2720C44A07001C4B21 /* lobster-live.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lobster-live.jpeg"; sourceTree = "<group>"; };
+		6D597A0C20CBBF7000A7DAC1 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		6D597A0E20CBC2C600A7DAC1 /* title-world.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title-world.png"; sourceTree = "<group>"; };
 		6D5B4CD2208E47D9000A436D /* FreightStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreightStationViewController.swift; sourceTree = "<group>"; };
 		6D7D0CA820C3F8A700052C8E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		6DA726BE20C06B8D0060B1FA /* CustomerViewControllerModern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewControllerModern.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 		6D7D0CA720C0F64400052C8E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				6D597A0E20CBC2C600A7DAC1 /* title-world.png */,
+				6D597A0C20CBBF7000A7DAC1 /* title.png */,
 				6D0D358E20CAC9B800B6CD50 /* chef_pic.jpg */,
 				6DDB361E20C9074300ECD562 /* chef-pic.jpeg */,
 				6D04B18320C709C900472720 /* lobster.png */,
@@ -288,11 +294,13 @@
 				A2D9CBCE1943C2540017F096 /* Images.xcassets in Resources */,
 				6DDB361F20C9074400ECD562 /* chef-pic.jpeg in Resources */,
 				A31A89F71BF3FDFA00C7B656 /* Launch Screen.storyboard in Resources */,
+				6D597A0F20CBC2C700A7DAC1 /* title-world.png in Resources */,
 				6D0604F9208FA55F00CC4FBE /* lobster_dish.jpeg in Resources */,
 				6D038EC42090A16C002B8209 /* blockchain.png in Resources */,
 				6D4B2C2820C44A07001C4B21 /* lobster-live.jpeg in Resources */,
 				6D04B18420C709C900472720 /* lobster.png in Resources */,
 				6DA726D520C073EA0060B1FA /* location.png in Resources */,
+				6D597A0D20CBBF7000A7DAC1 /* title.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
