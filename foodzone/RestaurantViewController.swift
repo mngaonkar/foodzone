@@ -228,20 +228,20 @@ class RestaurantViewController: UIViewController, UIPickerViewDataSource, UIPick
                 
                 if imageData["url"].exists(){
                     imageURL = imageData["url"].string!
+                    //imageURL = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Blockchain_Black.jpg/800px-Blockchain_Black.jpg"
+                    
+                    // Download image from URL and show
+                    if imageURL != nil {
+                        Alamofire.request(imageURL).responseImage { response in
+                            if let picture = response.result.value {
+                                self.foodImage.image = picture
+                            }
+                        }
+                    }
                 }
                 
             } else {
                 print("Network error = \(response.result.error)")
-            }
-        }
-        
-        //imageURL = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Blockchain_Black.jpg/800px-Blockchain_Black.jpg"
-        // Download image from URL and show
-        if imageURL != nil {
-            Alamofire.request(imageURL).responseImage { response in
-                if let picture = response.result.value {
-                    self.foodImage.image = picture
-                }
             }
         }
     }
