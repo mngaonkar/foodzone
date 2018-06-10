@@ -21,11 +21,18 @@ class RestaurantViewController: UIViewController, UIPickerViewDataSource, UIPick
     @IBOutlet weak var cookingOil: UITextField!
     @IBOutlet weak var herbs: UITextField!
     @IBOutlet weak var foodImage: UIImageView!
+    @IBOutlet weak var dishName: UITextField!
+    @IBOutlet weak var recipeDetails: UILabel!
     
     
     let experienceData = ["5", "10", "15", "20", "30"]
     let chefNamesData = ["Novok", "Roger", "Peter", "John"]
     let cookingCareData  = ["Low Flame", "High Flame", "Medium Rare", "Well done"]
+    let dishNameData = ["Traditional Lobster Roll",
+                    "Lobster Roll",
+                    "Lobster Thermidor",
+                    "Lobster Mashed Potatoes"
+                ]
     let cookingOilData = ["Single", "Multiple"]
     let herbsData = ["Cinnamon", "Red Chillies"]
     var serviceEndPoint : ServiceEndpoint? = nil
@@ -84,6 +91,11 @@ class RestaurantViewController: UIViewController, UIPickerViewDataSource, UIPick
         herbsPicker.tag = 5
         herbsPicker.delegate = self
         herbs.inputView = herbsPicker
+
+        let dishNamePicker = UIPickerView()
+        dishNamePicker.tag = 6
+        dishNamePicker.delegate = self
+        dishName.inputView = dishNamePicker
         
         serviceEndPoint = ServiceEndpoint()
         
@@ -126,6 +138,8 @@ class RestaurantViewController: UIViewController, UIPickerViewDataSource, UIPick
             count = cookingOilData.count
         case 5:
             count = herbsData.count
+        case 6:
+            count = dishNameData.count
         default:
             count = 0
         }
@@ -144,6 +158,9 @@ class RestaurantViewController: UIViewController, UIPickerViewDataSource, UIPick
             cookingOil.text = cookingOilData[row]
         case 5:
             herbs.text = herbsData[row]
+        case 6:
+            dishName.text = dishNameData[row]
+            getRecipeDetails(menu: dishName.text!)
         default:
             print("default")
         }
@@ -164,6 +181,8 @@ class RestaurantViewController: UIViewController, UIPickerViewDataSource, UIPick
             title = cookingOilData[row]
         case 5:
             title = herbsData[row]
+        case 6:
+            title = dishNameData[row]
         default:
             print("default")
         }
@@ -213,6 +232,29 @@ class RestaurantViewController: UIViewController, UIPickerViewDataSource, UIPick
         }
     }
 
+    func getRecipeDetails(menu: String) {
+        var endpoint = ServiceEndpoint().endPoint
+
+        // Get lobster image URL
+        //endpoint.append("/v1/GetRecipe?menu=\(menu)")
+        endpoint.append("/v1/GetRecipe")
+        
+        Alamofire.request(endpoint, method: .get, parameters: ["menu":menu]).responseData {
+            response in
+            if response.result.isSuccess {
+                print("Recipe data received")
+                let recipeData : JSON = JSON(response.result.value!)
+                
+                if recipeData["recipe"].exists(){
+                    self.recipeDetails.text = recipeData["recipe"].string!
+                }
+                
+            } else {
+                print("Network error = \(response.result.error)")
+            }
+        }
+    }
+    
     func getLobsterImage(lobsterId: String) {
         var endpoint = ServiceEndpoint().endPoint
         var imageURL: String!

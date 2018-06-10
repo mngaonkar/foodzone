@@ -576,18 +576,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tJ3-X6-RHZ">
-                                <rect key="frame" x="16" y="92" width="339" height="533"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="tJ3-X6-RHZ">
+                                <rect key="frame" x="16" y="92" width="339" height="552"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lobster-live.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Rgj-0H-c4P">
-                                        <rect key="frame" x="0.0" y="0.0" width="339" height="183"/>
+                                        <rect key="frame" x="139" y="0.0" width="200" height="100"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="183" id="edR-Gr-Qll"/>
-                                            <constraint firstAttribute="width" constant="339" id="pgv-0t-E7O"/>
+                                            <constraint firstAttribute="height" constant="100" id="edR-Gr-Qll"/>
+                                            <constraint firstAttribute="width" constant="200" id="pgv-0t-E7O"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ecQ-LR-j3k">
-                                        <rect key="frame" x="0.0" y="203" width="339" height="30"/>
+                                        <rect key="frame" x="0.0" y="118" width="339" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SN-d7-Qf2">
                                                 <rect key="frame" x="0.0" y="0.0" width="126" height="20.5"/>
@@ -618,7 +618,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Of5-pf-OIP">
-                                        <rect key="frame" x="0.0" y="253" width="339" height="30"/>
+                                        <rect key="frame" x="0.0" y="166" width="339" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chef Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1x-od-dSf">
                                                 <rect key="frame" x="0.0" y="0.0" width="126" height="30"/>
@@ -638,7 +638,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MJU-sr-hBD">
-                                        <rect key="frame" x="0.0" y="303" width="339" height="30"/>
+                                        <rect key="frame" x="0.0" y="214" width="339" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chef Experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vwl-Bq-LJn">
                                                 <rect key="frame" x="0.0" y="0.0" width="126" height="30"/>
@@ -655,7 +655,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="u3C-KC-Zyh">
-                                        <rect key="frame" x="0.0" y="353" width="339" height="30"/>
+                                        <rect key="frame" x="0.0" y="262" width="339" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cooking Care" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muY-Mx-zH2">
                                                 <rect key="frame" x="0.0" y="0.0" width="126" height="30"/>
@@ -678,7 +678,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Mrm-IP-rdo">
-                                        <rect key="frame" x="0.0" y="403" width="339" height="30"/>
+                                        <rect key="frame" x="0.0" y="310" width="339" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cooking Oil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGL-hE-0PH">
                                                 <rect key="frame" x="0.0" y="0.0" width="126" height="30"/>
@@ -701,7 +701,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jbp-47-VnY">
-                                        <rect key="frame" x="0.0" y="453" width="339" height="30"/>
+                                        <rect key="frame" x="0.0" y="358" width="339" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Herbs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTg-da-dsn">
                                                 <rect key="frame" x="0.0" y="0.0" width="126" height="30"/>
@@ -720,8 +720,37 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rQp-X3-st1">
+                                        <rect key="frame" x="0.0" y="406" width="339" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dish Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgK-WL-CM4">
+                                                <rect key="frame" x="0.0" y="0.0" width="126" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="126" id="6sp-uv-GbU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A1k-HR-c2I">
+                                                <rect key="frame" x="146" y="0.0" width="193" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe details" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="t0Z-fD-2H3">
+                                        <rect key="frame" x="0.0" y="454" width="339" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="587-kF-pxk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmZ-nb-hsR">
-                                        <rect key="frame" x="0.0" y="503" width="339" height="30"/>
+                                        <rect key="frame" x="0.0" y="522" width="339" height="30"/>
                                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Submit"/>
                                         <connections>
@@ -734,6 +763,7 @@
                                     <constraint firstItem="ecQ-LR-j3k" firstAttribute="leading" secondItem="tJ3-X6-RHZ" secondAttribute="leading" id="4Ga-31-AG1"/>
                                     <constraint firstAttribute="trailing" secondItem="Rgj-0H-c4P" secondAttribute="trailing" id="Akc-Jj-R4A"/>
                                     <constraint firstAttribute="trailing" secondItem="Mrm-IP-rdo" secondAttribute="trailing" id="CHD-EV-9ED"/>
+                                    <constraint firstItem="rQp-X3-st1" firstAttribute="leading" secondItem="tJ3-X6-RHZ" secondAttribute="leading" id="Cde-Wx-zKL"/>
                                     <constraint firstAttribute="trailing" secondItem="u3C-KC-Zyh" secondAttribute="trailing" id="E80-uO-eI0"/>
                                     <constraint firstAttribute="trailing" secondItem="ecQ-LR-j3k" secondAttribute="trailing" id="JZr-g1-d2h"/>
                                     <constraint firstAttribute="trailing" secondItem="Of5-pf-OIP" secondAttribute="trailing" id="LMT-yv-hVi"/>
@@ -742,11 +772,19 @@
                                     <constraint firstItem="Rgj-0H-c4P" firstAttribute="leading" secondItem="tJ3-X6-RHZ" secondAttribute="leading" id="Vx9-aH-THg"/>
                                     <constraint firstAttribute="trailing" secondItem="MJU-sr-hBD" secondAttribute="trailing" id="anF-jX-dmM"/>
                                     <constraint firstItem="Of5-pf-OIP" firstAttribute="leading" secondItem="tJ3-X6-RHZ" secondAttribute="leading" id="b8a-Jn-6ck"/>
+                                    <constraint firstItem="t0Z-fD-2H3" firstAttribute="leading" secondItem="tJ3-X6-RHZ" secondAttribute="leading" id="eya-sa-XPJ"/>
                                     <constraint firstItem="jbp-47-VnY" firstAttribute="leading" secondItem="tJ3-X6-RHZ" secondAttribute="leading" id="j3w-ce-mdH"/>
                                     <constraint firstItem="VmZ-nb-hsR" firstAttribute="centerX" secondItem="tJ3-X6-RHZ" secondAttribute="centerX" id="pP8-YU-KPT"/>
+                                    <constraint firstAttribute="trailing" secondItem="t0Z-fD-2H3" secondAttribute="trailing" id="qNd-Vf-N4d"/>
                                     <constraint firstAttribute="trailing" secondItem="jbp-47-VnY" secondAttribute="trailing" id="tKu-Et-h9l"/>
                                     <constraint firstItem="MJU-sr-hBD" firstAttribute="leading" secondItem="tJ3-X6-RHZ" secondAttribute="leading" id="v7C-2v-l7f"/>
+                                    <constraint firstAttribute="trailing" secondItem="rQp-X3-st1" secondAttribute="trailing" id="x6C-gO-o3Q"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Vx9-aH-THg"/>
+                                    </mask>
+                                </variation>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKu-Pg-LpM">
                                 <rect key="frame" x="6" y="20" width="44" height="36"/>
@@ -785,9 +823,11 @@
                         <outlet property="chefName" destination="lZJ-b9-Ek3" id="BZf-Xz-jN4"/>
                         <outlet property="cookingCare" destination="APD-pX-dtK" id="q52-Py-7I4"/>
                         <outlet property="cookingOil" destination="m0e-fr-vB0" id="Pr7-aq-nE4"/>
+                        <outlet property="dishName" destination="A1k-HR-c2I" id="bHY-X2-TV3"/>
                         <outlet property="foodID" destination="gdd-GK-Sz1" id="0UY-rm-tqM"/>
                         <outlet property="foodImage" destination="Rgj-0H-c4P" id="DbA-Cp-TbB"/>
                         <outlet property="herbs" destination="lV2-XP-qVD" id="XmY-0E-UHF"/>
+                        <outlet property="recipeDetails" destination="t0Z-fD-2H3" id="CKM-iX-Whf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nrn-5e-3uf" userLabel="First Responder" sceneMemberID="firstResponder"/>
