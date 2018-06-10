@@ -28,10 +28,11 @@ class RestaurantViewController: UIViewController, UIPickerViewDataSource, UIPick
     let experienceData = ["5", "10", "15", "20", "30"]
     let chefNamesData = ["Novok", "Roger", "Peter", "John"]
     let cookingCareData  = ["Low Flame", "High Flame", "Medium Rare", "Well done"]
-    let dishNameData = ["Traditional Lobster Roll",
-                    "Lobster Roll",
+    let dishNameData = ["Lobster Roll",
                     "Lobster Thermidor",
-                    "Lobster Mashed Potatoes"
+                    "Lobster Mashed Potatoes",
+                    "Lobster Nachos",
+                    "Lobster Pizza"
                 ]
     let cookingOilData = ["Single", "Multiple"]
     let herbsData = ["Cinnamon", "Red Chillies"]
